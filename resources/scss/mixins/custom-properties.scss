@@ -1,0 +1,60 @@
+@mixin elements-custom-properties($selector) {
+	#{$selector} {
+
+		////////////////////
+		// Element tokens //
+		////////////////////
+
+		// Links
+		--enokh--link--text--color: var(--enokh--color--brand-primary);
+		--enokh--link--text--color--hover: var(--enokh--color--brand-primary-60);
+
+		// Button: primary
+		--enokh--button--primary--background--color: var(--enokh--color--brand-primary);
+		--enokh--button--primary--border--color: var(--enokh--color--brand-primary);
+		--enokh--button--primary--text--color: var(--enokh--color--neutral-100);
+		--enokh--button--primary--background--color--hover: var(--enokh--color--brand-primary-60);
+		--enokh--button--primary--border--color--hover: var(--enokh--color--neutral-20);
+		--enokh--button--primary--text--color--hover: var(--enokh--color--neutral-20);
+
+		// Button: secondary
+		--enokh--button--secondary--background--color: var(--enokh--color--neutral-100);
+		--enokh--button--secondary--border--color: var(--enokh--color--brand-primary);
+		--enokh--button--secondary--text--color: var(--enokh--color--brand-primary);
+		--enokh--button--secondary--background--color--hover: var(--enokh--color--neutral-100);
+		--enokh--button--secondary--border--color--hover: var(--enokh--color--brand-primary-60);
+		--enokh--button--secondary--text--color--hover: var(--enokh--color--brand-primary-60);
+
+		// Button: ghost
+		--enokh--button--ghost--background--color: transparent;
+		--enokh--button--ghost--border--color: transparent;
+		--enokh--button--ghost--text--color: var(--enokh--color--neutral-20);
+		--enokh--button--ghost--background--color--hover: var(--enokh--color--neutral-70);
+		--enokh--button--ghost--border--color--hover: var(--enokh--color--neutral-70);
+		--enokh--button--ghost--text--color--hover: var(--enokh--color--neutral-20);
+
+		// Button: disabled
+		--enokh--button--disabled--background--color: var(--enokh--color--neutral-70);
+		--enokh--button--disabled--border--color: var(--enokh--color--neutral-70);
+		--enokh--button--disabled--text--color: var(--enokh--color--neutral-20);
+
+		// label
+		--enokh--label--text--color: var(--enokh--color--neutral-20);
+
+		// Input
+		--enokh--input--text--color: var(--enokh--color--neutral-20);
+		--enokh--input--border--color: var(--enokh--color--neutral-50);
+		--enokh--input--background--color: var(--enokh--color--brand-primary-100);
+
+		// Checkbox
+		--enokh--checkbox--background--color: var(--enokh--color--neutral-100);
+		--enokh--checkbox--border--color: var(--enokh--color--brand-primary);
+		--enokh--checkbox--text--color: var(--enokh--color--neutral-20);
+		--enokh--checkbox--background--color--checked: var(--enokh--color--brand-primary);
+		--enokh--checkbox--border--color--checked: var(--enokh--color--brand-primary);
+		--enokh--checkbox--text--color--checked: var(--enokh--color--neutral-100);
+		--enokh--checkbox--background--color--disabled: var(--enokh--color--neutral-70);
+		--enokh--checkbox--border--color--disabled: var(--enokh--color--neutral-20);
+		--enokh--checkbox--text--color--disabled: var(--enokh--color--neutral-20);
+	}
+}

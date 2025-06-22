@@ -57,7 +57,7 @@ class NavigationDrawerBlock extends PresentationElements\Block\BaseBlock impleme
                 [
                     "style" => [
                         'color' => [
-                            'background' => 'var(--mah--color--brand-primary-100)',
+                            'background' => 'var(--enokh--color--brand-primary-100)',
                         ],
                         'spacing' => [
                             'blockGap' => '0',
@@ -70,7 +70,7 @@ class NavigationDrawerBlock extends PresentationElements\Block\BaseBlock impleme
                         [
                             "style" => [
                                 'color' => [
-                                    'background' => 'var(--mah--color--brand-primary-90)',
+                                    'background' => 'var(--enokh--color--brand-primary-90)',
                                 ],
                                 "spacing" => [
                                     "blockGap" => "var:preset|spacing|30",
@@ -92,7 +92,7 @@ class NavigationDrawerBlock extends PresentationElements\Block\BaseBlock impleme
                         block('enokh-universal-theme/search', [
                             "style" => [
                                 'border' => [
-                                    'color' => 'var(--mah--color--brand-primary-80)',
+                                    'color' => 'var(--enokh--color--brand-primary-80)',
                                 ],
                             ],
                         ])
@@ -108,7 +108,7 @@ class NavigationDrawerBlock extends PresentationElements\Block\BaseBlock impleme
                         ],
                         "style" => [
                             'color' => [
-                                'background' => 'var(--mah--color--brand-primary-90)',
+                                'background' => 'var(--enokh--color--brand-primary-90)',
                             ],
                             "spacing" => [
                                 "blockGap" => "var:preset|spacing|30",
@@ -137,7 +137,7 @@ class NavigationDrawerBlock extends PresentationElements\Block\BaseBlock impleme
                         ],
                         "style" => [
                             'color' => [
-                                'background' => 'var(--mah--color--brand-primary-100)',
+                                'background' => 'var(--enokh--color--brand-primary-100)',
                             ],
                             "spacing" => [
                                 "blockGap" => "var:preset|spacing|30",

@@ -1,0 +1,38 @@
+{
+  "enokh": {
+    "color": {
+      "semantic-success": {
+        "value": "#00a32a",
+        "type": "color"
+      },
+      "semantic-success-100": {
+        "value": "#edfaef",
+        "type": "color"
+      },
+      "semantic-warning": {
+        "value": "#dba617",
+        "type": "color"
+      },
+      "semantic-warning-100": {
+        "value": "#fcf9e8",
+        "type": "color"
+      },
+      "semantic-error": {
+        "value": "#d63638",
+        "type": "color"
+      },
+      "semantic-error-100": {
+        "value": "#fcf0f1",
+        "type": "color"
+      },
+      "semantic-info": {
+        "value": "#72aee6",
+        "type": "color"
+      },
+      "semantic-info-100": {
+        "value": "#f0f6fc",
+        "type": "color"
+      }
+    }
+  }
+}

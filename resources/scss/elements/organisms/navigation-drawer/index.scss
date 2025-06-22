@@ -1,4 +1,7 @@
-@import "@inpsyde-global-service-provider/mah-design-system";
+@import "../../../variables";
+@import "../../../mixins";
+@import "../../../functions";
+
 
 // Styles up to WP mobile breakpoint
 @include screen-max-wpmobile() {

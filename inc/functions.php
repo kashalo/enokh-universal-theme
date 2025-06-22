@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Enokh\UniversalTheme;
 
+use Enokh\UniversalTheme\Presentation\Elements\Icon;
 use Inpsyde\Modularity;
 
 /**
@@ -47,4 +48,22 @@ function package(): Modularity\Package
     }
 
     return $package;
+}
+
+
+/**
+ * Builds an Icon presentation element for a registered icon
+ *
+ * @param string $set
+ * @param string $name
+ * @param array<string, mixed> $attributes
+ * @return Icon
+ */
+function icon(string $set, string $name, array $attributes = []): Icon
+{
+    /** @var Icon $icon */
+    $icon = element(Icon::class);
+    $icon->withIcon($set, $name)->withAttributes($attributes);
+
+    return $icon;
 }

@@ -1,0 +1,74 @@
+// Colors: Brand
+@mixin with--border-color--brand-primary {
+	color: var(--wp--preset--color--brand-primary);
+}
+
+@mixin with--border-color--brand-secondary {
+	color: var(--wp--preset--color--brand-primary);
+}
+
+@mixin with--border-color--brand-tertiary {
+	color: var(--wp--preset--color--brand-primary);
+}
+
+// Colors: Neutral
+@mixin with--border-color--neutral-0 {
+	color: var(--wp--preset--color--neutral-0);
+}
+
+@mixin with--border-color--neutral-10 {
+	color: var(--wp--preset--color--neutral-10);
+}
+
+@mixin with--border-color--neutral-20 {
+	color: var(--wp--preset--color--neutral-20);
+}
+
+@mixin with--border-color--neutral-30 {
+	color: var(--wp--preset--color--neutral-30);
+}
+
+@mixin with--border-color--neutral-40 {
+	color: var(--wp--preset--color--neutral-40);
+}
+
+@mixin with--border-color--neutral-50 {
+	color: var(--wp--preset--color--neutral-50);
+}
+
+@mixin with--border-color--neutral-60 {
+	color: var(--wp--preset--color--neutral-60);
+}
+
+@mixin with--border-color--neutral-70 {
+	color: var(--wp--preset--color--neutral-70);
+}
+
+@mixin with--border-color--neutral-80 {
+	color: var(--wp--preset--color--neutral-80);
+}
+
+@mixin with--border-color--neutral-90 {
+	color: var(--wp--preset--color--neutral-90);
+}
+
+@mixin with--border-color--neutral-100 {
+	color: var(--wp--preset--color--neutral-100);
+}
+
+// Colors: Semantic
+@mixin with--border-color--semantic-success {
+	color: var(--wp--preset--color--semantic-success);
+}
+
+@mixin with--border-color--semantic-warning {
+	color: var(--wp--preset--color--semantic-warning);
+}
+
+@mixin with--border-color--semantic-error {
+	color: var(--wp--preset--color--semantic-error);
+}
+
+@mixin with--border-color--semantic-info {
+	color: var(--wp--preset--color--semantic-info);
+}

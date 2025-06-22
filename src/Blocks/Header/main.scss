@@ -1,5 +1,6 @@
 @use "../../../resources/scss/variables";
-@import "@inpsyde-global-service-provider/mah-design-system";
+@import "../../../resources/scss/mixins";
+@import "../../../resources/scss/functions";
 
 .enokh-universal-theme-header {
 	transition: all 0.3s ease;

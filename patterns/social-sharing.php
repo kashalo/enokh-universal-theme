@@ -27,7 +27,7 @@ echo block(
                 ],
             ],
             "color" => [
-                'background' => 'var(--Enokh--color--neutral-90)',
+                'background' => 'var(--enokh--color--neutral-90)',
             ],
         ],
     ],

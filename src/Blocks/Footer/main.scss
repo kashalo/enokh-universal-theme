@@ -1,4 +1,6 @@
-@import "@inpsyde-global-service-provider/mah-design-system";
+@use "../../../resources/scss/variables";
+@import "../../../resources/scss/mixins";
+@import "../../../resources/scss/functions";
 
 .enokh-universal-theme-footer {
 	margin-block-start: 0;

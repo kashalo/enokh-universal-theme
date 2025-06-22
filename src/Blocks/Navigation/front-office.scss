@@ -53,8 +53,8 @@
 				border-radius: 3px;
 				box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.1);
 				transition: all ease-in-out 200ms;
-				background-color: var(--mah--color--neutral-100);
-				border-color: var(--mah--color--neutral-90);
+				background-color: var(--enokh--color--neutral-100);
+				border-color: var(--enokh--color--neutral-90);
 				border-width: 1px;
 				border-style: solid;
 				display: flex;
@@ -76,7 +76,7 @@
 					height: 0;
 					border-style: solid;
 					border-width: 0 12px 12px 12px;
-					border-color: transparent transparent var(--mah--color--neutral-90) transparent;
+					border-color: transparent transparent var(--enokh--color--neutral-90) transparent;
 					top: -12px;
 					left: 50%;
 					margin-left: -12px;
@@ -90,7 +90,7 @@
 					height: 0;
 					border-style: solid;
 					border-width: 0 10px 10px 10px;
-					border-color: transparent transparent var(--mah--color--neutral-100) transparent;
+					border-color: transparent transparent var(--enokh--color--neutral-100) transparent;
 					top: -10px;
 					left: 50%;
 					margin-left: -10px;
@@ -109,12 +109,12 @@
 				}
 
 				a {
-					color: var(--mah--link--text--color);
+					color: var(--enokh--link--text--color);
 					padding: var(--wp--preset--spacing--20) var(--wp--preset--spacing--40);
 
 					&:hover {
-						color: var(--mah--link--text--color);
-						background-color: var(--mah--color--brand-primary-90);
+						color: var(--enokh--link--text--color);
+						background-color: var(--enokh--color--brand-primary-90);
 					}
 				}
 			}

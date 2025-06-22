@@ -1,0 +1,54 @@
+{
+  "enokh": {
+    "color": {
+      "brand-primary": {
+        "value": "{enokh.color.teal}",
+        "type": "color"
+      },
+      "brand-primary-0": {
+        "value": "{enokh.color.teal}",
+        "type": "color"
+      },
+      "brand-primary-10": {
+        "value": "{enokh.color.teal}",
+        "type": "color"
+      },
+      "brand-primary-20": {
+        "value": "{enokh.color.teal}",
+        "type": "color"
+      },
+      "brand-primary-30": {
+        "value": "{enokh.color.teal}",
+        "type": "color"
+      },
+      "brand-primary-40": {
+        "value": "{enokh.color.teal}",
+        "type": "color"
+      },
+      "brand-primary-50": {
+        "value": "{enokh.color.teal}",
+        "type": "color"
+      },
+      "brand-primary-60": {
+        "value": "{enokh.color.light-teal}",
+        "type": "color"
+      },
+      "brand-primary-70": {
+        "value": "{enokh.color.light-teal}",
+        "type": "color"
+      },
+      "brand-primary-80": {
+        "value": "{enokh.color.light-teal}",
+        "type": "color"
+      },
+      "brand-primary-90": {
+        "value": "{enokh.color.light-pastel-teal}",
+        "type": "color"
+      },
+      "brand-primary-100": {
+        "value": "{enokh.color.off-white}",
+        "type": "color"
+      }
+    }
+  }
+}

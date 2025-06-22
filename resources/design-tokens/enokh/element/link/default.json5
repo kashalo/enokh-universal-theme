@@ -1,0 +1,20 @@
+{
+  "enokh": {
+    "element": {
+      "link": {
+        "default": {
+          "text-color": {
+            "value": '{enokh.color.brand-primary}',
+            "type": 'color'
+          },
+          "hover": {
+            "text-color": {
+              "value": '{enokh.color.brand-primary-60}',
+              "type": 'color'
+            }
+          }
+        }
+      }
+    }
+  }
+}

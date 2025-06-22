@@ -1,0 +1,22 @@
+{
+  "enokh": {
+    "element": {
+      "input": {
+        "default": {
+          "text-color": {
+            "value": '{enokh.color.neutral-20}',
+            "type": 'color'
+          },
+          "border-color": {
+            "value": '{enokh.color.neutral-50}',
+            "type": 'color'
+          },
+          "background-color": {
+            "value": '{enokh.color.neutral-100}',
+            "type": 'color'
+          }
+        }
+      }
+    }
+  }
+}

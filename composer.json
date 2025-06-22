@@ -43,8 +43,7 @@
     "inpsyde/more-menu-fields": "~0.2",
     "inpsyde/presentation-elements": "^1",
     "inpsyde/wp-context": "^1.5",
-    "inpsyde/wp-contracts": "^2.0",
-    "inpsyde/mah-design-system": "^0.3"
+    "inpsyde/wp-contracts": "^2.0"
   },
   "require-dev": {
     "inpsyde/composer-assets-compiler": "^2",

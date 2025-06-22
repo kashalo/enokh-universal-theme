@@ -72,7 +72,7 @@ class HeaderBlock extends PresentationElements\Block\BaseBlock implements Asset\
                 ],
                 "border" => [
                     "bottom" => [
-                        'color' => 'var(--Enokh--color--neutral-70)',
+                        'color' => 'var(--enokh--color--neutral-70)',
                         "width" => '1px',
                     ],
                 ],

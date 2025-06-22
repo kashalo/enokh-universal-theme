@@ -1,0 +1,42 @@
+@use "mixins";
+
+button,
+.button {
+
+	@include mixins.button-base;
+	@include mixins.button-style-default;
+
+	&[disabled] {
+
+		@include mixins.button-style-disabled;
+	}
+}
+
+////////////
+// Styles //
+////////////
+
+button.is-style-outline,
+.button.is-style-outline {
+
+	@include mixins.button-base;
+	@include mixins.button-style-outline;
+}
+
+button.is-style-ghost,
+.button.is-style-ghost {
+
+	@include mixins.button-base;
+	@include mixins.button-style-ghost;
+}
+
+//////////////////
+// WordPress UI //
+//////////////////
+
+button.is-primary,
+.button.is-primary {
+
+	@include mixins.button-base;
+	@include mixins.button-style-default;
+}

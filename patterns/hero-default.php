@@ -31,7 +31,7 @@ echo block(
                     ],
                 ],
                 "color" => [
-                    'background' => 'var(--Enokh--color--brand-primary-90)',
+                    'background' => 'var(--enokh--color--brand-primary-90)',
                 ],
             ],
         ],

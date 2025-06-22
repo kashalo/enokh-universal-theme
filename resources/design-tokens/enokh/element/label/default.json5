@@ -1,0 +1,14 @@
+{
+  "enokh": {
+    "element": {
+      "label": {
+        "default": {
+          "text-color": {
+            "value": '{enokh.color.neutral-20}',
+            "type": 'color'
+          }
+        }
+      }
+    }
+  }
+}

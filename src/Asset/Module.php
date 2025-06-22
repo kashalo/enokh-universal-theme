@@ -44,6 +44,26 @@ class Module implements
                     $container->get(Modularity\Package::PROPERTIES)
                 ))->createStyle();
             },
+            CoreStyle::class =>  static function (ContainerInterface $container): Style {
+                return (new CoreStyle(
+                    $container->get(Modularity\Package::PROPERTIES)
+                ))->createStyle();
+            },
+            CoreEditorStyle::class =>  static function (ContainerInterface $container): Style {
+                return (new CoreEditorStyle(
+                    $container->get(Modularity\Package::PROPERTIES)
+                ))->createStyle();
+            },
+            ElementsStyle::class =>  static function (ContainerInterface $container): Style {
+                return (new ElementsStyle(
+                    $container->get(Modularity\Package::PROPERTIES)
+                ))->createStyle();
+            },
+            ElementsEditorStyle::class =>  static function (ContainerInterface $container): Style {
+                return (new ElementsEditorStyle(
+                    $container->get(Modularity\Package::PROPERTIES)
+                ))->createStyle();
+            },
         ];
     }
 

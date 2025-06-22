@@ -1,0 +1,67 @@
+@mixin button-base {
+	box-sizing: border-box;
+	border: none;
+	border-radius: var(--wp--preset--spacing--30);
+	transition: all ease-in-out 0.15s;
+	box-shadow: none !important;
+	padding: calc(var(--wp--preset--spacing--40) + 2px) calc(var(--wp--preset--spacing--50) + 2px);
+	cursor: pointer;
+
+	&:hover {
+		box-shadow: none !important;
+	}
+}
+
+@mixin button-style-default {
+	background-color: var(--enokh--element--button--primary--background-color);
+	border-color: var(--enokh--element--button--primary--border-color);
+	border-width: 2px;
+	border-style: solid;
+	color: var(--enokh--element--button--primary--text-color);
+
+	&:hover {
+		background-color: var(--enokh--element--button--primary--background-color--hover);
+		border-color: var(--enokh--element--button--primary--border-color--hover);
+		color: var(--enokh--element--button--primary--text-color--hover);
+	}
+}
+
+@mixin button-style-outline {
+	background-color: var(--enokh--element--button--secondary--background-color);
+	border-color: var(--enokh--element--button--secondary--border-color);
+	border-width: 2px;
+	border-style: solid;
+	color: var(--enokh--element--button--secondary--text-color);
+
+	&:hover {
+		background-color: var(--enokh--element--button--secondary--background-color--hover);
+		border-color: var(--enokh--element--button--secondary--border-color--hover);
+		color: var(--enokh--element--button--secondary--text-color--hover);
+	}
+}
+
+@mixin button-style-ghost {
+	background-color: transparent !important;
+	border: none !important;
+
+	&:hover {
+		background-color: var(--enokh--element--button--secondary--background-color--hover) !important;
+		color: var(--enokh--element--button--secondary--text-color--hover) !important;
+		border: none !important;
+	}
+}
+
+@mixin button-style-disabled {
+	background-color: var(--enokh--element--button--disabled--background-color);
+	border-color: var(--enokh--element--button--disabled--border-color);
+	border-width: 0;
+	border-style: none;
+	color: var(--enokh--element--button--disabled--text-color);
+	cursor: not-allowed;
+
+	&:hover {
+		background-color: var(--enokh--element--button--disabled--background-color);
+		border-color: var(--enokh--element--button--disabled--border-color);
+		color: var(--enokh--element--button--disabled--text-color);
+	}
+}

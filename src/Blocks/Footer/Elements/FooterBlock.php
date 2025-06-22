@@ -92,7 +92,7 @@ class FooterBlock extends PresentationElements\Block\BaseBlock implements Asset\
                     ],
                     "border" => [
                         "top" => [
-                            'color' => 'var(--Enokh--color--neutral-70)',
+                            'color' => 'var(--enokh--color--neutral-70)',
                             "width" => '1px',
                             "style" => 'solid',
                         ],

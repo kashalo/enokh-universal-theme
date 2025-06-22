@@ -1,0 +1,74 @@
+// Colors: Brand
+@mixin with--background-color--brand-primary {
+	color: var(--enokh--color--brand-primary);
+}
+
+@mixin with--background-color--brand-secondary {
+	color: var(--enokh--color--brand-secondary);
+}
+
+@mixin with--background-color--brand-tertiary {
+	color: var(--enokh--color--brand-tertiary);
+}
+
+// Colors: Neutral
+@mixin with--background-color--neutral-0 {
+	color: var(--enokh--color--neutral-0);
+}
+
+@mixin with--background-color--neutral-10 {
+	color: var(--enokh--color--neutral-10);
+}
+
+@mixin with--background-color--neutral-20 {
+	color: var(--enokh--color--neutral-20);
+}
+
+@mixin with--background-color--neutral-30 {
+	color: var(--enokh--color--neutral-30);
+}
+
+@mixin with--background-color--neutral-40 {
+	color: var(--enokh--color--neutral-40);
+}
+
+@mixin with--background-color--neutral-50 {
+	color: var(--enokh--color--neutral-50);
+}
+
+@mixin with--background-color--neutral-60 {
+	color: var(--enokh--color--neutral-60);
+}
+
+@mixin with--background-color--neutral-70 {
+	color: var(--enokh--color--neutral-70);
+}
+
+@mixin with--background-color--neutral-80 {
+	color: var(--enokh--color--neutral-80);
+}
+
+@mixin with--background-color--neutral-90 {
+	color: var(--enokh--color--neutral-90);
+}
+
+@mixin with--background-color--neutral-100 {
+	color: var(--enokh--color--neutral-100);
+}
+
+// Colors: Semantic
+@mixin with--background-color--semantic-success {
+	color: var(--enokh--color--semantic-success);
+}
+
+@mixin with--background-color--semantic-warning {
+	color: var(--enokh--color--semantic-warning);
+}
+
+@mixin with--background-color--semantic-error {
+	color: var(--enokh--color--semantic-error);
+}
+
+@mixin with--background-color--semantic-info {
+	color: var(--enokh--color--semantic-info);
+}

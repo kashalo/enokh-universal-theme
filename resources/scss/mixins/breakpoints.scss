@@ -1,0 +1,211 @@
+@use "../functions";
+@import "~include-media/dist/include-media";
+
+// Screens
+$screen-wpmobile: "wp-mobile";
+$screen-xsmall: "x-small";
+$screen-small: "small";
+$screen-medium: "medium";
+$screen-large: "large";
+$screen-xlarge: "x-large";
+
+// Breakpoints
+$breakpoints: (
+	$screen-wpmobile: 782px, // This needs to be fixed tp pixels
+	$screen-xsmall: functions.rem(480px),
+	$screen-small: functions.rem(768px),
+	$screen-medium: functions.rem(1024px),
+	$screen-large: functions.rem(1280px),
+	$screen-xlarge: functions.rem(1920px),
+);
+
+@mixin screen-min($from-breakpoint) {
+
+	@include media("screen", ">#{$from-breakpoint}") {
+		@content;
+	}
+}
+
+@mixin screen-max($to-breakpoint) {
+
+	@include media("screen", "<=#{$to-breakpoint}") {
+		@content;
+	}
+}
+
+@mixin screen-range($from-breakpoint, $to-breakpoint) {
+
+	@include media("screen", ">#{$from-breakpoint}", "<=#{$to-breakpoint}") {
+		@content;
+	}
+}
+
+////////////////
+// Min screen //
+////////////////
+
+@mixin screen-min-wpmobile() {
+
+	@include media("screen", ">#{$screen-wpmobile}") {
+		@content;
+	}
+}
+
+@mixin screen-min-xsmall() {
+
+	@include media("screen", ">#{$screen-xsmall}") {
+		@content;
+	}
+}
+
+@mixin screen-min-small() {
+
+	@include media("screen", ">#{$screen-small}") {
+		@content;
+	}
+}
+
+@mixin screen-min-medium() {
+
+	@include media("screen", ">#{$screen-medium}") {
+		@content;
+	}
+}
+
+@mixin screen-min-large() {
+
+	@include media("screen", ">#{$screen-large}") {
+		@content;
+	}
+}
+
+@mixin screen-min-xlarge() {
+
+	@include media("screen", ">#{$screen-xlarge}") {
+		@content;
+	}
+}
+
+////////////////
+// Max screen //
+////////////////
+
+@mixin screen-max-wpmobile() {
+
+	@include media("screen", "<=#{$screen-wpmobile}") {
+		@content;
+	}
+}
+
+@mixin screen-max-xsmall() {
+
+	@include media("screen", "<=#{$screen-xsmall}") {
+		@content;
+	}
+}
+
+@mixin screen-max-small() {
+
+	@include media("screen", "<=#{$screen-small}") {
+		@content;
+	}
+}
+
+@mixin screen-max-medium() {
+
+	@include media("screen", "<=#{$screen-medium}") {
+		@content;
+	}
+}
+
+@mixin screen-max-large() {
+
+	@include media("screen", "<=#{$screen-large}") {
+		@content;
+	}
+}
+
+@mixin screen-max-xlarge() {
+
+	@include media("screen", "<=#{$screen-xlarge}") {
+		@content;
+	}
+}
+
+///////////////////
+// Screen ranges //
+///////////////////
+
+// XSmall
+@mixin screen-xsmall-to-small() {
+
+	@include media("screen", ">#{$screen-xsmall}", "<=#{$screen-small}") {
+		@content;
+	}
+}
+
+@mixin screen-xsmall-to-medium() {
+
+	@include media("screen", ">#{$screen-xsmall}", "<=#{$screen-medium}") {
+		@content;
+	}
+}
+
+@mixin screen-xsmall-to-large() {
+
+	@include media("screen", ">#{$screen-xsmall}", "<=#{$screen-large}") {
+		@content;
+	}
+}
+
+@mixin screen-xsmall-to-xlarge() {
+
+	@include media("screen", ">#{$screen-xsmall}", "<=#{$screen-xlarge}") {
+		@content;
+	}
+}
+
+// Small
+@mixin screen-small-to-medium() {
+
+	@include media("screen", ">#{$screen-small}", "<=#{$screen-medium}") {
+		@content;
+	}
+}
+
+@mixin screen-small-to-large() {
+
+	@include media("screen", ">#{$screen-small}", "<=#{$screen-large}") {
+		@content;
+	}
+}
+
+@mixin screen-small-to-xlarge() {
+
+	@include media("screen", ">#{$screen-small}", "<=#{$screen-xlarge}") {
+		@content;
+	}
+}
+
+// Medium
+@mixin screen-medium-to-large() {
+
+	@include media("screen", ">#{$screen-medium}", "<=#{$screen-large}") {
+		@content;
+	}
+}
+
+@mixin screen-medium-to-xlarge() {
+
+	@include media("screen", ">#{$screen-medium}", "<=#{$screen-xlarge}") {
+		@content;
+	}
+}
+
+// Large
+@mixin screen-large-to-xlarge() {
+
+	@include media("screen", ">#{$screen-large}", "<=#{$screen-xlarge}") {
+		@content;
+	}
+}

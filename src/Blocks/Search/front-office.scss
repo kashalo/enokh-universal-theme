@@ -1,6 +1,6 @@
 .blocks-search {
-	background-color: var(--mah--color--neutral-100);
-	border-color: var(--mah--color--neutral-70);
+	background-color: var(--enokh--color--neutral-100);
+	border-color: var(--enokh--color--neutral-70);
 	border-width: 1px;
 	border-style: solid;
 	border-radius: var(--wp--preset--spacing--20);
@@ -10,7 +10,7 @@
 
 	&:has(input:focus),
 	&:has(input:focus-visible) {
-		border-color: var(--mah--color--brand-primary);
+		border-color: var(--enokh--color--brand-primary);
 	}
 
 	.wp-block-search {

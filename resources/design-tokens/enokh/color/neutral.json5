@@ -1,0 +1,50 @@
+{
+  "enokh": {
+    "color": {
+      "neutral-0": {
+        "value": "hsl(0 0% 0%)",
+        "type": "color"
+      },
+      "neutral-10": {
+        "value": "hsl(0 0% 10%)",
+        "type": "color"
+      },
+      "neutral-20": {
+        "value": "hsl(0 0% 20%)",
+        "type": "color"
+      },
+      "neutral-30": {
+        "value": "hsl(0 0% 30%)",
+        "type": "color"
+      },
+      "neutral-40": {
+        "value": "hsl(0 0% 40%)",
+        "type": "color"
+      },
+      "neutral-50": {
+        "value": "hsl(0 0% 50%)",
+        "type": "color"
+      },
+      "neutral-60": {
+        "value": "hsl(0 0% 60%)",
+        "type": "color"
+      },
+      "neutral-70": {
+        "value": "hsl(0 0% 70%)",
+        "type": "color"
+      },
+      "neutral-80": {
+        "value": "hsl(0 0% 80%)",
+        "type": "color"
+      },
+      "neutral-90": {
+        "value": "hsl(0 0% 90%)",
+        "type": "color"
+      },
+      "neutral-100": {
+        "value": "hsl(0 0% 100%)",
+        "type": "color"
+      }
+    }
+  }
+}

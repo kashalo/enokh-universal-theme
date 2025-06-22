@@ -1,0 +1,50 @@
+{
+  "enokh": {
+    "element": {
+      "checkbox": {
+        "default": {
+          "text-color": {
+            "value": '{enokh.color.neutral-100}',
+            "type": 'color'
+          },
+          "border-color": {
+            "value": '{enokh.color.brand-primary}',
+            "type": 'color'
+          },
+          "background-color": {
+            "value": '{enokh.color.neutral-20}',
+            "type": 'color'
+          },
+          "checked": {
+            "text-color": {
+              "value": '{enokh.color.brand-primary}',
+              "type": 'color'
+            },
+            "border-color": {
+              "value": '{enokh.color.brand-primary}',
+              "type": 'color'
+            },
+            "background-color": {
+              "value": '{enokh.color.neutral-100}',
+              "type": 'color'
+            }
+          },
+          "disabled": {
+            "text-color": {
+              "value": '{enokh.color.neutral-70}',
+              "type": 'color'
+            },
+            "border-color": {
+              "value": '{enokh.color.neutral-20}',
+              "type": 'color'
+            },
+            "background-color": {
+              "value": '{enokh.color.neutral-20}',
+              "type": 'color'
+            }
+          }
+        }
+      }
+    }
+  }
+}

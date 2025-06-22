@@ -1,0 +1,20 @@
+{
+  "enokh": {
+    "element": {
+      "button": {
+        "primary": {
+          "background-color": {
+            "value": "{enokh.color.brand-primary}",
+            "type": "color"
+          },
+          "hover": {
+            "background-color": {
+              "value": "{enokh.color.brand-primary}",
+              "type": "color"
+            }
+          }
+        }
+      }
+    }
+  }
+}

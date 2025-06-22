@@ -1,0 +1,124 @@
+@use "mixins";
+@use "../buttons/mixins" as buttonMixins;
+
+form {
+	margin: var(--wp--preset--spacing--50) 0;
+}
+
+label {
+	color: var(--enokh--label--text--color);
+	font-size: 14px;
+	font-weight: 600;
+	margin-bottom: 4px;
+	display: inline-block;
+	padding: 0;
+}
+
+/* stylelint-disable-next-line no-duplicate-selectors */
+input[type="email"],
+input[type="checkbox"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="radio"],
+input[type="search"],
+input[type="tel"],
+input[type="search"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+textarea {
+
+	@include mixins.control-base;
+	padding: var(--wp--preset--spacing--30) var(--wp--preset--spacing--40);
+	min-height: 0;
+}
+
+input[type="search"] {
+	-webkit-appearance: none;
+	margin-top: 1px;
+}
+
+select {
+
+	@include mixins.control-base;
+	padding: var(--wp--preset--spacing--30) var(--wp--preset--spacing--40);
+}
+
+input {
+	padding: 0.9rem 3rem;
+
+	&:not(:focus) {
+		font-weight: 600;
+	}
+
+	&::placeholder,
+	&[value=""] {
+		font-weight: 400;
+	}
+}
+
+textarea {
+	height: auto;
+	min-height: 200px;
+}
+
+option {
+	font-weight: 400;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+
+	@include buttonMixins.button-base;
+	@include buttonMixins.button-style-default;
+
+	&[disabled] {
+
+		@include buttonMixins.button-style-disabled;
+	}
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	height: auto;
+	width: auto !important;
+	display: inline;
+}
+
+input[type="checkbox"] {
+	appearance: none;
+	background-color: var(--enokh--checkbox--background--color);
+	border: 1px solid var(--enokh--checkbox--border--color);
+	border-radius: 4px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	height: 20px !important;
+	width: 20px !important;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	cursor: pointer;
+	aspect-ratio: 1/1;
+
+	&:checked {
+		background-color: var(--enokh--checkbox--background--color--checked);
+		color: var(--enokh--checkbox--text--color--checked);
+
+		&::after {
+			content: "\2713";
+			position: absolute;
+		}
+	}
+
+	&[disabled] {
+		background-color: var(--enokh--checkbox--background--color--disabled);
+		color: var(--enokh--checkbox--text--color--disabled);
+	}
+}

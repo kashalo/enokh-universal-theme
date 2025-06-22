@@ -3,34 +3,34 @@
     "variations": {
       "outline": {
         "typography": {
-          "fontFamily": "var(--Enokh--button--secondary--text--family)",
-          "fontSize": "var(--Enokh--button--secondary--text--weight)",
-          "fontStyle": "var(--Enokh--button--secondary--text--style)",
-          "fontWeight": "var(--Enokh--button--secondary--text--weight)"
+          "fontFamily": "var(--enokh--button--secondary--text--family)",
+          "fontSize": "var(--enokh--button--secondary--text--weight)",
+          "fontStyle": "var(--enokh--button--secondary--text--style)",
+          "fontWeight": "var(--enokh--button--secondary--text--weight)"
         },
         "color": {
-          "background": "var(--Enokh--button--secondary--background--color)",
-          "text": "var(--Enokh--button--secondary--text--color)"
+          "background": "var(--enokh--button--secondary--background--color)",
+          "text": "var(--enokh--button--secondary--text--color)"
         },
         "spacing": {
-          "padding": "var(--Enokh--button--secondary--spacing--padding)"
+          "padding": "var(--enokh--button--secondary--spacing--padding)"
         },
         "border": {
-          "color": "var(--Enokh--button--secondary--border--color)",
-          "width": "var(--Enokh--button--secondary--border--width)",
-          "style": "var(--Enokh--button--secondary--border--style)",
-          "radius": "var(--Enokh--button--secondary--border--radius)"
+          "color": "var(--enokh--button--secondary--border--color)",
+          "width": "var(--enokh--button--secondary--border--width)",
+          "style": "var(--enokh--button--secondary--border--style)",
+          "radius": "var(--enokh--button--secondary--border--radius)"
         },
         ":hover": {
           "color": {
-            "background": "var(--Enokh--button--secondary--background--color--hover)",
-            "text": "var(--Enokh--button--secondary--text--color--hover)"
+            "background": "var(--enokh--button--secondary--background--color--hover)",
+            "text": "var(--enokh--button--secondary--text--color--hover)"
           },
           "border": {
-            "color": "var(--Enokh--button--secondary--border--color--hover)",
-            "width": "var(--Enokh--button--secondary--border--width--hover)",
-            "style": "var(--Enokh--button--secondary--border--style--hover)",
-            "radius": "var(--Enokh--button--secondary--border--radius--hover)"
+            "color": "var(--enokh--button--secondary--border--color--hover)",
+            "width": "var(--enokh--button--secondary--border--width--hover)",
+            "style": "var(--enokh--button--secondary--border--style--hover)",
+            "radius": "var(--enokh--button--secondary--border--radius--hover)"
           }
         }
       }
@@ -38,7 +38,7 @@
   },
   "core/quote": {
     "border": {
-      "color": "var(--Enokh--color--neutral-70)"
+      "color": "var(--enokh--color--neutral-70)"
     }
   }
 }

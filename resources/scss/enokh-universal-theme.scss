@@ -1,4 +1,7 @@
-@import "@inpsyde-global-service-provider/mah-design-system";
+@import "../../resources/scss/variables";
+@import "../../resources/scss/mixins";
+@import "../../resources/scss/functions";
+
 @import './custom-properties';
 @import './elements';
 @import "./plugins";

@@ -1,0 +1,11 @@
+@mixin control-base {
+	font-size: var(--wp--preset--font-size--normal);
+	box-sizing: border-box;
+	color: var(--enokh--input--text--color);
+	background: var(--enokh--input--background--color);
+	border: 1px solid var(--enokh--input--border--color);
+	border-radius: var(--wp--preset--spacing--30);
+	width: 100%;
+	margin-bottom: var(--wp--preset--spacing--50);
+	transition: border-color ease-in-out 0.15s;
+}
