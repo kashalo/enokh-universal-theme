@@ -1,0 +1,33 @@
+[
+  {
+    "name": "blank",
+    "title": "Blank",
+    "postTypes": [
+      "post",
+      "page"
+    ]
+  },
+  {
+    "name": "blank-without-header",
+    "title": "Blank without header",
+    "postTypes": [
+      "post",
+      "page"
+    ]
+  },
+  {
+    "name": "blank-with-sidebar",
+    "title": "Blank with Sidebar",
+    "postTypes": [
+      "post",
+      "page"
+    ]
+  },
+  {
+    "name": "landing-page",
+    "title": "Landing Page",
+    "postTypes": [
+      "page"
+    ]
+  }
+]

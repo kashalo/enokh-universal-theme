@@ -1,0 +1,19 @@
+// Strengthen selector in block editor
+.editor-styles-wrapper {
+	// stylelint-disable-next-line no-invalid-position-at-import-rule
+	@import "front-office";
+
+	// Ensure block is always visible within the block editor
+	.blocks-navigation-drawer-toggle {
+		display: flex;
+
+		// Allow block layout supports to affect inner content
+		> div {
+			display: contents !important;
+		}
+	}
+}
+
+.blocks-navigation-drawer-toggle__toolbar-dropdown-control {
+	width: 250px;
+}

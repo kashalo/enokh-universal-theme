@@ -1,0 +1,22 @@
+[
+  {
+    "area": "header",
+    "name": "header",
+    "title": "Header"
+  },
+  {
+    "area": "header",
+    "name": "header-logo-only",
+    "title": "Header with only logo"
+  },
+  {
+    "area": "sidebar",
+    "name": "sidebar",
+    "title": "Sidebar"
+  },
+  {
+    "area": "footer",
+    "name": "footer",
+    "title": "Footer"
+  }
+]

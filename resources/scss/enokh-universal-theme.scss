@@ -1,0 +1,18 @@
+@import "@inpsyde-global-service-provider/mah-design-system";
+@import './custom-properties';
+@import './elements';
+@import "./plugins";
+
+// WP Admin Bar
+#wpadminbar {
+  position: fixed; // ensure it stays sticky with sticky header
+}
+
+// Allow top-level template content to directly interact with direct parent
+// This CSS breaks the block editor, so can only be loaded in front-office
+.wp-site-blocks {
+
+  > .wp-block-template-part {
+    display: contents;
+  }
+}

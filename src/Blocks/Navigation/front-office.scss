@@ -1,0 +1,162 @@
+// stylelint-disable no-descending-specificity
+
+.blocks-navigation {
+	box-sizing: border-box;
+	font-weight: 300;
+
+	// Allow block supports to affect list items
+	ul:first-child {
+		display: contents;
+	}
+
+	ul {
+		box-sizing: border-box;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		li {
+			box-sizing: border-box;
+			display: inline-flex;
+			align-items: center;
+			gap: var(--wp--preset--spacing--20);
+			position: relative;
+			margin: 0;
+			padding: 0;
+
+			a {
+				box-sizing: border-box;
+				display: inline-flex;
+				align-items: center;
+				gap: var(--wp--preset--spacing--20);
+				width: 100%;
+			}
+		}
+	}
+
+	// Generic styles for 1st level submenus
+	ul:first-child > li > ul {
+		font-size: 0.8em;
+
+		ul {
+			font-size: 1em;
+		}
+	}
+
+	// Horizontal layout
+	&:not(.is-vertical) {
+
+		ul:first-child > li {
+			justify-content: center;
+
+			> ul {
+				border-radius: 3px;
+				box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.1);
+				transition: all ease-in-out 200ms;
+				background-color: var(--mah--color--neutral-100);
+				border-color: var(--mah--color--neutral-90);
+				border-width: 1px;
+				border-style: solid;
+				display: flex;
+				flex-direction: column;
+				position: absolute;
+				top: calc(100% + 12px); // parent height + triangle at the top
+				margin: 0;
+				padding: var(--wp--preset--spacing--20) 0;
+				z-index: 10;
+				min-width: 200px;
+				opacity: 0;
+				visibility: hidden;
+
+				// Top triangle "border"
+				&::before {
+					content: "";
+					position: absolute;
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-width: 0 12px 12px 12px;
+					border-color: transparent transparent var(--mah--color--neutral-90) transparent;
+					top: -12px;
+					left: 50%;
+					margin-left: -12px;
+				}
+
+				// Top triangle
+				&::after {
+					content: "";
+					position: absolute;
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-width: 0 10px 10px 10px;
+					border-color: transparent transparent var(--mah--color--neutral-100) transparent;
+					top: -10px;
+					left: 50%;
+					margin-left: -10px;
+				}
+
+				ul {
+					display: flex;
+					flex-direction: column;
+					box-shadow: none;
+					position: relative;
+					inset: auto;
+				}
+
+				li {
+					flex-direction: column;
+				}
+
+				a {
+					color: var(--mah--link--text--color);
+					padding: var(--wp--preset--spacing--20) var(--wp--preset--spacing--40);
+
+					&:hover {
+						color: var(--mah--link--text--color);
+						background-color: var(--mah--color--brand-primary-90);
+					}
+				}
+			}
+		}
+
+		ul:first-child > li:hover > ul {
+			display: flex;
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+
+	// Vertical layout
+	&.is-vertical {
+
+		ul:first-child > li {
+			flex-direction: column;
+			align-items: flex-start;
+			width: 100%;
+
+			ul {
+				padding-top: var(--wp--preset--spacing--20);
+				padding-bottom: var(--wp--preset--spacing--40);
+				padding-left: var(--wp--preset--spacing--30);
+				display: flex;
+				flex-direction: column;
+				gap: var(--wp--preset--spacing--20);
+				width: 100%;
+
+				li {
+					display: flex;
+					flex-direction: column;
+					align-items: flex-start;
+
+					a {
+						display: flex;
+						flex-direction: column;
+						align-items: flex-start;
+						padding: var(--wp--preset--spacing--20) var(--wp--preset--spacing--30);
+					}
+				}
+			}
+		}
+	}
+}

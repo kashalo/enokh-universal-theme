@@ -1,0 +1,36 @@
+@import "@inpsyde-global-service-provider/mah-design-system";
+
+// Styles up to WP mobile breakpoint
+@include screen-max-wpmobile() {
+
+  .enokh-blocks-navigation-drawer {
+    left: -100vw;
+    width: 100vw;
+  }
+}
+
+// Styles up to medium breakpoint
+@include screen-max-medium() {
+  .enokh-blocks-navigation-drawer,
+  .enokh-blocks-navigation-drawer-backdrop {
+    top: var(--mahut--element--header--height);
+  }
+
+  // Styles when WP admin bar is present
+  .admin-bar .enokh-blocks-navigation-drawer,
+  .admin-bar .enokh-blocks-navigation-drawer-backdrop {
+    top: calc(var(--wp-admin--admin-bar--height) + var(--mahut--element--header--height));
+  }
+}
+
+// Ensure that mobile navigation UI is not displayed after medium breakpoint
+@include screen-min-medium() {
+  html.has-open-navigation-drawer {
+    overflow: visible;
+
+    .enokh-blocks-navigation-drawer,
+    .enokh-blocks-navigation-drawer-backdrop {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "enokh-universal-theme/related-posts",
+  "title": "Enokh Related Posts",
+  "category": "theme",
+  "icon": "posts",
+  "description": "Allows listing posts related to a currently displayed post",
+  "keywords": [],
+  "version": "0.1.0",
+  "textdomain": "enokh-universal-theme",
+  "attributes": {},
+  "providesContext": {},
+  "usesContext": [],
+  "supports": {
+    "Enokh": {
+      "contentOnlyEditing": true
+    },
+    "html": false
+  },
+  "styles": [],
+  "example": {},
+  "variations": [],
+  "editorScript": "file:./editor.tsx",
+  "render": "file:./render.php"
+}

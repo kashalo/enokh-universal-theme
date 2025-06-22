@@ -1,0 +1,59 @@
+@use "./resources/scss/variables";
+
+.blocks-navigation-drawer {
+	box-sizing: border-box;
+	background-color: var(--mah--color--neutral-100);
+	opacity: 0;
+	visibility: hidden;
+	position: fixed;
+	top: 0;
+	left: -90vw;
+	bottom: 0;
+	width: 90vw;
+	transition: transform 200ms ease-in-out 0s, opacity 200ms ease-in-out 0s, visibility 200ms ease-in-out 0s;
+	z-index: 100001; // ensure it stays above any overflowing admin bar elements
+	pointer-events: none;
+	overflow-y: auto;
+
+	.admin-bar & {
+		top: var(--wp-admin--admin-bar--height);
+	}
+
+	// Styles up to tablet breakpoint
+	@media (min-width: #{variables.$wp-tablet-break-point + 1px}) {
+		left: -400px;
+		max-width: 400px;
+	}
+}
+
+.blocks-navigation-drawer-backdrop {
+	content: "";
+	position: fixed;
+	inset: 0;
+	opacity: 0;
+	transition: all 200ms ease-in-out 0s;
+	z-index: 100000; // ensure it stays above any overflowing admin bar elements
+	pointer-events: none;
+
+	.admin-bar & {
+		top: var(--wp-admin--admin-bar--height);
+	}
+}
+
+html.has-open-navigation-drawer {
+	overflow: hidden;
+
+	.blocks-navigation-drawer {
+		opacity: 1;
+		visibility: visible;
+		transform: translateX(100%);
+		pointer-events: auto;
+	}
+
+	.blocks-navigation-drawer-backdrop {
+		background-color: rgba(0, 0, 0);
+		opacity: 0.75;
+		visibility: visible;
+		pointer-events: auto;
+	}
+}

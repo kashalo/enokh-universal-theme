@@ -1,0 +1,75 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "enokh-universal-theme/navigation",
+  "title": "Navigation",
+  "category": "themes",
+  "icon": "navigation",
+  "description": "Navigation block using classic Navigation Menus",
+  "keywords": [],
+  "version": "0.1.0",
+  "textdomain": "enokh-universal-theme",
+  "attributes": {
+    "menuLocation": {
+      "type": "string",
+      "default": "",
+      "__experimentalRole": "content"
+    },
+      "ariaLabel": {
+          "type": "string",
+          "default": "Navigation"
+      }
+  },
+  "providesContext": {},
+  "usesContext": [],
+  "supports": {
+    "mah": {
+      "contentOnlyEditing": true
+    },
+    "className": false,
+    "html": false,
+    "align": true,
+    "color": {
+      "background": true,
+      "link": true,
+      "__experimentalDefaultControls": {
+        "background": true,
+        "link": true
+      }
+    },
+    "spacing": {
+      "blockGap": true,
+      "margin": true,
+      "padding": true,
+      "__experimentalDefaultControls": {
+        "blockGap": true,
+        "margin": true,
+        "padding": true
+      }
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "fontStyle": true,
+      "fontWeight": true,
+      "textTransform": true,
+      "__experimentalFontStyle": true,
+      "__experimentalFontWeight": true,
+      "__experimentalTextTransform": true
+    },
+    "layout": {
+      "allowEditing": true,
+      "default": {
+        "type": "flex",
+        "orientation": "horizontal",
+        "justifyContent": "left",
+        "verticalAlignment": "center"
+      }
+    }
+  },
+  "editorScript": "file:./editor.tsx",
+  "editorStyle": "file:./editor.css",
+  "viewScript": "file:./front-office.ts",
+  "style": "file:./front-office.css",
+  "render": "file:./render.php"
+}

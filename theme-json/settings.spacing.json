@@ -1,0 +1,18 @@
+{
+  "blockGap": true,
+  "customSpacingSize": false,
+  "margin": true,
+  "padding": true,
+  "spacingScale": {
+    "operator": "*",
+    "increment": 1.5,
+    "steps": 7,
+    "mediumStep": 1.5,
+    "unit": "rem"
+  },
+  "units": [
+    "px",
+    "em",
+    "%"
+  ]
+}

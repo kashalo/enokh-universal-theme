@@ -1,0 +1,44 @@
+{
+  "core/button": {
+    "variations": {
+      "outline": {
+        "typography": {
+          "fontFamily": "var(--Enokh--button--secondary--text--family)",
+          "fontSize": "var(--Enokh--button--secondary--text--weight)",
+          "fontStyle": "var(--Enokh--button--secondary--text--style)",
+          "fontWeight": "var(--Enokh--button--secondary--text--weight)"
+        },
+        "color": {
+          "background": "var(--Enokh--button--secondary--background--color)",
+          "text": "var(--Enokh--button--secondary--text--color)"
+        },
+        "spacing": {
+          "padding": "var(--Enokh--button--secondary--spacing--padding)"
+        },
+        "border": {
+          "color": "var(--Enokh--button--secondary--border--color)",
+          "width": "var(--Enokh--button--secondary--border--width)",
+          "style": "var(--Enokh--button--secondary--border--style)",
+          "radius": "var(--Enokh--button--secondary--border--radius)"
+        },
+        ":hover": {
+          "color": {
+            "background": "var(--Enokh--button--secondary--background--color--hover)",
+            "text": "var(--Enokh--button--secondary--text--color--hover)"
+          },
+          "border": {
+            "color": "var(--Enokh--button--secondary--border--color--hover)",
+            "width": "var(--Enokh--button--secondary--border--width--hover)",
+            "style": "var(--Enokh--button--secondary--border--style--hover)",
+            "radius": "var(--Enokh--button--secondary--border--radius--hover)"
+          }
+        }
+      }
+    }
+  },
+  "core/quote": {
+    "border": {
+      "color": "var(--Enokh--color--neutral-70)"
+    }
+  }
+}

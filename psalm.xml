@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<psalm
+    useDocblockPropertyTypes="true"
+    usePhpDocMethodsWithoutMagicCall="true"
+    strictBinaryOperands="true"
+    memoizeMethodCallResults="true"
+    hideExternalErrors="true"
+    findUnusedBaselineEntry="true"
+    findUnusedCode="false"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="https://getpsalm.org/schema/config"
+    xsi:schemaLocation="https://getpsalm.org/schema/config vendor/vimeo/psalm/config.xsd">
+
+    <stubs>
+        <file name="vendor/php-stubs/wordpress-stubs/wordpress-stubs.php" />
+    </stubs>
+
+    <projectFiles>
+        <directory name="inc"/>
+        <directory name="src"/>
+        <directory name="parts"/>
+        <directory name="patterns"/>
+        <directory name="templates"/>
+        <ignoreFiles>
+            <directory name="vendor"/>
+        </ignoreFiles>
+    </projectFiles>
+
+    <issueHandlers>
+        <MixedAssignment errorLevel="suppress"/>
+        <MissingClosureParamType errorLevel="suppress"/>
+        <MissingClosureReturnType errorLevel="suppress"/>
+        <UnresolvableInclude errorLevel="suppress"/>
+        <UndefinedConstant errorLevel="suppress"/>
+        <RiskyTruthyFalsyComparison errorLevel="suppress" />
+    </issueHandlers>
+</psalm>

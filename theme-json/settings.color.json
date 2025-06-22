@@ -1,0 +1,90 @@
+{
+  "background": true,
+  "custom": false,
+  "customDuotone": false,
+  "customGradient": false,
+  "defaultDuotone": false,
+  "defaultGradients": false,
+  "defaultPalette": false,
+  "duotone": [],
+  "gradients": [],
+  "link": true,
+  "text": true,
+  "palette": [
+    {
+      "name": "Teal",
+      "slug": "brand-primary",
+      "color": "hsl(176 99% 26%)"
+    },
+    {
+      "name": "Light Teal",
+      "slug": "brand-primary-60",
+      "color": "hsl(163 49% 62%)"
+    },
+    {
+      "name": "Light Pastel Teal",
+      "slug": "brand-primary-90",
+      "color": "hsl(167 37% 93%)"
+    },
+    {
+      "name": "Off-white Teal",
+      "slug": "brand-primary-100",
+      "color": "hsl(240 7% 97%)"
+    },
+    {
+      "name": "Blue",
+      "slug": "brand-secondary",
+      "color": "hsl(213 68% 15%)"
+    },
+    {
+      "name": "Rich Blue",
+      "slug": "brand-secondary-50",
+      "color": "hsl(242 73% 60%)"
+    },
+    {
+      "name": "Vista Blue",
+      "slug": "brand-secondary-60",
+      "color": "hsl(223 74% 66%)"
+    },
+    {
+      "name": "Pastel Blue",
+      "slug": "brand-secondary-70",
+      "color": "hsl(207 90% 69%)"
+    },
+    {
+      "name": "Lime",
+      "slug": "brand-tertiary",
+      "color": "hsl(75 84% 56%)"
+    },
+    {
+      "name": "Lemon",
+      "slug": "brand-tertiary-70",
+      "color": "hsl(54 100% 69%)"
+    },
+    {
+      "name": "Dark Accent Grey",
+      "slug": "neutral-20",
+      "color": "hsl(205 15% 25%)"
+    },
+    {
+      "name": "Grey",
+      "slug": "neutral-70",
+      "color": "hsl(30 2% 78%)"
+    },
+    {
+      "name": "Light grey",
+      "slug": "neutral-80",
+      "color": "hsl(0 0% 91%)"
+    },
+    {
+      "name": "White",
+      "slug": "neutral-100",
+      "color": "hsl(0 0% 100%)"
+    },
+    {
+      "name": "Transparent",
+      "slug": "transparent",
+      "color": "transparent"
+    }
+  ]
+}

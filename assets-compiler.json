@@ -1,0 +1,26 @@
+{
+  "auto-discover": false,
+  "default-env": {
+    "GITHUB_API_REPOSITORY": "Inpsyde-Global-Service-Provider/enokh-universal-theme",
+    "BUILD_ENV": "development"
+  },
+  "dependencies": "install",
+  "script": "build --mode=${BUILD_ENV}",
+  "pre-compiled": {
+    "env": {
+      "root": {
+        "adapter": false
+      },
+      "production": {
+        "source": "assets-${version}",
+        "target": "./assets/",
+        "adapter": "gh-release-zip"
+      },
+      "$default": {
+        "source": "assets-${hash}",
+        "target": "./assets/",
+        "adapter": "gh-action-artifact"
+      }
+    }
+  }
+}

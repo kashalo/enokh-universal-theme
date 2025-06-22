@@ -1,0 +1,617 @@
+{
+  "customFontSize": false,
+  "dropCap": false,
+  "fontFamilies": [
+    {
+      "name": "Invention",
+      "slug": "invention",
+      "fontFamily": "Invention",
+      "fontFace": [
+        {
+          "fontFamily": "Invention",
+          "fontStyle": "normal",
+          "fontWeight": 400,
+          "fontDisplay": "swap",
+          "src": [
+            "file:./resources/fonts/invention/Invention_W_Rg.woff2",
+            "file:./resources/fonts/invention/Invention_W_Rg.woff",
+            "file:./resources/fonts/invention/Invention_A_Rg.ttf"
+          ]
+        },
+        {
+          "fontFamily": "Invention",
+          "fontStyle": "italic",
+          "fontWeight": 400,
+          "fontDisplay": "swap",
+          "src": [
+            "file:./resources/fonts/invention/Invention_W_It.woff2",
+            "file:./resources/fonts/invention/Invention_W_It.woff",
+            "file:./resources/fonts/invention/Invention_A_It.ttf"
+          ]
+        },
+        {
+          "fontFamily": "Invention",
+          "fontStyle": "normal",
+          "fontWeight": 300,
+          "fontDisplay": "swap",
+          "src": [
+            "file:./resources/fonts/invention/Invention_W_Lt.woff2",
+            "file:./resources/fonts/invention/Invention_W_Lt.woff",
+            "file:./resources/fonts/invention/Invention_A_Lt.ttf"
+          ]
+        },
+        {
+          "fontFamily": "Invention",
+          "fontStyle": "italic",
+          "fontWeight": 300,
+          "fontDisplay": "swap",
+          "src": [
+            "file:./resources/fonts/invention/Invention_W_LtIt.woff2",
+            "file:./resources/fonts/invention/Invention_W_LtIt.woff",
+            "file:./resources/fonts/invention/Invention_A_LtIt.ttf"
+          ]
+        },
+        {
+          "fontFamily": "Invention",
+          "fontStyle": "normal",
+          "fontWeight": 700,
+          "fontDisplay": "swap",
+          "src": [
+            "file:./resources/fonts/invention/Invention_W_Bd.woff2",
+            "file:./resources/fonts/invention/Invention_W_Bd.woff",
+            "file:./resources/fonts/invention/Invention_A_Bd.ttf"
+          ]
+        },
+        {
+          "fontFamily": "Invention",
+          "fontStyle": "italic",
+          "fontWeight": 700,
+          "fontDisplay": "swap",
+          "src": [
+            "file:./resources/fonts/invention/Invention_W_BdIt.woff2",
+            "file:./resources/fonts/invention/Invention_W_BdIt.woff",
+            "file:./resources/fonts/invention/Invention_A_BdIt.ttf"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "System",
+      "slug": "system",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;"
+    },
+    {
+      "name": "Rubik",
+      "slug": "rubik",
+      "fontFamily": "Rubik",
+      "fontFace": [
+        {
+          "fontFamily": "Rubik",
+          "fontStyle": "normal",
+          "fontWeight": 300,
+          "fontDisplay": "swap",
+          "fontVariationSettings": "'wght' 300",
+          "src": [
+            "file:./resources/fonts/rubik/Rubik-VariableFont_wght.ttf"
+          ]
+        },
+        {
+          "fontFamily": "Rubik",
+          "fontStyle": "italic",
+          "fontWeight": 300,
+          "fontDisplay": "swap",
+          "fontVariationSettings": "'wght' 300",
+          "src": [
+            "file:./resources/fonts/rubik/Rubik-Italic-VariableFont_wght.ttf"
+          ]
+        },
+        {
+          "fontFamily": "Rubik",
+          "fontStyle": "normal",
+          "fontWeight": 400,
+          "fontDisplay": "swap",
+          "fontVariationSettings": "'wght' 400",
+          "src": [
+            "file:./resources/fonts/rubik/Rubik-VariableFont_wght.ttf"
+          ]
+        },
+        {
+          "fontFamily": "Rubik",
+          "fontStyle": "italic",
+          "fontWeight": 400,
+          "fontDisplay": "swap",
+          "fontVariationSettings": "'wght' 400",
+          "src": [
+            "file:./resources/fonts/rubik/Rubik-Italic-VariableFont_wght.ttf"
+          ]
+        },
+        {
+          "fontFamily": "Rubik",
+          "fontStyle": "normal",
+          "fontWeight": 500,
+          "fontDisplay": "swap",
+          "fontVariationSettings": "'wght' 500",
+          "src": [
+            "file:./resources/fonts/rubik/Rubik-VariableFont_wght.ttf"
+          ]
+        },
+        {
+          "fontFamily": "Rubik",
+          "fontStyle": "italic",
+          "fontWeight": 500,
+          "fontDisplay": "swap",
+          "fontVariationSettings": "'wght' 500",
+          "src": [
+            "file:./resources/fonts/rubik/Rubik-Italic-VariableFont_wght.ttf"
+          ]
+        },
+        {
+          "fontFamily": "Rubik",
+          "fontStyle": "normal",
+          "fontWeight": 600,
+          "fontDisplay": "swap",
+          "fontVariationSettings": "'wght' 600",
+          "src": [
+            "file:./resources/fonts/rubik/Rubik-VariableFont_wght.ttf"
+          ]
+        },
+        {
+          "fontFamily": "Rubik",
+          "fontStyle": "italic",
+          "fontWeight": 600,
+          "fontDisplay": "swap",
+          "fontVariationSettings": "'wght' 600",
+          "src": [
+            "file:./resources/fonts/rubik/Rubik-Italic-VariableFont_wght.ttf"
+          ]
+        },
+        {
+          "fontFamily": "Rubik",
+          "fontStyle": "normal",
+          "fontWeight": 700,
+          "fontDisplay": "swap",
+          "fontVariationSettings": "'wght' 700",
+          "src": [
+            "file:./resources/fonts/rubik/Rubik-VariableFont_wght.ttf"
+          ]
+        },
+        {
+          "fontFamily": "Rubik",
+          "fontStyle": "italic",
+          "fontWeight": 700,
+          "fontDisplay": "swap",
+          "fontVariationSettings": "'wght' 700",
+          "src": [
+            "file:./resources/fonts/rubik/Rubik-Italic-VariableFont_wght.ttf"
+          ]
+        },
+        {
+          "fontFamily": "Rubik",
+          "fontStyle": "normal",
+          "fontWeight": 800,
+          "fontDisplay": "swap",
+          "fontVariationSettings": "'wght' 800",
+          "src": [
+            "file:./resources/fonts/rubik/Rubik-VariableFont_wght.ttf"
+          ]
+        },
+        {
+          "fontFamily": "Rubik",
+          "fontStyle": "italic",
+          "fontWeight": 800,
+          "fontDisplay": "swap",
+          "fontVariationSettings": "'wght' 800",
+          "src": [
+            "file:./resources/fonts/rubik/Rubik-Italic-VariableFont_wght.ttf"
+          ]
+        },
+        {
+          "fontFamily": "Rubik",
+          "fontStyle": "normal",
+          "fontWeight": 900,
+          "fontDisplay": "swap",
+          "fontVariationSettings": "'wght' 900",
+          "src": [
+            "file:./resources/fonts/rubik/Rubik-VariableFont_wght.ttf"
+          ]
+        },
+        {
+          "fontFamily": "Rubik",
+          "fontStyle": "italic",
+          "fontWeight": 900,
+          "fontDisplay": "swap",
+          "fontVariationSettings": "'wght' 900",
+          "src": [
+            "file:./resources/fonts/rubik/Rubik-Italic-VariableFont_wght.ttf"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Source Sans",
+      "slug": "source-sans",
+      "fontFamily": "Source Sans",
+      "fontFace": [
+        {
+          "fontFamily": "Source Sans",
+          "fontStyle": "normal",
+          "fontWeight": 200,
+          "fontDisplay": "swap",
+          "fontVariationSettings": "'wght' 200",
+          "src": [
+            "file:./resources/fonts/source-sans/SourceSans3-VariableFont_wght.ttf"
+          ]
+        },
+        {
+          "fontFamily": "Source Sans",
+          "fontStyle": "italic",
+          "fontWeight": 200,
+          "fontDisplay": "swap",
+          "fontVariationSettings": "'wght' 200",
+          "src": [
+            "file:./resources/fonts/source-sans/SourceSans3-Italic-VariableFont_wght.ttf"
+          ]
+        },
+        {
+          "fontFamily": "Source Sans",
+          "fontStyle": "normal",
+          "fontWeight": 300,
+          "fontDisplay": "swap",
+          "fontVariationSettings": "'wght' 300",
+          "src": [
+            "file:./resources/fonts/source-sans/SourceSans3-VariableFont_wght.ttf"
+          ]
+        },
+        {
+          "fontFamily": "Source Sans",
+          "fontStyle": "italic",
+          "fontWeight": 300,
+          "fontDisplay": "swap",
+          "fontVariationSettings": "'wght' 300",
+          "src": [
+            "file:./resources/fonts/source-sans/SourceSans3-Italic-VariableFont_wght.ttf"
+          ]
+        },
+        {
+          "fontFamily": "Source Sans",
+          "fontStyle": "normal",
+          "fontWeight": 400,
+          "fontDisplay": "swap",
+          "fontVariationSettings": "'wght' 400",
+          "src": [
+            "file:./resources/fonts/source-sans/SourceSans3-VariableFont_wght.ttf"
+          ]
+        },
+        {
+          "fontFamily": "Source Sans",
+          "fontStyle": "italic",
+          "fontWeight": 400,
+          "fontDisplay": "swap",
+          "fontVariationSettings": "'wght' 400",
+          "src": [
+            "file:./resources/fonts/source-sans/SourceSans3-Italic-VariableFont_wght.ttf"
+          ]
+        },
+        {
+          "fontFamily": "Source Sans",
+          "fontStyle": "normal",
+          "fontWeight": 500,
+          "fontDisplay": "swap",
+          "fontVariationSettings": "'wght' 500",
+          "src": [
+            "file:./resources/fonts/source-sans/SourceSans3-VariableFont_wght.ttf"
+          ]
+        },
+        {
+          "fontFamily": "Source Sans",
+          "fontStyle": "italic",
+          "fontWeight": 500,
+          "fontDisplay": "swap",
+          "fontVariationSettings": "'wght' 500",
+          "src": [
+            "file:./resources/fonts/source-sans/SourceSans3-Italic-VariableFont_wght.ttf"
+          ]
+        },
+        {
+          "fontFamily": "Source Sans",
+          "fontStyle": "normal",
+          "fontWeight": 600,
+          "fontDisplay": "swap",
+          "fontVariationSettings": "'wght' 600",
+          "src": [
+            "file:./resources/fonts/source-sans/SourceSans3-VariableFont_wght.ttf"
+          ]
+        },
+        {
+          "fontFamily": "Source Sans",
+          "fontStyle": "italic",
+          "fontWeight": 600,
+          "fontDisplay": "swap",
+          "fontVariationSettings": "'wght' 600",
+          "src": [
+            "file:./resources/fonts/source-sans/SourceSans3-Italic-VariableFont_wght.ttf"
+          ]
+        },
+        {
+          "fontFamily": "Source Sans",
+          "fontStyle": "normal",
+          "fontWeight": 700,
+          "fontDisplay": "swap",
+          "fontVariationSettings": "'wght' 700",
+          "src": [
+            "file:./resources/fonts/source-sans/SourceSans3-VariableFont_wght.ttf"
+          ]
+        },
+        {
+          "fontFamily": "Source Sans",
+          "fontStyle": "italic",
+          "fontWeight": 700,
+          "fontDisplay": "swap",
+          "fontVariationSettings": "'wght' 700",
+          "src": [
+            "file:./resources/fonts/source-sans/SourceSans3-Italic-VariableFont_wght.ttf"
+          ]
+        },
+        {
+          "fontFamily": "Source Sans",
+          "fontStyle": "normal",
+          "fontWeight": 800,
+          "fontDisplay": "swap",
+          "fontVariationSettings": "'wght' 800",
+          "src": [
+            "file:./resources/fonts/source-sans/SourceSans3-VariableFont_wght.ttf"
+          ]
+        },
+        {
+          "fontFamily": "Source Sans",
+          "fontStyle": "italic",
+          "fontWeight": 800,
+          "fontDisplay": "swap",
+          "fontVariationSettings": "'wght' 800",
+          "src": [
+            "file:./resources/fonts/source-sans/SourceSans3-Italic-VariableFont_wght.ttf"
+          ]
+        },
+        {
+          "fontFamily": "Source Sans",
+          "fontStyle": "normal",
+          "fontWeight": 900,
+          "fontDisplay": "swap",
+          "fontVariationSettings": "'wght' 900",
+          "src": [
+            "file:./resources/fonts/source-sans/SourceSans3-VariableFont_wght.ttf"
+          ]
+        },
+        {
+          "fontFamily": "Source Sans",
+          "fontStyle": "italic",
+          "fontWeight": 900,
+          "fontDisplay": "swap",
+          "fontVariationSettings": "'wght' 900",
+          "src": [
+            "file:./resources/fonts/source-sans/SourceSans3-Italic-VariableFont_wght.ttf"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mulish",
+      "slug": "mulish",
+      "fontFamily": "Mulish",
+      "fontFace": [
+        {
+          "fontFamily": "Mulish",
+          "fontStyle": "normal",
+          "fontWeight": 200,
+          "fontDisplay": "swap",
+          "fontVariationSettings": "'wght' 200",
+          "src": [
+            "file:./resources/fonts/mulish/Mulish-VariableFont_wght.ttf"
+          ]
+        },
+        {
+          "fontFamily": "Mulish",
+          "fontStyle": "italic",
+          "fontWeight": 200,
+          "fontDisplay": "swap",
+          "fontVariationSettings": "'wght' 200",
+          "src": [
+            "file:./resources/fonts/mulish/Mulish-Italic-VariableFont_wght.ttf"
+          ]
+        },
+        {
+          "fontFamily": "Mulish",
+          "fontStyle": "normal",
+          "fontWeight": 300,
+          "fontDisplay": "swap",
+          "fontVariationSettings": "'wght' 300",
+          "src": [
+            "file:./resources/fonts/mulish/Mulish-VariableFont_wght.ttf"
+          ]
+        },
+        {
+          "fontFamily": "Mulish",
+          "fontStyle": "italic",
+          "fontWeight": 300,
+          "fontDisplay": "swap",
+          "fontVariationSettings": "'wght' 300",
+          "src": [
+            "file:./resources/fonts/mulish/Mulish-Italic-VariableFont_wght.ttf"
+          ]
+        },
+        {
+          "fontFamily": "Mulish",
+          "fontStyle": "normal",
+          "fontWeight": 400,
+          "fontDisplay": "swap",
+          "fontVariationSettings": "'wght' 400",
+          "src": [
+            "file:./resources/fonts/mulish/Mulish-VariableFont_wght.ttf"
+          ]
+        },
+        {
+          "fontFamily": "Mulish",
+          "fontStyle": "italic",
+          "fontWeight": 400,
+          "fontDisplay": "swap",
+          "fontVariationSettings": "'wght' 400",
+          "src": [
+            "file:./resources/fonts/mulish/Mulish-Italic-VariableFont_wght.ttf"
+          ]
+        },
+        {
+          "fontFamily": "Mulish",
+          "fontStyle": "normal",
+          "fontWeight": 500,
+          "fontDisplay": "swap",
+          "fontVariationSettings": "'wght' 500",
+          "src": [
+            "file:./resources/fonts/mulish/Mulish-VariableFont_wght.ttf"
+          ]
+        },
+        {
+          "fontFamily": "Mulish",
+          "fontStyle": "italic",
+          "fontWeight": 500,
+          "fontDisplay": "swap",
+          "fontVariationSettings": "'wght' 500",
+          "src": [
+            "file:./resources/fonts/mulish/Mulish-Italic-VariableFont_wght.ttf"
+          ]
+        },
+        {
+          "fontFamily": "Mulish",
+          "fontStyle": "normal",
+          "fontWeight": 600,
+          "fontDisplay": "swap",
+          "fontVariationSettings": "'wght' 600",
+          "src": [
+            "file:./resources/fonts/mulish/Mulish-VariableFont_wght.ttf"
+          ]
+        },
+        {
+          "fontFamily": "Mulish",
+          "fontStyle": "italic",
+          "fontWeight": 600,
+          "fontDisplay": "swap",
+          "fontVariationSettings": "'wght' 600",
+          "src": [
+            "file:./resources/fonts/mulish/Mulish-Italic-VariableFont_wght.ttf"
+          ]
+        },
+        {
+          "fontFamily": "Mulish",
+          "fontStyle": "normal",
+          "fontWeight": 700,
+          "fontDisplay": "swap",
+          "fontVariationSettings": "'wght' 700",
+          "src": [
+            "file:./resources/fonts/mulish/Mulish-VariableFont_wght.ttf"
+          ]
+        },
+        {
+          "fontFamily": "Mulish",
+          "fontStyle": "italic",
+          "fontWeight": 700,
+          "fontDisplay": "swap",
+          "fontVariationSettings": "'wght' 700",
+          "src": [
+            "file:./resources/fonts/mulish/Mulish-Italic-VariableFont_wght.ttf"
+          ]
+        },
+        {
+          "fontFamily": "Mulish",
+          "fontStyle": "normal",
+          "fontWeight": 800,
+          "fontDisplay": "swap",
+          "fontVariationSettings": "'wght' 800",
+          "src": [
+            "file:./resources/fonts/mulish/Mulish-VariableFont_wght.ttf"
+          ]
+        },
+        {
+          "fontFamily": "Mulish",
+          "fontStyle": "italic",
+          "fontWeight": 800,
+          "fontDisplay": "swap",
+          "fontVariationSettings": "'wght' 800",
+          "src": [
+            "file:./resources/fonts/mulish/Mulish-Italic-VariableFont_wght.ttf"
+          ]
+        },
+        {
+          "fontFamily": "Mulish",
+          "fontStyle": "normal",
+          "fontWeight": 900,
+          "fontDisplay": "swap",
+          "fontVariationSettings": "'wght' 900",
+          "src": [
+            "file:./resources/fonts/mulish/Mulish-VariableFont_wght.ttf"
+          ]
+        },
+        {
+          "fontFamily": "Mulish ",
+          "fontStyle": "italic",
+          "fontWeight": 900,
+          "fontDisplay": "swap",
+          "fontVariationSettings": "'wght' 900",
+          "src": [
+            "file:./resources/fonts/mulish/Mulish-Italic-VariableFont_wght.ttf"
+          ]
+        }
+      ]
+    }
+  ],
+  "fontSizes": [
+    {
+      "name": "Small",
+      "slug": "small",
+      "size": "0.8rem"
+    },
+    {
+      "name": "Medium",
+      "slug": "medium",
+      "size": "1rem",
+      "fluid": {
+        "min": "0.8rem",
+        "max": "1rem"
+      }
+    },
+    {
+      "name": "Large",
+      "slug": "large",
+      "size": "1.4rem",
+      "fluid": {
+        "min": "1.1rem",
+        "max": "1.4rem"
+      }
+    },
+    {
+      "name": "Extra Large",
+      "slug": "x-large",
+      "size": "1.8rem",
+      "fluid": {
+        "min": "1.4rem",
+        "max": "1.8rem"
+      }
+    },
+    {
+      "name": "Extra Extra Large",
+      "slug": "xx-large",
+      "size": "2.2rem",
+      "fluid": {
+        "min": "2rem",
+        "max": "2.2rem"
+      }
+    }
+  ],
+  "fontStyle": true,
+  "fontWeight": true,
+  "fluid": true,
+  "letterSpacing": true,
+  "lineHeight": true,
+  "textColumns": false,
+  "textDecoration": true,
+  "textTransform": true,
+  "writingMode": false
+}

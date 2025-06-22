@@ -1,0 +1,73 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "enokh-universal-theme/search",
+  "title": "MAH Search",
+  "category": "theme",
+  "icon": "search",
+  "description": "Quick search box",
+  "keywords": [
+    "find"
+  ],
+  "version": "0.1.0",
+  "textdomain": "enokh-universal-theme",
+  "attributes": {
+    "placeholderText": {
+      "type": "string",
+      "default": "",
+      "__experimentalRole": "content"
+    },
+    "buttonOnly": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "providesContext": {},
+  "usesContext": [],
+  "supports": {
+    "mah": {
+      "contentOnlyEditing": true
+    },
+    "className": false,
+    "html": false,
+    "align": true,
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "fontStyle": true,
+      "fontWeight": true,
+      "textTransform": true,
+      "__experimentalFontStyle": true,
+      "__experimentalFontWeight": true,
+      "__experimentalTextTransform": true
+    },
+    "color": {
+      "background": true,
+      "text": true
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true
+    },
+    "__experimentalBorder": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true,
+      "__experimentalDefaultControls": {
+        "color": true,
+        "radius": true,
+        "style": true,
+        "width": true
+      }
+    }
+  },
+  "styles": [],
+  "example": {},
+  "variations": [],
+  "editorScript": "file:./editor.tsx",
+  "editorStyle": "file:./editor.css",
+  "viewScript": "file:./front-office.ts",
+  "style": "file:./front-office.css",
+  "render": "file:./render.php"
+}

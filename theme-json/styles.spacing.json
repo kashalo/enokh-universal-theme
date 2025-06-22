@@ -1,0 +1,10 @@
+{
+  "blockGap": "var:preset|spacing|50",
+  "margin": {},
+  "padding": {
+    "top": "0",
+    "bottom": "0",
+    "left": "0",
+    "right": "0"
+  }
+}

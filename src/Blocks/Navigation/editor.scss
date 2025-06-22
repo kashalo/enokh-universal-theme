@@ -1,0 +1,25 @@
+// Strengthen selector in block editor
+.editor-styles-wrapper {
+	// stylelint-disable-next-line no-invalid-position-at-import-rule
+	@import "front-office";
+
+	.blocks-navigation {
+
+		// Allow block layout supports to affect inner content
+		> div {
+			display: contents !important;
+
+			> ul {
+				display: contents !important;
+			}
+		}
+
+		a {
+			pointer-events: none;
+		}
+	}
+}
+
+.blocks-navigation__toolbar-dropdown-control {
+	width: 250px;
+}

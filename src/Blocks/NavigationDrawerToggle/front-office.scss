@@ -1,0 +1,38 @@
+.blocks-navigation-drawer-toggle {
+	display: none;
+	flex-direction: row;
+	background: none;
+	border: none;
+	color: var(--mah--link--text--color);
+	margin: 0;
+	padding: 0;
+
+	&:hover {
+		background: none;
+		border: none;
+		color: var(--mah--link--text--color--hover);
+	}
+
+	svg {
+		fill: currentcolor;
+	}
+
+	&__close {
+		display: none;
+	}
+}
+
+body.has-navigation-drawer {
+	display: flex;
+}
+
+html.has-open-navigation-drawer {
+
+	.blocks-navigation-drawer-toggle__open {
+		display: none;
+	}
+
+	.blocks-navigation-drawer-toggle__close {
+		display: flex;
+	}
+}

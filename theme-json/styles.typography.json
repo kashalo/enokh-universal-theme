@@ -1,0 +1,12 @@
+{
+  "fontFamily": "var:preset|font-family|invention",
+  "fontSize": "var:preset|font-size|normal",
+  "fontStyle": "normal",
+  "fontWeight": "300",
+  "letterSpacing": "",
+  "lineHeight": "1.6",
+  "textColumns": "",
+  "textDecoration": "",
+  "textTransform": "",
+  "writingMode": ""
+}

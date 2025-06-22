@@ -1,0 +1,10 @@
+// Strengthen selector in block editor
+.editor-styles-wrapper {
+	// stylelint-disable-next-line no-invalid-position-at-import-rule
+	@import "front-office";
+}
+
+// Textarea elements available withing block toolbar dropdowns
+.blocks-search__toolbar_content_textarea {
+	width: 250px;
+}
