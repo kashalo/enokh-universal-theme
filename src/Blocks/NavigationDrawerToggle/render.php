@@ -8,7 +8,7 @@ declare(strict_types=1);
  * @var \WP_Block $block Block instance.
  */
 
-use Mah\Blocks\Editor\Blocks\NavigationDrawerToggle\Element;
+use Enokh\UniversalTheme\Blocks\NavigationDrawerToggle\Element;
 
 use function Inpsyde\PresentationElements\element;
 use function Inpsyde\PresentationElements\parseAttributes;

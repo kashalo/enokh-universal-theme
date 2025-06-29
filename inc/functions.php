@@ -7,6 +7,8 @@ namespace Enokh\UniversalTheme;
 use Enokh\UniversalTheme\Presentation\Elements\Icon;
 use Inpsyde\Modularity;
 
+use function Inpsyde\PresentationElements\element;
+
 /**
  * @return Modularity\Package
  */
@@ -44,7 +46,6 @@ function package(): Modularity\Package
         );
 
         $package->connect(\Inpsyde\PresentationElements\package());
-        $package->connect(\Mah\DesignSystem\package());
     }
 
     return $package;

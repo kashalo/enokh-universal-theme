@@ -57,4 +57,37 @@ add_action(
     },
     0 // Boot earlier so that child themes can boot on the default priority without issues
 );
+add_filter('wpstarter.htaccess-content', function($content) {
+    // Your custom .htaccess rules
+    $custom_rules = '
+# BEGIN WordPress Subdirectory
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
 
+# Handle WordPress admin directly
+RewriteRule ^wp-admin/?$ wp/wp-admin/ [R=301,L]
+RewriteRule ^wp-admin/(.*)$ wp/wp-admin/$1 [L]
+
+# Handle wp-login.php directly
+RewriteRule ^wp-login\.php(.*)$ wp/wp-login.php$1 [L]
+
+# Handle wp-includes
+RewriteRule ^wp-includes/(.*)$ wp/wp-includes/$1 [L]
+
+# Handle other WordPress core files
+RewriteRule ^(wp-[^/]*\.php)$ wp/$1 [L]
+
+# Handle xmlrpc.php
+RewriteRule ^xmlrpc\.php$ wp/xmlrpc.php [L]
+
+# Handle everything else - send to index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+# END WordPress Subdirectory
+';
+
+    return $custom_rules;
+});
