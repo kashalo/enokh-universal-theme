@@ -47,7 +47,6 @@
   },
   "require-dev": {
     "inpsyde/composer-assets-compiler": "^2",
-    "inpsyde/gutenberg-dialogs": "*",
     "inpsyde/php-coding-standards": "^1.0@dev",
     "inpsyde/wp-app-container": "^1.3.1 || ^2.0.0",
     "php-stubs/wordpress-stubs": "^6.4.0@stable",

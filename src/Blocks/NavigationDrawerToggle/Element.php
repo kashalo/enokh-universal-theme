@@ -25,7 +25,7 @@ class Element extends PresentationElements\Element\BaseElement
     public const LABEL_POSITION_AFTER = 'after';
 
     // Classes
-    public const CLASS_WRAPPER = 'enokh-universal-theme/navigation-drawer-toggle';
+    public const CLASS_WRAPPER = 'enokh-blocks-navigation-drawer-toggle';
     public const CLASS_OPEN_ICON = self::CLASS_WRAPPER . '__open';
     public const CLASS_CLOSE_ICON = self::CLASS_WRAPPER . '__close';
 

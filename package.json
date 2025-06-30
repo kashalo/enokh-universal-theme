@@ -32,9 +32,8 @@
     "include-media": "^2.0.0"
   },
   "scripts": {
-    "build": "node ./bin/build-style-dictionary.ts & wp-scripts build",
+    "build": "wp-scripts build",
     "build:dev": "wp-scripts build --mode development",
-    "build:tokens": "node ./bin/build-style-dictionary.ts",
     "start": "wp-scripts start",
     "lint:md": "wp-scripts lint-md-docs docs/**/*.md",
     "lint:js": "wp-scripts lint-js src/**/*.{ts,tsx} resources/ts/**/*.{ts,tsx}",

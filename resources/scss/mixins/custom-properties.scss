@@ -1,3 +1,132 @@
+@mixin core-custom-properties($selector) {
+	#{$selector} {
+		///////////////////
+		// Global tokens //
+		///////////////////
+
+		// Brand colors
+		--enokh--color--teal: hsl(176 99% 26%); // #01857C
+		--enokh--color--light-teal: hsl(163 49% 62%); // #6ECEB2
+		--enokh--color--light-pastel-teal: hsl(167 37% 93%); // #e5f3f0
+		--enokh--color--off-white: hsl(240 7% 97%); // #F7F7F8
+		--enokh--color--blue: hsl(213 68% 15%); // #0C2340
+		--enokh--color--rich-blue: hsl(242 73% 60%); // #5450E4
+		--enokh--color--vista-blue: hsl(223 74% 66%); // #688CE8
+		--enokh--color--pastel-blue: hsl(207 90% 69%); // #69B8F7
+		--enokh--color--lime: hsl(75 84% 56%); // #BFED33
+		--enokh--color--lemon: hsl(54 100% 69%); // #FFF063
+		--enokh--color--dark-accent-grey: hsl(205 15% 25%); // #37424a
+		--enokh--color--grey: hsl(30 2% 78%); // #C9C8C7
+		--enokh--color--light-grey: hsl(0 0% 91%); // #E8E8E8
+		--enokh--color--white: hsl(0 0% 100%); // #FFFFFF
+		--enokh--color--transparent: transparent;
+
+		// Brand colors (backward compatibility with initial Theme.json)
+		--wp--preset--color--teal: var(--enokh--color--teal);
+		--wp--preset--color--light-teal: var(--enokh--color--light-teal);
+		--wp--preset--color--light-pastel-teal: var(--enokh--color--light-pastel-teal);
+		--wp--preset--color--off-white: var(--enokh--color--off-white);
+		--wp--preset--color--blue: var(--enokh--color--blue);
+		--wp--preset--color--rich-blue: var(--enokh--color--rich-blue);
+		--wp--preset--color--vista-blue: var(--enokh--color--vista-blue);
+		--wp--preset--color--pastel-blue: var(--enokh--color--pastel-blue);
+		--wp--preset--color--lime: var(--enokh--color--lime);
+		--wp--preset--color--lemon: var(--enokh--color--lemon);
+		--wp--preset--color--dark-accent-grey: var(--enokh--color--dark-accent-grey);
+		--wp--preset--color--grey: var(--enokh--color--grey);
+		--wp--preset--color--light-grey: var(--enokh--color--light-grey);
+		--wp--preset--color--white: var(--enokh--color--white);
+		--wp--preset--color--transparent: var(--enokh--color--transparent);
+
+		// Brand primary color
+		--enokh--color--brand-primary: var(--wp--preset--color--brand-primary, var(--wp--preset--color--teal));
+		--enokh--color--brand-primary-0: var(--wp--preset--color--brand-primary-0, var(--wp--preset--color--teal));
+		--enokh--color--brand-primary-10: var(--wp--preset--color--brand-primary-10, var(--wp--preset--color--teal));
+		--enokh--color--brand-primary-20: var(--wp--preset--color--brand-primary-20, var(--wp--preset--color--teal));
+		--enokh--color--brand-primary-30: var(--wp--preset--color--brand-primary-30, var(--wp--preset--color--teal));
+		--enokh--color--brand-primary-40: var(--wp--preset--color--brand-primary-40, var(--wp--preset--color--teal));
+		--enokh--color--brand-primary-50: var(--wp--preset--color--brand-primary-50, var(--wp--preset--color--teal));
+		--enokh--color--brand-primary-60: var(--wp--preset--color--brand-primary-60, var(--wp--preset--color--light-teal));
+		--enokh--color--brand-primary-70: var(--wp--preset--color--brand-primary-70, var(--wp--preset--color--light-teal));
+		--enokh--color--brand-primary-80: var(--wp--preset--color--brand-primary-80, var(--wp--preset--color--light-teal));
+		--enokh--color--brand-primary-90: var(--wp--preset--color--brand-primary-90, var(--wp--preset--color--light-pastel-teal));
+		--enokh--color--brand-primary-100: var(--wp--preset--color--brand-primary-100, var(--wp--preset--color--off-white));
+
+		// Brand secondary color
+		--enokh--color--brand-secondary: var(--wp--preset--color--brand-secondary, var(--wp--preset--color--blue));
+		--enokh--color--brand-secondary-0: var(--wp--preset--color--brand-secondary-0, var(--wp--preset--color--blue));
+		--enokh--color--brand-secondary-10: var(--wp--preset--color--brand-secondary-10, var(--wp--preset--color--blue));
+		--enokh--color--brand-secondary-20: var(--wp--preset--color--brand-secondary-20, var(--wp--preset--color--blue));
+		--enokh--color--brand-secondary-30: var(--wp--preset--color--brand-secondary-30, var(--wp--preset--color--blue));
+		--enokh--color--brand-secondary-40: var(--wp--preset--color--brand-secondary-40, var(--wp--preset--color--blue));
+		--enokh--color--brand-secondary-50: var(--wp--preset--color--brand-secondary-50, var(--wp--preset--color--rich-blue));
+		--enokh--color--brand-secondary-60: var(--wp--preset--color--brand-secondary-60, var(--wp--preset--color--vista-blue));
+		--enokh--color--brand-secondary-70: var(--wp--preset--color--brand-secondary-70, var(--wp--preset--color--pastel-blue));
+		--enokh--color--brand-secondary-80: var(--wp--preset--color--brand-secondary-80, var(--wp--preset--color--pastel-blue));
+		--enokh--color--brand-secondary-90: var(--wp--preset--color--brand-secondary-90, var(--wp--preset--color--pastel-blue));
+		--enokh--color--brand-secondary-100: var(--wp--preset--color--brand-secondary-100, var(--wp--preset--color--pastel-blue));
+
+		// Brand tertiary color
+		--enokh--color--brand-tertiary: var(--wp--preset--color--brand-tertiary, var(--wp--preset--color--lime));
+		--enokh--color--brand-tertiary-0: var(--wp--preset--color--brand-tertiary-0, var(--wp--preset--color--lime));
+		--enokh--color--brand-tertiary-10: var(--wp--preset--color--brand-tertiary-10, var(--wp--preset--color--lime));
+		--enokh--color--brand-tertiary-20: var(--wp--preset--color--brand-tertiary-20, var(--wp--preset--color--lime));
+		--enokh--color--brand-tertiary-30: var(--wp--preset--color--brand-tertiary-30, var(--wp--preset--color--lime));
+		--enokh--color--brand-tertiary-40: var(--wp--preset--color--brand-tertiary-40, var(--wp--preset--color--lime));
+		--enokh--color--brand-tertiary-50: var(--wp--preset--color--brand-tertiary-50, var(--wp--preset--color--lime));
+		--enokh--color--brand-tertiary-60: var(--wp--preset--color--brand-tertiary-60, var(--wp--preset--color--lime));
+		--enokh--color--brand-tertiary-70: var(--wp--preset--color--brand-tertiary-70, var(--wp--preset--color--lemon));
+		--enokh--color--brand-tertiary-80: var(--wp--preset--color--brand-tertiary-80, var(--wp--preset--color--lemon));
+		--enokh--color--brand-tertiary-90: var(--wp--preset--color--brand-tertiary-90, var(--wp--preset--color--lemon));
+		--enokh--color--brand-tertiary-100: var(--wp--preset--color--brand-tertiary-100, var(--wp--preset--color--lemon));
+
+		// Neutral colors
+		--enokh--color--neutral-0: var(--wp--preset--color--neutral-0, hsl(0 0% 0%));
+		--enokh--color--neutral-10: var(--wp--preset--color--neutral-10, hsl(0 0% 10%));
+		--enokh--color--neutral-20: var(--wp--preset--color--neutral-20, hsl(0 0% 20%));
+		--enokh--color--neutral-30: var(--wp--preset--color--neutral-30, hsl(0 0% 30%));
+		--enokh--color--neutral-40: var(--wp--preset--color--neutral-40, hsl(0 0% 40%));
+		--enokh--color--neutral-50: var(--wp--preset--color--neutral-50, hsl(0 0% 50%));
+		--enokh--color--neutral-60: var(--wp--preset--color--neutral-60, hsl(0 0% 60%));
+		--enokh--color--neutral-70: var(--wp--preset--color--neutral-70, hsl(0 0% 70%));
+		--enokh--color--neutral-80: var(--wp--preset--color--neutral-80, hsl(0 0% 80%));
+		--enokh--color--neutral-90: var(--wp--preset--color--neutral-90, hsl(0 0% 90%));
+		--enokh--color--neutral-100: var(--wp--preset--color--neutral-100, hsl(0 0% 100%));
+
+		// Semantic colors
+		--enokh--color--semantic-success: var(--wp--preset--color--semantic-success, var(--wp--preset--color--green));
+		--enokh--color--semantic-warning: var(--wp--preset--color--semantic-warning, var(--wp--preset--color--orange));
+		--enokh--color--semantic-error: var(--wp--preset--color--semantic-error, var(--wp--preset--color--red));
+		--enokh--color--semantic-info: var(--wp--preset--color--semantic-info, var(--wp--preset--color--blue));
+
+		// Colors: text
+
+		// Colors: border
+
+		// Colors: surface
+
+		// Text: base
+		--enokh--text--base--family: invention;
+		--enokh--text--base--size: 16px;
+		--enokh--text--base--size--small: 0.8rem;
+		--enokh--text--base--size--medium--min: 0.8rem;
+		--enokh--text--base--size--medium--max: 1rem;
+		--enokh--text--base--size--medium: var(--enokh--text--base--size--medium--max);
+		--enokh--text--base--size--large--min: 1.1rem;
+		--enokh--text--base--size--large--max: 1.4rem;
+		--enokh--text--base--size--large: var(--enokh--text--base--size--large--max);
+		--enokh--text--base--size--x-large--min: 1.4rem;
+		--enokh--text--base--size--x-large--max: 1.8rem;
+		--enokh--text--base--size--x-large: var(--enokh--text--base--size--x-large--max);
+		--enokh--text--base--size--xx-large--min: 2rem;
+		--enokh--text--base--size--xx-large--max: 2.2rem;
+		--enokh--text--base--size--xx-large: var(--enokh--text--base--size--xx-large--max);
+		--enokh--text--base--weight: 300;
+		--enokh--text--base--style: normal;
+		--enokh--text--base--line-height: 1.6;
+	}
+}
+
 @mixin elements-custom-properties($selector) {
 	#{$selector} {
 
@@ -5,33 +134,127 @@
 		// Element tokens //
 		////////////////////
 
+		// Headings
+		--enokh--heading--base--text--weight: 300;
+		--enokh--h1--base--text--size: calc(2 * var(--wp--preset--font-size--large));
+		--enokh--h2--base--text--size: calc(1.8 * var(--wp--preset--font-size--large));
+		--enokh--h3--base--text--size: calc(1.6 * var(--wp--preset--font-size--large));
+		--enokh--h4--base--text--size: calc(1.4 * var(--wp--preset--font-size--large));
+		--enokh--h5--base--text--size: calc(1.2 * var(--wp--preset--font-size--large));
+		--enokh--h6--base--text--size: var(--wp--preset--font-size--large);
+
 		// Links
-		--enokh--link--text--color: var(--enokh--color--brand-primary);
-		--enokh--link--text--color--hover: var(--enokh--color--brand-primary-60);
+		--enokh--link--base--text--color: var(--enokh--color--brand-primary);
+		--enokh--link--base--text--color--hover: var(--enokh--color--brand-primary-60);
+		--enokh--link--base--text--decoration: none;
+		--enokh--link--base--text--decoration--hover: var(--enokh--link--base--text--decoration);
+		// Links: backward compatibility
+		--enokh--link--text--color: var(--enokh--link--base--text--color);
+		--enokh--link--text--color--hover: var(--enokh--link--base--text--color--hover);
+
+		// Button: base
+		// Button: base / text
+		--enokh--button--base--text--color: inherit;
+		--enokh--button--base--text--color--hover: inherit;
+		--enokh--button--base--text--family: inherit;
+		--enokh--button--base--text--size: inherit;
+		--enokh--button--base--text--style: normal;
+		--enokh--button--base--text--weight: 700;
+		// Button: primary / background
+		--enokh--button--base--background--color: var(--enokh--color--neutral-50);
+		--enokh--button--base--background--color--hover: var(--enokh--color--neutral-60);
+		// Button: base / border
+		--enokh--button--base--border--color: transparent;
+		--enokh--button--base--border--color--hover: var(--enokh--button--base--border--color);
+		--enokh--button--base--border--style: solid;
+		--enokh--button--base--border--style--hover: var(--enokh--button--base--border--style);
+		--enokh--button--base--border--width: 2px;
+		--enokh--button--base--border--width--hover: var(--enokh--button--base--border--width);
+		--enokh--button--base--border--radius: var(--wp--preset--spacing--30);
+		--enokh--button--base--border--radius--hover: var(--enokh--button--base--border--radius);
+		// Button: base / sizing
+		--enokh--button--base--sizing--height: auto;
+		--enokh--button--base--sizing--width: auto;
+		// Button: base / spacing
+		--enokh--button--base--spacing--padding: calc(var(--wp--preset--spacing--30) + var(--enokh--button--base--border--width)) calc(var(--wp--preset--spacing--40) + var(--enokh--button--base--border--width));
 
 		// Button: primary
-		--enokh--button--primary--background--color: var(--enokh--color--brand-primary);
-		--enokh--button--primary--border--color: var(--enokh--color--brand-primary);
+		// Button: primary / text
 		--enokh--button--primary--text--color: var(--enokh--color--neutral-100);
-		--enokh--button--primary--background--color--hover: var(--enokh--color--brand-primary-60);
-		--enokh--button--primary--border--color--hover: var(--enokh--color--neutral-20);
 		--enokh--button--primary--text--color--hover: var(--enokh--color--neutral-20);
+		--enokh--button--primary--text--family: var(--enokh--button--base--text--family);
+		--enokh--button--primary--text--size: var(--enokh--button--base--text--size);
+		--enokh--button--primary--text--style: var(--enokh--button--base--text--style);
+		--enokh--button--primary--text--weight: var(--enokh--button--base--text--weight);
+		// Button: primary / background
+		--enokh--button--primary--background--color: var(--enokh--color--brand-primary);
+		--enokh--button--primary--background--color--hover: var(--enokh--color--brand-primary-60);
+		// Button: primary / border
+		--enokh--button--primary--border--color: var(--enokh--color--brand-primary);
+		--enokh--button--primary--border--color--hover: var(--enokh--color--neutral-20);
+		--enokh--button--primary--border--style: var(--enokh--button--base--border--style);
+		--enokh--button--primary--border--style--hover: var(--enokh--button--base--border--style--hover);
+		--enokh--button--primary--border--width: var(--enokh--button--base--border--width);
+		--enokh--button--primary--border--width--hover: var(--enokh--button--base--border--width--hover);
+		--enokh--button--primary--border--radius: var(--enokh--button--base--border--radius);
+		--enokh--button--primary--border--radius--hover: var(--enokh--button--base--border--radius--hover);
+		// Button: primary / sizing
+		--enokh--button--primary--sizing--height: var(--enokh--button--base--sizing--height);
+		--enokh--button--primary--sizing--width: var(--enokh--button--base--sizing--width);
+		// Button: primary / spacing
+		--enokh--button--primary--spacing--padding: var(--enokh--button--base--spacing--padding);
 
 		// Button: secondary
-		--enokh--button--secondary--background--color: var(--enokh--color--neutral-100);
-		--enokh--button--secondary--border--color: var(--enokh--color--brand-primary);
+		// Button: secondary / text
 		--enokh--button--secondary--text--color: var(--enokh--color--brand-primary);
-		--enokh--button--secondary--background--color--hover: var(--enokh--color--neutral-100);
-		--enokh--button--secondary--border--color--hover: var(--enokh--color--brand-primary-60);
 		--enokh--button--secondary--text--color--hover: var(--enokh--color--brand-primary-60);
+		--enokh--button--secondary--text--family: var(--enokh--button--base--text--family);
+		--enokh--button--secondary--text--size: var(--enokh--button--base--text--size);
+		--enokh--button--secondary--text--style: var(--enokh--button--base--text--style);
+		--enokh--button--secondary--text--weight: var(--enokh--button--base--text--weight);
+		// Button: secondary / background
+		--enokh--button--secondary--background--color: var(--enokh--color--neutral-100);
+		--enokh--button--secondary--background--color--hover: var(--enokh--color--neutral-100);
+		// Button: secondary / border
+		--enokh--button--secondary--border--color: var(--enokh--color--brand-primary);
+		--enokh--button--secondary--border--color--hover: var(--enokh--color--brand-primary-60);
+		--enokh--button--secondary--border--style: var(--enokh--button--base--border--style);
+		--enokh--button--secondary--border--style--hover: var(--enokh--button--base--border--style--hover);
+		--enokh--button--secondary--border--width: var(--enokh--button--base--border--width);
+		--enokh--button--secondary--border--width--hover: var(--enokh--button--base--border--width--hover);
+		--enokh--button--secondary--border--radius: var(--enokh--button--base--border--radius);
+		--enokh--button--secondary--border--radius--hover: var(--enokh--button--base--border--radius--hover);
+		// Button: secondary / sizing
+		--enokh--button--secondary--sizing--height: var(--enokh--button--base--sizing--height);
+		--enokh--button--secondary--sizing--width: var(--enokh--button--base--sizing--width);
+		// Button: secondary / spacing
+		--enokh--button--secondary--spacing--padding: var(--enokh--button--base--spacing--padding);
 
 		// Button: ghost
-		--enokh--button--ghost--background--color: transparent;
-		--enokh--button--ghost--border--color: transparent;
+		// Button: ghost / text
 		--enokh--button--ghost--text--color: var(--enokh--color--neutral-20);
-		--enokh--button--ghost--background--color--hover: var(--enokh--color--neutral-70);
-		--enokh--button--ghost--border--color--hover: var(--enokh--color--neutral-70);
 		--enokh--button--ghost--text--color--hover: var(--enokh--color--neutral-20);
+		--enokh--button--ghost--text--family: var(--enokh--button--base--text--family);
+		--enokh--button--ghost--text--size: var(--enokh--button--base--text--size);
+		--enokh--button--ghost--text--style: var(--enokh--button--base--text--style);
+		--enokh--button--ghost--text--weight: var(--enokh--button--base--text--weight);
+		// Button: ghost / background
+		--enokh--button--ghost--background--color: transparent !important;
+		--enokh--button--ghost--background--color--hover: var(--enokh--color--neutral-70);
+		// Button: ghost / border
+		--enokh--button--ghost--border--color: transparent !important;
+		--enokh--button--ghost--border--color--hover: var(--enokh--button--ghost--border--color);
+		--enokh--button--ghost--border--style: none !important;
+		--enokh--button--ghost--border--style--hover: none !important;
+		--enokh--button--ghost--border--width: var(--enokh--button--base--border--width);
+		--enokh--button--ghost--border--width--hover: var(--enokh--button--base--border--width--hover);
+		--enokh--button--ghost--border--radius: var(--enokh--button--base--border--radius);
+		--enokh--button--ghost--border--radius--hover: var(--enokh--button--base--border--radius--hover);
+		// Button: ghost / sizing
+		--enokh--button--ghost--sizing--height: var(--enokh--button--base--sizing--height);
+		--enokh--button--ghost--sizing--width: var(--enokh--button--base--sizing--width);
+		// Button: ghost / spacing
+		--enokh--button--ghost--spacing--padding: var(--enokh--button--base--spacing--padding);
 
 		// Button: disabled
 		--enokh--button--disabled--background--color: var(--enokh--color--neutral-70);
@@ -39,22 +262,76 @@
 		--enokh--button--disabled--text--color: var(--enokh--color--neutral-20);
 
 		// label
-		--enokh--label--text--color: var(--enokh--color--neutral-20);
+		--enokh--label--base--text--color: var(--enokh--color--neutral-20);
+		--enokh--label--base--text--family: inherit;
+		--enokh--label--base--text--size: 14px;
+		--enokh--label--base--text--weight: 600;
+		--enokh--label--base--text--style: normal;
+		// Input: backward compatibility
+		--enokh--label--text--color: var(--enokh--label--base--text--color);
 
-		// Input
-		--enokh--input--text--color: var(--enokh--color--neutral-20);
-		--enokh--input--border--color: var(--enokh--color--neutral-50);
-		--enokh--input--background--color: var(--enokh--color--brand-primary-100);
+		// Control: base
+		--enokh--control--base--sizing--width: 100%;
+		--enokh--control--base--spacing--padding: var(--wp--preset--spacing--30) var(--wp--preset--spacing--40);
+		--enokh--control--base--text--color: var(--enokh--color--neutral-20);
+		--enokh--control--base--text--family: inherit;
+		--enokh--control--base--text--size: var(--wp--preset--font-size--normal);
+		--enokh--control--base--text--weight: normal;
+		--enokh--control--base--text--style: normal;
+		--enokh--control--base--background--color: var(--enokh--color--brand-primary-100);
+		--enokh--control--base--border--style: solid;
+		--enokh--control--base--border--width: 1px;
+		--enokh--control--base--border--radius: var(--wp--preset--spacing--30);
+		--enokh--control--base--border--color: var(--enokh--color--neutral-50);
+		// Control (formerly Input): backward compatibility
+		--enokh--input--text--color: var(--enokh--control--base--text--color);
+		--enokh--input--border--color: var(--enokh--control--base--border--color);
+		--enokh--input--background--color: var(--enokh--control--base--background--color);
 
-		// Checkbox
-		--enokh--checkbox--background--color: var(--enokh--color--neutral-100);
-		--enokh--checkbox--border--color: var(--enokh--color--brand-primary);
-		--enokh--checkbox--text--color: var(--enokh--color--neutral-20);
-		--enokh--checkbox--background--color--checked: var(--enokh--color--brand-primary);
-		--enokh--checkbox--border--color--checked: var(--enokh--color--brand-primary);
-		--enokh--checkbox--text--color--checked: var(--enokh--color--neutral-100);
-		--enokh--checkbox--background--color--disabled: var(--enokh--color--neutral-70);
-		--enokh--checkbox--border--color--disabled: var(--enokh--color--neutral-20);
-		--enokh--checkbox--text--color--disabled: var(--enokh--color--neutral-20);
+		// Checkbox: base
+		--enokh--checkbox--base--sizing--height: 1.25rem;
+		--enokh--checkbox--base--sizing--width: 1.25rem;
+		--enokh--checkbox--base--text--color: var(--enokh--color--neutral-20);
+		--enokh--checkbox--base--text--color--checked: var(--enokh--color--neutral-100);
+		--enokh--checkbox--base--text--color--disabled: var(--enokh--color--neutral-20);
+		--enokh--checkbox--base--background--color: var(--enokh--color--neutral-100);
+		--enokh--checkbox--base--background--color--checked: var(--enokh--color--brand-primary);
+		--enokh--checkbox--base--background--color--disabled: var(--enokh--color--neutral-70);
+		--enokh--checkbox--base--border--style: solid;
+		--enokh--checkbox--base--border--width: 1px;
+		--enokh--checkbox--base--border--radius: 4px;
+		--enokh--checkbox--base--border--color: var(--enokh--color--brand-primary);
+		--enokh--checkbox--base--border--color--checked: var(--enokh--color--brand-primary);
+		--enokh--checkbox--base--border--color--disabled: var(--enokh--color--neutral-20);
+
+		// Checkbox: backward compatibility
+		--enokh--checkbox--background--color: var(--enokh--checkbox--base--background--color);
+		--enokh--checkbox--border--color: var(--enokh--checkbox--base--border--color);
+		--enokh--checkbox--text--color: var(--enokh--checkbox--base--text--color);
+		--enokh--checkbox--background--color--checked: var(--enokh--checkbox--base--background--color--checked);
+		--enokh--checkbox--border--color--checked: var(--enokh--checkbox--base--border--color--checked);
+		--enokh--checkbox--text--color--checked: var(--enokh--checkbox--base--text--color--checked);
+		--enokh--checkbox--background--color--disabled: var(--enokh--checkbox--base--background--color--disabled);
+		--enokh--checkbox--border--color--disabled: var(--enokh--checkbox--base--border--color--disabled);
+		--enokh--checkbox--text--color--disabled: var(--enokh--checkbox--base--text--color--disabled);
+
+		// Radio: base
+		--enokh--radio--base--sizing--height: 1.25rem;
+		--enokh--radio--base--sizing--width: 1.25rem;
+		--enokh--radio--base--text--color: var(--enokh--color--neutral-20);
+		--enokh--radio--base--text--color--checked: var(--enokh--color--neutral-100);
+		--enokh--radio--base--text--color--disabled: var(--enokh--color--neutral-20);
+		--enokh--radio--base--background--color: var(--enokh--color--neutral-100);
+		--enokh--radio--base--background--color--checked: var(--enokh--color--brand-primary);
+		--enokh--radio--base--background--color--disabled: var(--enokh--color--neutral-70);
+		--enokh--radio--base--border--style: solid;
+		--enokh--radio--base--border--width: 1px;
+		--enokh--radio--base--border--radius: 50%;
+		--enokh--radio--base--border--color: var(--enokh--color--brand-primary);
+		--enokh--radio--base--border--color--checked: var(--enokh--color--brand-primary);
+		--enokh--radio--base--border--color--disabled: var(--enokh--color--neutral-20);
+
+		// Cite: base
+		--enokh--cite--text--color: var(--enokh--color--neutral-50);
 	}
 }

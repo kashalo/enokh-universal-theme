@@ -1,7 +1,7 @@
-//@use "mixins";
-//
-//// Restrict elements custom properties to the block editor
-//@include mixins.elements-custom-properties(".editor-styles-wrapper");
+@use "mixins";
+
+// Restrict elements custom properties to the block editor
+@include mixins.elements-custom-properties(".editor-styles-wrapper");
 
 // Restrict elements styles to the block editor
 .editor-styles-wrapper {

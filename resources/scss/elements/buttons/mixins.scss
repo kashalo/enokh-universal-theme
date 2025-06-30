@@ -1,67 +1,120 @@
 @mixin button-base {
+	color: var(--enokh--button--base--text--color);
+	font-family: var(--enokh--button--base--text--family);
+	font-size: var(--enokh--button--base--text--size);
+	font-style: var(--enokh--button--base--text--style);
+	font-weight: var(--enokh--button--base--text--weight);
+	background-color: var(--enokh--button--base--background--color);
+	border-color: var(--enokh--button--base--border--color);
+	border-style: var(--enokh--button--base--border--style);
+	border-width: var(--enokh--button--base--border--width);
+	border-radius: var(--enokh--button--base--border--radius);
+	padding: var(--enokh--button--base--spacing--padding);
+	line-height: 1.4;
 	box-sizing: border-box;
-	border: none;
-	border-radius: var(--wp--preset--spacing--30);
 	transition: all ease-in-out 0.15s;
 	box-shadow: none !important;
-	padding: calc(var(--wp--preset--spacing--40) + 2px) calc(var(--wp--preset--spacing--50) + 2px);
 	cursor: pointer;
 
 	&:hover {
+		color: var(--enokh--button--base--text--color--hover);
+		background-color: var(--enokh--button--base--background--color--hover);
+		border-color: var(--enokh--button--base--border--color--hover);
+		border-style: var(--enokh--button--base--border--style--hover);
+		border-width: var(--enokh--button--base--border--width--hover);
+		border-radius: var(--enokh--button--base--border--radius--hover);
 		box-shadow: none !important;
 	}
 }
 
 @mixin button-style-default {
-	background-color: var(--enokh--element--button--primary--background-color);
-	border-color: var(--enokh--element--button--primary--border-color);
-	border-width: 2px;
-	border-style: solid;
-	color: var(--enokh--element--button--primary--text-color);
+
+	@include button-base;
+	color: var(--enokh--button--primary--text--color);
+	font-family: var(--enokh--button--primary--text--family);
+	font-size: var(--enokh--button--primary--text--size);
+	font-style: var(--enokh--button--primary--text--style);
+	font-weight: var(--enokh--button--primary--text--weight);
+	padding: var(--enokh--button--primary--spacing--padding);
+	background-color: var(--enokh--button--primary--background--color);
+	border-color: var(--enokh--button--primary--border--color);
+	border-style: var(--enokh--button--primary--border--style);
+	border-width: var(--enokh--button--primary--border--width);
+	border-radius: var(--enokh--button--primary--border--radius);
 
 	&:hover {
-		background-color: var(--enokh--element--button--primary--background-color--hover);
-		border-color: var(--enokh--element--button--primary--border-color--hover);
-		color: var(--enokh--element--button--primary--text-color--hover);
+		color: var(--enokh--button--primary--text--color--hover);
+		background-color: var(--enokh--button--primary--background--color--hover);
+		border-color: var(--enokh--button--primary--border--color--hover);
+		border-style: var(--enokh--button--primary--border--style--hover);
+		border-width: var(--enokh--button--primary--border--width--hover);
+		border-radius: var(--enokh--button--primary--border--radius--hover);
 	}
 }
 
 @mixin button-style-outline {
-	background-color: var(--enokh--element--button--secondary--background-color);
-	border-color: var(--enokh--element--button--secondary--border-color);
-	border-width: 2px;
-	border-style: solid;
-	color: var(--enokh--element--button--secondary--text-color);
+
+	@include button-base;
+	color: var(--enokh--button--secondary--text--color);
+	font-family: var(--enokh--button--secondary--text--family);
+	font-size: var(--enokh--button--secondary--text--size);
+	font-style: var(--enokh--button--secondary--text--style);
+	font-weight: var(--enokh--button--secondary--text--weight);
+	padding: var(--enokh--button--secondary--spacing--padding);
+	background-color: var(--enokh--button--secondary--background--color);
+	border-color: var(--enokh--button--secondary--border--color);
+	border-style: var(--enokh--button--secondary--border--style);
+	border-width: var(--enokh--button--secondary--border--width);
+	border-radius: var(--enokh--button--secondary--border--radius);
 
 	&:hover {
-		background-color: var(--enokh--element--button--secondary--background-color--hover);
-		border-color: var(--enokh--element--button--secondary--border-color--hover);
-		color: var(--enokh--element--button--secondary--text-color--hover);
+		color: var(--enokh--button--secondary--text--color--hover);
+		background-color: var(--enokh--button--secondary--background--color--hover);
+		border-color: var(--enokh--button--secondary--border--color--hover);
+		border-style: var(--enokh--button--secondary--border--style--hover);
+		border-width: var(--enokh--button--secondary--border--width--hover);
+		border-radius: var(--enokh--button--secondary--border--radius--hover);
 	}
 }
 
 @mixin button-style-ghost {
-	background-color: transparent !important;
-	border: none !important;
+
+	@include button-base;
+	color: var(--enokh--button--ghost--text--color);
+	font-family: var(--enokh--button--ghost--text--family);
+	font-size: var(--enokh--button--ghost--text--size);
+	font-style: var(--enokh--button--ghost--text--style);
+	font-weight: var(--enokh--button--ghost--text--weight);
+	padding: var(--enokh--button--ghost--spacing--padding);
+	background-color: var(--enokh--button--ghost--background--color);
+	border-color: var(--enokh--button--ghost--border--color);
+	border-style: var(--enokh--button--ghost--border--style);
+	border-width: var(--enokh--button--ghost--border--width);
+	border-radius: var(--enokh--button--ghost--border--radius);
 
 	&:hover {
-		background-color: var(--enokh--element--button--secondary--background-color--hover) !important;
-		color: var(--enokh--element--button--secondary--text-color--hover) !important;
-		border: none !important;
+		color: var(--enokh--button--ghost--text--color--hover);
+		background-color: var(--enokh--button--ghost--background--color--hover);
+		border-color: var(--enokh--button--ghost--border--color--hover);
+		border-style: var(--enokh--button--ghost--border--style--hover);
+		border-width: var(--enokh--button--ghost--border--width--hover);
+		border-radius: var(--enokh--button--ghost--border--radius--hover);
 	}
 }
 
 @mixin button-style-disabled {
-	background-color: var(--enokh--element--button--disabled--background-color);
-	border-color: var(--enokh--element--button--disabled--border-color);
+
+	@include button-base;
+	background-color: var(--enokh--button--disabled--background--color);
+	border-color: var(--enokh--button--disabled--border--color);
 	border-width: 0;
 	border-style: none;
-	color: var(--enokh--element--button--disabled--text-color);
+	color: var(--enokh--button--disabled--text--color);
 	cursor: not-allowed;
 
 	&:hover {
-		background-color: var(--enokh--element--button--disabled--background-color);
-		border-color: var(--enokh--element--button--disabled--border-color);
-		color: var(--enokh--element--button--disabled--text-color);
+		background-color: var(--enokh--button--disabled--background--color);
+		border-color: var(--enokh--button--disabled--border--color);
+		color: var(--enokh--button--disabled--text--color);
 	}
 }

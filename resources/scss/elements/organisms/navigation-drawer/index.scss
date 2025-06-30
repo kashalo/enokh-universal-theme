@@ -1,7 +1,4 @@
-@import "../../../variables";
-@import "../../../mixins";
-@import "../../../functions";
-
+@import "../../../enokh-design-system";
 
 // Styles up to WP mobile breakpoint
 @include screen-max-wpmobile() {
@@ -16,13 +13,13 @@
 @include screen-max-medium() {
   .enokh-blocks-navigation-drawer,
   .enokh-blocks-navigation-drawer-backdrop {
-    top: var(--mahut--element--header--height);
+    top: var(--enokhut--element--header--height);
   }
 
   // Styles when WP admin bar is present
   .admin-bar .enokh-blocks-navigation-drawer,
   .admin-bar .enokh-blocks-navigation-drawer-backdrop {
-    top: calc(var(--wp-admin--admin-bar--height) + var(--mahut--element--header--height));
+    top: calc(var(--wp-admin--admin-bar--height) + var(--enokhut--element--header--height));
   }
 }
 

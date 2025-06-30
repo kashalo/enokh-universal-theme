@@ -1,4 +1,4 @@
-.blocks-navigation-drawer-toggle {
+.enokh-blocks-navigation-drawer-toggle {
 	display: none;
 	flex-direction: row;
 	background: none;
@@ -28,11 +28,11 @@ body.has-navigation-drawer {
 
 html.has-open-navigation-drawer {
 
-	.blocks-navigation-drawer-toggle__open {
+	.enokh-blocks-navigation-drawer-toggle__open {
 		display: none;
 	}
 
-	.blocks-navigation-drawer-toggle__close {
+	.enokh-blocks-navigation-drawer-toggle__close {
 		display: flex;
 	}
 }

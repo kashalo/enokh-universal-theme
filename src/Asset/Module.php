@@ -77,6 +77,10 @@ class Module implements
                     $container->get(BlockEditorStyle::class),
                     $container->get(FrontOfficeScript::class),
                     $container->get(FrontOfficeStyle::class),
+                    $container->get(CoreStyle::class),
+                    $container->get(CoreEditorStyle::class),
+                    $container->get(ElementsStyle::class),
+                    $container->get(ElementsEditorStyle::class),
                 );
             }
         );

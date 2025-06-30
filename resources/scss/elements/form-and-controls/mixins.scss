@@ -1,11 +1,137 @@
+@mixin label-base {
+	color: var(--enokh--label--base--text--color);
+	font-family: var(--enokh--label--base--text--family);
+	font-size: var(--enokh--label--base--text--size);
+	font-weight: var(--enokh--label--base--text--weight);
+	font-style: var(--enokh--label--base--text--style);
+	margin-bottom: 4px;
+	display: inline-block;
+	padding: 0;
+}
+
 @mixin control-base {
-	font-size: var(--wp--preset--font-size--normal);
+	color: var(--enokh--control--base--text--color);
+	font-family: var(--enokh--control--base--text--family);
+	font-size: var(--enokh--control--base--text--size);
+	font-weight: var(--enokh--control--base--text--weight);
+	font-style: var(--enokh--control--base--text--style);
+	background: var(--enokh--control--base--background--color);
+	border-style: var(--enokh--control--base--border--style);
+	border-width: var(--enokh--control--base--border--width);
+	border-color: var(--enokh--control--base--border--color);
+	border-radius: var(--enokh--control--base--border--radius);
+	width: var(--enokh--control--base--sizing--width);
+	padding: var(--enokh--control--base--spacing--padding);
 	box-sizing: border-box;
-	color: var(--enokh--input--text--color);
-	background: var(--enokh--input--background--color);
-	border: 1px solid var(--enokh--input--border--color);
-	border-radius: var(--wp--preset--spacing--30);
-	width: 100%;
 	margin-bottom: var(--wp--preset--spacing--50);
 	transition: border-color ease-in-out 0.15s;
+}
+
+@mixin input-base {
+
+	@include control-base;
+	min-height: 0;
+
+	&:not(:focus) {
+		font-weight: 600;
+	}
+
+	&::placeholder,
+	&[value=""] {
+		font-weight: 400;
+	}
+}
+
+@mixin input-search-base {
+
+	@include control-base;
+	-webkit-appearance: none;
+	margin-top: 1px;
+}
+
+@mixin textarea-base {
+
+	@include control-base;
+	height: auto;
+	min-height: 200px;
+}
+
+@mixin select-base {
+
+	@include control-base;
+}
+
+@mixin select-option-base {
+	font-weight: 400;
+}
+
+@mixin radio-base {
+	appearance: none;
+	background-color: var(--enokh--radio--base--background--color);
+	border-style: var(--enokh--radio--base--border--style);
+	border-width: var(--enokh--radio--base--border--width);
+	border-color: var(--enokh--radio--base--border--color);
+	border-radius: var(--enokh--radio--base--border--radius);
+	height: var(--enokh--radio--base--sizing--height) !important;
+	width: var(--enokh--radio--base--sizing--width) !important;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	cursor: pointer;
+	aspect-ratio: 1/1;
+
+	&:checked {
+
+		&::after {
+			content: "";
+			position: absolute;
+			background-color: var(--enokh--radio--base--background--color--checked);
+			height: calc(var(--enokh--radio--base--sizing--height) - 8px);
+			width: calc(var(--enokh--radio--base--sizing--width) - 8px);
+			border-radius: var(--enokh--radio--base--border--radius);
+			inset: 3px;
+		}
+	}
+}
+
+@mixin checkbox-base {
+	appearance: none;
+	background-color: var(--enokh--checkbox--base--background--color);
+	border-style: var(--enokh--checkbox--base--border--style);
+	border-width: var(--enokh--checkbox--base--border--width);
+	border-color: var(--enokh--checkbox--base--border--color);
+	border-radius: var(--enokh--checkbox--base--border--radius);
+	height: var(--enokh--checkbox--base--sizing--height) !important;
+	width: var(--enokh--checkbox--base--sizing--width) !important;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	cursor: pointer;
+	aspect-ratio: 1/1;
+
+	&:checked {
+		background-color: var(--enokh--checkbox--base--background--color--checked);
+		color: var(--enokh--checkbox--base--text--color--checked);
+
+		&::after {
+			content: "\2713";
+			position: absolute;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+			width: 100%;
+		}
+	}
+
+	&[disabled] {
+		background-color: var(--enokh--checkbox-base---background--color--disabled);
+		color: var(--enokh--checkbox--base--text--color--disabled);
+	}
 }

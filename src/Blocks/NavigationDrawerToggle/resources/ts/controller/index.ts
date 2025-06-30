@@ -1,6 +1,6 @@
 class Controller {
     public initialize = ( container: Document | HTMLElement ) => {
-        container.querySelector( '.blocks-navigation-drawer-toggle' ).addEventListener( 'click', ( event ) => {
+        container.querySelector( '.enokh-blocks-navigation-drawer-toggle' ).addEventListener( 'click', ( event ) => {
             document.documentElement.classList.toggle( 'has-open-navigation-drawer' );
         } );
     };

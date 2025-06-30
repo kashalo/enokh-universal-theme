@@ -1,10 +1,8 @@
-@import "../../resources/scss/variables";
-@import "../../resources/scss/mixins";
-@import "../../resources/scss/functions";
-
+@import './variables';
+@import './functions';
+@import './mixins';
 @import './custom-properties';
 @import './elements';
-@import "./plugins";
 
 // WP Admin Bar
 #wpadminbar {
