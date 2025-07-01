@@ -1,7 +1,7 @@
 {
   "auto-discover": false,
   "default-env": {
-    "GITHUB_API_REPOSITORY": "Inpsyde-Global-Service-Provider/enokh-universal-theme",
+    "GITHUB_API_REPOSITORY": "kashalo/enokh-universal-theme",
     "BUILD_ENV": "development"
   },
   "dependencies": "install",
