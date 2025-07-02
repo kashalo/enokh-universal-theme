@@ -20,7 +20,6 @@
     "jsx": "react",
     "sourceMap": true,
     "noLib": false,
-    "suppressImplicitAnyIndexErrors": true,
     "downlevelIteration": true
   },
   "compileOnSave": false,

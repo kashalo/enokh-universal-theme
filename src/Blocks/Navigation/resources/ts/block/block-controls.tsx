@@ -34,9 +34,6 @@ const Controls: React.FunctionComponent< BlockControlsProps > = ( props ) => {
                                 onToggle();
                             }
                         }}
-                        placeholder={undefined}
-                        onPointerEnterCapture={undefined}
-                        onPointerLeaveCapture={undefined}
                     >
                         { _x( 'Menu', 'Navigation block', 'mah-blocks' ) }
                     </ToolbarButton>
@@ -63,9 +60,6 @@ const Controls: React.FunctionComponent< BlockControlsProps > = ( props ) => {
                                 onToggle();
                             }
                         } }
-                        placeholder={undefined}
-                        onPointerEnterCapture={undefined}
-                        onPointerLeaveCapture={undefined}
                     >
                         { _x( 'Accessibility', 'Navigation block', 'mah-blocks' ) }
                     </ToolbarButton>

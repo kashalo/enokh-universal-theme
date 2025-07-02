@@ -33,8 +33,7 @@ const Controls: React.FunctionComponent< BlockControlsProps > = ( props ) => {
                                     event.preventDefault();
                                     onToggle();
                                 }
-                            }} placeholder={undefined} onPointerEnterCapture={undefined}
-                            onPointerLeaveCapture={undefined}                        >
+                            }}                     >
                             { _x( 'Label', 'Navigation Drawer Toggle block', 'mah-blocks' ) }
                         </ToolbarButton>
                     ) }

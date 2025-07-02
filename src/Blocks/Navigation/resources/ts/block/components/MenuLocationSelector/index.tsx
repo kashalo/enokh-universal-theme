@@ -23,7 +23,7 @@ const MenuLocationSelector: React.FunctionComponent< ComponentProps > = ( props 
                 } )
             );
         } );
-        return <Spinner onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />;
+        return <Spinner  />;
     }
 
     const noSelectionOption: SelectControlOption = {

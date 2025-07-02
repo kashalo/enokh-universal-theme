@@ -33,9 +33,6 @@ const SearchBlockControls: React.FunctionComponent< BlockToolbarControlProps > =
                                 onToggle();
                             }
                         } }
-                        placeholder={undefined}
-                        onPointerEnterCapture={undefined}
-                        onPointerLeaveCapture={undefined}
                     >
                         { _x( 'Placeholder', 'Search block', 'mah-blocks' ) }
                     </ToolbarButton>
