@@ -10,10 +10,10 @@
     "last 2 versions, not dead"
   ],
   "devDependencies": {
-    "@wordpress/scripts": "~30",
+    "@types/minimatch": "^6.0.0",
+    "@wordpress/scripts": "~27",
     "classnames": "^2.5.1",
     "react": "18.3.1",
-
     "react-dom": "^18.3.1",
     "ts-loader": "^9.0.0",
     "typescript": "^5.8.3"
