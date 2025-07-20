@@ -9,8 +9,8 @@
 
 declare(strict_types=1);
 
-use Enokh\UniversalTheme\Blocks\NavigationDrawer\Elements\NavigationDrawerBlock;
 
+use Enokh\UniversalTheme\Blocks\NavigationDrawerTheme\Elements\NavigationDrawerBlock;
 use function Inpsyde\PresentationElements\block;
 
 // phpcs:disable WordPress.Security.EscapeOutput.OutputNotEscaped

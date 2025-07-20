@@ -10,7 +10,7 @@ import { BlockEditProps } from './types';
 const Edit: React.FunctionComponent< BlockEditProps > = ( props ) => {
     const blockProps = useInnerBlocksProps(
         useBlockProps( {
-            className: 'blocks-navigation-drawer',
+            className: 'enokh-blocks-navigation-drawer',
         } ),
         {
             templateLock: props.attributes.templateLock,

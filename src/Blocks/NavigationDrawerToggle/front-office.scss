@@ -3,14 +3,14 @@
 	flex-direction: row;
 	background: none;
 	border: none;
-	color: var(--enokh--link--text--color);
+	color: var(--mds--link--base--color);
 	margin: 0;
 	padding: 0;
 
 	&:hover {
 		background: none;
 		border: none;
-		color: var(--enokh--link--text--color--hover);
+		color: var(--mds--link--base--color--hover);
 	}
 
 	svg {

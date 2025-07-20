@@ -25,22 +25,23 @@ const Controls: React.FunctionComponent< BlockControlsProps > = ( props ) => {
                     popoverProps={ { position: 'bottom right' } }
                     renderToggle={ ( { isOpen, onToggle } ) => (
                         <ToolbarButton
-                            onClick={onToggle}
+                            onClick={ onToggle }
                             aria-haspopup="true"
-                            aria-expanded={isOpen}
-                            onKeyDown={(event) => {
-                                if (!isOpen && event.keyCode === DOWN) {
+                            aria-expanded={ isOpen }
+                            onKeyDown={ ( event ) => {
+                                if ( ! isOpen && event.keyCode === DOWN ) {
                                     event.preventDefault();
                                     onToggle();
                                 }
-                            }}                     >
-                            { _x( 'Label', 'Navigation Drawer Toggle block', 'mah-blocks' ) }
+                            } }
+                        >
+                            { _x( 'Label', 'Navigation Drawer Toggle block', 'enokh-universal-theme' ) }
                         </ToolbarButton>
                     ) }
                     renderContent={ () => (
-                        <div className="blocks-navigation-drawer-toggle__toolbar-dropdown-control">
+                        <div className="enokh-blocks-navigation-drawer-toggle__toolbar-dropdown-control">
                             <TextControl
-                                label={ _x( 'Label text', 'Navigation Drawer Toggle block', 'mah-blocks' ) }
+                                label={ _x( 'Label text', 'Navigation Drawer Toggle block', 'enokh-universal-theme' ) }
                                 value={ props.attributes.labelText }
                                 onChange={ ( labelText ) => props.setAttributes( { labelText } ) }
                             />

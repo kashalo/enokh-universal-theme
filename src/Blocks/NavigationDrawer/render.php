@@ -8,8 +8,19 @@ declare(strict_types=1);
  * @var \WP_Block $block Block instance.
  */
 
-$attributes = $attributes ?? [];
+use Enokh\UniversalTheme\Blocks\NavigationDrawer\Elements\Backdrop;
+use Enokh\UniversalTheme\Blocks\NavigationDrawer\Elements\Drawer;
 
-// phpcs:disable VariableAnalysis.CodeAnalysis.VariableAnalysis.UndefinedVariable
+use function Inpsyde\PresentationElements\element;
+use function Inpsyde\PresentationElements\parseAttributes;
+
+$attributes = $attributes ?? [];
+$content = $content ?? '';
+
+/** @var Drawer $drawer */
+$drawer = element(Drawer::class);
+$drawer->withAttributes(parseAttributes(\get_block_wrapper_attributes()));
+
 // phpcs:disable WordPress.Security.EscapeOutput.OutputNotEscaped
-echo $content;
+echo $drawer->withContent($content)->render();
+echo element(Backdrop::class)->render();

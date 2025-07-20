@@ -1,8 +1,8 @@
 @use "./resources/scss/variables";
 
-.blocks-navigation-drawer {
+.enokh-blocks-navigation-drawer {
 	box-sizing: border-box;
-	background-color: var(--enokh--color--neutral-100);
+	background-color: var(--mds--color--primary-two);
 	opacity: 0;
 	visibility: hidden;
 	position: fixed;
@@ -26,7 +26,7 @@
 	}
 }
 
-.blocks-navigation-drawer-backdrop {
+.enokh-blocks-navigation-drawer-backdrop {
 	content: "";
 	position: fixed;
 	inset: 0;
@@ -43,14 +43,14 @@
 html.has-open-navigation-drawer {
 	overflow: hidden;
 
-	.blocks-navigation-drawer {
+	.enokh-blocks-navigation-drawer {
 		opacity: 1;
 		visibility: visible;
 		transform: translateX(100%);
 		pointer-events: auto;
 	}
 
-	.blocks-navigation-drawer-backdrop {
+	.enokh-blocks-navigation-drawer-backdrop {
 		background-color: rgba(0, 0, 0);
 		opacity: 0.75;
 		visibility: visible;

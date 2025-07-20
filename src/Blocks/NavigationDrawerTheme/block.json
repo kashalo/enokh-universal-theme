@@ -1,0 +1,29 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "enokh-universal-theme/navigation-drawer-theme",
+  "title": "Enokh Universal Navigation Drawer",
+  "category": "theme",
+  "icon": "sidebar",
+  "description": "Navigation Drawer for the Enokh Universal Theme ",
+  "keywords": [],
+  "version": "0.1.0",
+  "textdomain": "enokh-universal-theme",
+  "attributes": {
+    "templateLock": {
+      "type": [ "string", "boolean" ],
+      "enum": [ "all", "insert", "contentOnly", false ]
+    }
+  },
+  "providesContext": {},
+  "usesContext": [],
+  "supports": {
+    "className": false,
+    "html": false
+  },
+  "styles": [],
+  "example": {},
+  "variations": [],
+  "editorScript": "file:./editor.tsx",
+  "render": "file:./render.php"
+}

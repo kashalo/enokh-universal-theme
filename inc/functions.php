@@ -29,10 +29,14 @@ function package(): Modularity\Package
                 new Asset\Module(),
                 new Blocks\Footer\Module(),
                 new Blocks\Header\Module(),
+
+
                 new Blocks\NavigationDrawer\Module(),
-                new Blocks\NavigationDrawerBlock\Module(),
+                new Blocks\NavigationDrawerTheme\Module(),
                 new Blocks\Navigation\Module(),
                 new Blocks\NavigationDrawerToggle\Module(),
+
+
                 new Blocks\Search\Module(),
                 new Blocks\RelatedPosts\Module(),
                 new Blocks\Module(),

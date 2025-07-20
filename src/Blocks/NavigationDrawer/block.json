@@ -2,28 +2,80 @@
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
   "name": "enokh-universal-theme/navigation-drawer",
-  "title": "Enokh Universal Navigation Drawer",
-  "category": "theme",
-  "icon": "sidebar",
-  "description": "Navigation Drawer for the Enokh Universal Theme",
-  "keywords": [],
+  "title": "Enokh Navigation Drawer",
+  "category": "themes",
+  "icon": "navigation",
+  "description": "A drawer to conditionally display global site navigation, particularly useful to display mobile navigation.",
+  "keywords": [
+    "navigation",
+    "drawer",
+    "sheet",
+    "panel"
+  ],
   "version": "0.1.0",
   "textdomain": "enokh-universal-theme",
   "attributes": {
     "templateLock": {
       "type": [ "string", "boolean" ],
       "enum": [ "all", "insert", "contentOnly", false ]
+    },
+    "position": {
+      "type": "string",
+      "default": "match-language"
+    },
+    "width": {
+      "type": "string",
+      "default": "90vw"
+    },
+    "maxWidth": {
+      "type": "string",
+      "default": "90vw"
+    },
+    "backdropEnabled": {
+      "type": "boolean",
+      "default": true
+    },
+    "backdropBackgroundColor": {
+      "type": "boolean",
+      "default": ""
+    },
+    "backdropBackgroundOpacity": {
+      "type": "string",
+      "default": ""
     }
   },
   "providesContext": {},
   "usesContext": [],
   "supports": {
     "className": false,
-    "html": false
+    "multiple": false,
+    "html": false,
+    "color": {
+      "background": true,
+      "border": true
+    },
+    "spacing": {
+      "blockGap": true,
+      "padding": true
+    },
+    "layout": {
+      "allowEditing": true,
+      "allowSizingOnChildren": true,
+      "default": {
+        "type": "flex",
+        "orientation": "vertical",
+        "justifyContent": "stretch",
+        "verticalAlignment": "top",
+        "flexWrap": "nowrap"
+      }
+    }
   },
   "styles": [],
   "example": {},
   "variations": [],
   "editorScript": "file:./editor.tsx",
+  "editorStyle": "file:./editor.css",
+  "viewScript": "file:./front-office.ts",
+  "style": "file:./front-office.css",
   "render": "file:./render.php"
 }

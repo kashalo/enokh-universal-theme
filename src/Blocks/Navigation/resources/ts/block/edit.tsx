@@ -21,7 +21,7 @@ const Edit: React.FunctionComponent< BlockEditProps > = ( props ) => {
 
     const blockProps = useBlockProps( {
         className: classnames( {
-            'blocks-navigation': true,
+            'enokh-blocks-navigation': true,
             'has-menu-location': props.attributes.menuLocation,
             [ `uses-${ props.attributes.menuLocation }-menu-location` ]: props.attributes.menuLocation,
         } ),

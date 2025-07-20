@@ -2,7 +2,7 @@
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
   "name": "enokh-universal-theme/navigation",
-  "title": "Navigation",
+  "title": "Enokh Navigation",
   "category": "themes",
   "icon": "navigation",
   "description": "Navigation block using classic Navigation Menus",

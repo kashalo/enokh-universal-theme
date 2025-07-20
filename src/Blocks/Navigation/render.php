@@ -41,7 +41,7 @@ if (isBlockRendererRestRequest('enokh-universal-theme/navigation')) {
 echo renderTag(
     'nav',
     \get_block_wrapper_attributes([
-        'class' => "blocks-navigation has-menu-location uses-$menuLocation-menu-location",
+        'class' => "enokh-blocks-navigation has-menu-location uses-$menuLocation-menu-location",
         'aria-label' => $menuAriaLabel,
     ]),
     $menu

@@ -1,7 +1,7 @@
 export interface BlockAttributes {
     labelEnabled: boolean;
     labelText: string;
-    labelPosition: "before" | "after";
+    labelPosition: string;
     layout: {};
 }
 

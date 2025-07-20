@@ -17,36 +17,47 @@ class Module implements
     public function factories(): array
     {
         return [
-            Elements\NavigationDrawerBlock::class => static fn() => new Elements\NavigationDrawerBlock(),
+            Elements\Drawer::class => static fn () => new Elements\Drawer(),
+            Elements\Backdrop::class => static fn () => new Elements\Backdrop(),
         ];
     }
 
     public function run(ContainerInterface $container): bool
     {
-        $this->registerBlocksElements($container);
-        $this->registerBlock();
+        $this->registerBlockElements($container);
+        $this->registerBlock($container);
 
         return true;
     }
 
-    private function registerBlocksElements(ContainerInterface $container): void
+    private function registerBlockElements(ContainerInterface $container): void
     {
-        PresentationElements\registerBlock(
-            Elements\NavigationDrawerBlock::BLOCK_TYPE,
-            fn () => $container->has(Elements\NavigationDrawerBlock::class)
-                ? $container->get(Elements\NavigationDrawerBlock::class)
-                : new PresentationElements\Block\NullBlock()
-        );
+        $elements = [
+            Elements\Drawer::class,
+            Elements\Backdrop::class,
+        ];
+
+        foreach ($elements as $element) {
+            PresentationElements\registerElement(
+                $element,
+                static fn () => $container->has($element)
+                    ? $container->get($element)
+                    : new PresentationElements\Element\NullElement()
+            );
+        }
     }
 
-    private function registerBlock(): void
+    private function registerBlock(ContainerInterface $container): void
     {
+        /** @var Modularity\Properties\Properties $properties */
+        $properties = $container->get(Modularity\Package::PROPERTIES);
+
         add_action(
             'init',
             static fn () => register_block_type_from_metadata(
-                get_stylesheet_directory() . '/assets/Blocks/NavigationDrawer'
+                $properties->basePath() . 'assets/Blocks/NavigationDrawer'
             ),
-            0 // need to register before _register_theme_block_patterns() runs on 'init'
+            1 // need to register before _register_theme_block_patterns() runs on 'init'
         );
     }
 }

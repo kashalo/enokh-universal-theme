@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Enokh\UniversalTheme\Blocks\NavigationDrawerToggle;
 
-use Enokh\UniversalTheme\Presentation\Elements\Icon;
 use Inpsyde\PresentationElements;
+use Enokh\UniversalTheme\Presentation\Elements\Icon;
 
 use function Enokh\UniversalTheme\icon;
 use function Inpsyde\PresentationElements\isBlockRendererRestRequest;
@@ -116,7 +116,7 @@ class Element extends PresentationElements\Element\BaseElement
             : '';
     }
 
-    private function openIcon(): Icon
+    private function openIcon():  Icon
     {
         return  icon('font-awesome-solid', 'bars')
             ->appendToAttribute('class', self::CLASS_OPEN_ICON);
@@ -124,7 +124,6 @@ class Element extends PresentationElements\Element\BaseElement
 
     private function closeIcon(): Icon
     {
-
         return icon('font-awesome-solid', 'xmark')
             ->appendToAttribute('class', self::CLASS_CLOSE_ICON);
     }

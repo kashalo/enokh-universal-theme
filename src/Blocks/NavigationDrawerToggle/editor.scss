@@ -4,7 +4,7 @@
 	@import "front-office";
 
 	// Ensure block is always visible within the block editor
-	.blocks-navigation-drawer-toggle {
+	.enokh-blocks-navigation-drawer-toggle {
 		display: flex;
 
 		// Allow block layout supports to affect inner content
@@ -14,6 +14,6 @@
 	}
 }
 
-.blocks-navigation-drawer-toggle__toolbar-dropdown-control {
+.enokh-blocks-navigation-drawer-toggle__toolbar-dropdown-control {
 	width: 250px;
 }

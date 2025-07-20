@@ -1,19 +1,23 @@
+// Stylesheets
+import './editor.scss';
+
 // Third-party dependencies
 import React from 'react';
 
 // WordPress dependencies
-import { Icon, sidebar } from '@wordpress/icons';
+import { Icon, navigation } from '@wordpress/icons';
 import { registerBlockType } from '@wordpress/blocks';
 
 // Implementation dependencies
-import blockConfiguration from './block.json';
-import Edit from './ts/edit';
-import Save from './ts/save';
+import blockJson from './block.json';
+import Edit from './resources/ts/block/edit';
+import Save from './resources/ts/block/save';
 
-// Register block type
-registerBlockType( blockConfiguration.name, {
-	/* @ts-ignore: missing onPointerEnterCapture and onPointerLeaveCapture props */
-	icon: <Icon icon={ sidebar } />,
-	edit: Edit,
-	save: Save,
+/**
+ * Not reading block.json as it will increase build size
+ */
+registerBlockType( blockJson.name, {
+    icon: <Icon icon={ navigation } />,
+    edit: Edit,
+    save: Save,
 } );

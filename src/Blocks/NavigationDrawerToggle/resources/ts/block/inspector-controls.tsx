@@ -17,35 +17,37 @@ const NavigationInspectorControls: React.FunctionComponent< BlockInspectorContro
         return null;
     }
 
+
     return (
         <>
             <InspectorControls>
                 <Panel>
-                    <PanelBody title={ _x( 'Label', 'Navigation Drawer Toggle block', 'mah-blocks' ) }>
+                    <PanelBody title={ _x( 'Label', 'Navigation Drawer Toggle block', 'enokh-universal-theme' ) }>
                         <ToggleControl
-                            label={ _x( 'Enabled', 'Navigation Drawer Toggle block', 'mah-blocks' ) }
+                            label={ _x( 'Enabled', 'Navigation Drawer Toggle block', 'enokh-universal-theme' ) }
                             checked={ props.attributes.labelEnabled }
                             onChange={ ( labelEnabled ) => props.setAttributes( { labelEnabled } ) }
                         />
                         { props.attributes.labelEnabled && (
                             <>
                                 <TextControl
-                                    label={ _x( 'Text', 'Navigation Drawer Toggle block', 'mah-blocks' ) }
+                                    label={ _x( 'Text', 'Navigation Drawer Toggle block', 'enokh-universal-theme' ) }
                                     value={ props.attributes.labelText }
                                     onChange={ ( labelText ) => props.setAttributes( { labelText } ) }
                                 />
                                 <SelectControl
-                                    label={ _x( 'Position', 'Navigation Drawer Toggle block', 'mah-blocks' ) }
+                                    label={ _x( 'Position', 'Navigation Drawer Toggle block', 'enokh-universal-theme' ) }
                                     options={ [
                                         {
                                             value: 'before',
-                                            label: _x( 'Before', 'Navigation Drawer Toggle block', 'mah-blocks' ),
+                                            label: _x( 'Before', 'Navigation Drawer Toggle block', 'enokh-universal-theme' ),
                                         },
                                         {
                                             value: 'after',
-                                            label: _x( 'After', 'Navigation Drawer Toggle block', 'mah-blocks' ),
+                                            label: _x( 'After', 'Navigation Drawer Toggle block', 'enokh-universal-theme' ),
                                         },
                                     ] }
+                                    // @ts-ignore
                                     value={ props.attributes.labelPosition }
                                     onChange={ ( labelPosition ) => props.setAttributes( { labelPosition } ) }
                                 />

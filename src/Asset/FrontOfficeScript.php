@@ -57,7 +57,7 @@ class FrontOfficeScript implements ScriptFactory
         $blocks = [
             block(Blocks\Header\Elements\HeaderBlock::BLOCK_TYPE),
             block(Blocks\Footer\Elements\FooterBlock::BLOCK_TYPE),
-            block(Blocks\NavigationDrawer\Elements\NavigationDrawerBlock::BLOCK_TYPE),
+            block(Blocks\NavigationDrawerTheme\Elements\NavigationDrawerBlock::BLOCK_TYPE),
         ];
 
         $data = [];

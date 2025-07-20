@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Enokh\UniversalTheme\Blocks\NavigationDrawer\Elements;
+namespace  Enokh\UniversalTheme\Blocks\NavigationDrawerTheme\Elements;
 
 use Inpsyde\PresentationElements;
 use Enokh\UniversalTheme\Asset;
@@ -13,7 +13,7 @@ use function Inpsyde\PresentationElements\renderValue;
 
 class NavigationDrawerBlock extends PresentationElements\Block\BaseBlock implements Asset\WithAssetLocalization
 {
-    public const BLOCK_TYPE = 'enokh-universal-theme/navigation-drawer';
+    public const BLOCK_TYPE = 'enokh-universal-theme/navigation-drawer-theme';
     public const CLASS_WRAPPER = 'enokh-universal-theme-navigation-drawer';
 
     public static function name(): string
@@ -47,17 +47,15 @@ class NavigationDrawerBlock extends PresentationElements\Block\BaseBlock impleme
     }
 
     // phpcs:disable Inpsyde.CodeQuality.FunctionLength.TooLong
-    // phpcs:disable Inpsyde.CodeQuality.FunctionLength.TooLong
     private function defaultInnerBlocks(): array
     {
-
         return [
             block(
-                'enokh-universal-theme/navigation-drawer-block',
+                'enokh-universal-theme/navigation-drawer',
                 [
                     "style" => [
                         'color' => [
-                            'background' => 'var(--enokh--color--brand-primary-100)',
+                            'background' => 'var(--mds--color--secondary-two)',
                         ],
                         'spacing' => [
                             'blockGap' => '0',
@@ -70,7 +68,7 @@ class NavigationDrawerBlock extends PresentationElements\Block\BaseBlock impleme
                         [
                             "style" => [
                                 'color' => [
-                                    'background' => 'var(--enokh--color--brand-primary-90)',
+                                    'background' => 'var(--mds--color--primary-one-1)',
                                 ],
                                 "spacing" => [
                                     "blockGap" => "var:preset|spacing|30",
@@ -92,7 +90,7 @@ class NavigationDrawerBlock extends PresentationElements\Block\BaseBlock impleme
                         block('enokh-universal-theme/search', [
                             "style" => [
                                 'border' => [
-                                    'color' => 'var(--enokh--color--brand-primary-80)',
+                                    'color' => 'var(--enokh--color--white)',
                                 ],
                             ],
                         ])
@@ -108,7 +106,7 @@ class NavigationDrawerBlock extends PresentationElements\Block\BaseBlock impleme
                         ],
                         "style" => [
                             'color' => [
-                                'background' => 'var(--enokh--color--brand-primary-90)',
+                                'background' => 'var(--enokh--color--white)',
                             ],
                             "spacing" => [
                                 "blockGap" => "var:preset|spacing|30",
@@ -137,7 +135,7 @@ class NavigationDrawerBlock extends PresentationElements\Block\BaseBlock impleme
                         ],
                         "style" => [
                             'color' => [
-                                'background' => 'var(--enokh--color--brand-primary-100)',
+                                'background' => 'var(--enokh--color--white)',
                             ],
                             "spacing" => [
                                 "blockGap" => "var:preset|spacing|30",

@@ -15,7 +15,7 @@ const Edit: React.FunctionComponent< BlockEditProps > = ( props ) => {
     const { layout, ...ssrAttributes } = props.attributes;
 
     const blockProps = useBlockProps( {
-        className: 'blocks-navigation-drawer-toggle',
+        className: 'enokh-blocks-navigation-drawer-toggle',
     } );
 
     const { children, ...wrapperProps } = useInnerBlocksProps( blockProps );

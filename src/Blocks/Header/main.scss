@@ -49,18 +49,18 @@
 		.enokh-universal-theme-header__primary-container {
 
 			// Hide main navigation
-			.Enokh-blocks-navigation {
+			.enokh-blocks-navigation {
 				display: none;
 			}
 
 			// Hide quick search
-			.Enokh-blocks-search {
+			.enokh-blocks-search {
 				display: none;
 			}
 		}
 	}
 
-	.Enokh-blocks-navigation-drawer-toggle {
+	.enokh-blocks-navigation-drawer-toggle {
 		display: none;
 	}
 }
@@ -88,7 +88,7 @@
 	// Styles up to medium breakpoint
 	@include screen-max-medium () {
 
-		.Enokh-blocks-navigation-drawer-toggle {
+		.enokh-blocks-navigation-drawer-toggle {
 			display: flex;
 		}
 	}

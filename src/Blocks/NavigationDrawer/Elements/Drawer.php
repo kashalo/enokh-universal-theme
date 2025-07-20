@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Enokh\UniversalTheme\Blocks\NavigationDrawerBlock\Elements;
+namespace Enokh\UniversalTheme\Blocks\NavigationDrawer\Elements;
 
 use Inpsyde\PresentationElements\Element;
 
@@ -11,11 +11,11 @@ use function Inpsyde\PresentationElements\renderTag;
 class Drawer extends Element\BaseElement
 {
     public const ARG_CONTENT = 'content';
-    public const CLASS_WRAPPER = 'blocks-navigation-drawer';
+    public const CLASS_WRAPPER = 'enokh-blocks-navigation-drawer';
 
     public static function name(): string
     {
-        return 'enokh-universal-theme/navigation-drawer-block';
+        return 'enokh-universal-theme/navigation-drawer';
     }
 
     public function withContent(mixed $content): self
