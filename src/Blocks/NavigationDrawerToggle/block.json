@@ -3,7 +3,7 @@
   "apiVersion": 3,
   "name": "enokh-universal-theme/navigation-drawer-toggle",
   "title": "Enokh Navigation Drawer Toggle",
-  "category": "themes",
+  "category": "theme",
   "icon": "navigation",
   "description": "Toggles visibility for the Navigation Drawer block",
   "keywords": [

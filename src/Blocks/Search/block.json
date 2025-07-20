@@ -2,7 +2,7 @@
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
   "name": "enokh-universal-theme/search",
-  "title": "MAH Search",
+  "title": "Enokh Search",
   "category": "theme",
   "icon": "search",
   "description": "Quick search box",

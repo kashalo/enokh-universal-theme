@@ -3,7 +3,7 @@
   "apiVersion": 3,
   "name": "enokh-universal-theme/navigation-drawer",
   "title": "Enokh Navigation Drawer",
-  "category": "themes",
+  "category": "theme",
   "icon": "navigation",
   "description": "A drawer to conditionally display global site navigation, particularly useful to display mobile navigation.",
   "keywords": [
