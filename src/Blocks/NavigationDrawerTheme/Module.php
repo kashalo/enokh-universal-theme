@@ -17,14 +17,14 @@ class Module implements
     public function factories(): array
     {
         return [
-            Elements\NavigationDrawerBlock::class => static fn() => new Elements\NavigationDrawerBlock(),
+            Elements\NavigationDrawerBlock::class => static fn () => new Elements\NavigationDrawerBlock(),
         ];
     }
 
     public function run(ContainerInterface $container): bool
     {
         $this->registerBlocksElements($container);
-        $this->registerBlock();
+        $this->registerBlock($container);
 
         return true;
     }
@@ -33,18 +33,21 @@ class Module implements
     {
         PresentationElements\registerBlock(
             Elements\NavigationDrawerBlock::BLOCK_TYPE,
-            fn () => $container->has(Elements\NavigationDrawerBlock::class)
+            static fn () => $container->has(Elements\NavigationDrawerBlock::class)
                 ? $container->get(Elements\NavigationDrawerBlock::class)
                 : new PresentationElements\Block\NullBlock()
         );
     }
 
-    private function registerBlock(): void
+    private function registerBlock(ContainerInterface $container): void
     {
+        /** @var Modularity\Properties\Properties $properties */
+        $properties = $container->get(Modularity\Package::PROPERTIES);
+
         add_action(
             'init',
             static fn () => register_block_type_from_metadata(
-                get_stylesheet_directory() . '/assets/Blocks/NavigationDrawerTheme'
+                $properties->basePath() . '/assets/Blocks/NavigationDrawerTheme'
             ),
             0 // need to register before _register_theme_block_patterns() runs on 'init'
         );

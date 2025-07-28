@@ -1,0 +1,144 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "enokh-blocks/carousel-play-pause",
+  "title": "Carousel Play Pause",
+  "category": "enokh-blocks",
+  "icon": "details",
+  "parent": [ "enokh-blocks/carousel" ],
+  "description": "Carousel play-pause button",
+  "keywords": [],
+  "version": "0.1.0",
+  "textdomain": "enokh-blocks",
+  "attributes": {
+    "uniqueId": {
+      "type": "string",
+      "default": ""
+    },
+    "display": {
+      "type": "object",
+      "default": {}
+    },
+    "spacing": {
+      "type": "object",
+      "default": {}
+    },
+    "borders": {
+      "type": "object",
+      "default": {}
+    },
+    "borderColor": {
+      "type": "string",
+      "default": ""
+    },
+    "borderColorHover": {
+      "type": "string",
+      "default": ""
+    },
+    "playTextColor": {
+      "type": "string",
+      "default": ""
+    },
+    "playTextColorTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "playTextColorMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "playTextColorHover": {
+      "type": "string",
+      "default": ""
+    },
+    "playTextColorHoverTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "playTextColorHoverMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "pauseTextColor": {
+      "type": "string",
+      "default": ""
+    },
+    "pauseTextColorTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "pauseTextColorMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "pauseTextColorHover": {
+      "type": "string",
+      "default": ""
+    },
+    "pauseTextColorHoverTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "pauseTextColorHoverMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "playBackgroundColor": {
+      "type": "string",
+      "default": ""
+    },
+    "playBackgroundColorTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "playBackgroundColorMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "playBackgroundColorHover": {
+      "type": "string",
+      "default": ""
+    },
+    "playBackgroundColorHoverTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "playBackgroundColorHoverMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "pauseBackgroundColor": {
+      "type": "string",
+      "default": ""
+    },
+    "pauseBackgroundColorTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "pauseBackgroundColorMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "pauseBackgroundColorHover": {
+      "type": "string",
+      "default": ""
+    },
+    "pauseBackgroundColorHoverTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "pauseBackgroundColorHoverMobile": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "supports": {
+    "className": false,
+    "html": false
+  },
+  "styles": [],
+  "editorScript": "file:./editor.tsx",
+  "editorStyle": "file:./editor.css",
+  "viewScript": "file:./front-office.ts",
+  "style": "file:./front-office.css"
+}

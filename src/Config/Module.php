@@ -4,9 +4,8 @@ declare(strict_types=1);
 
 namespace Enokh\UniversalTheme\Config;
 
-use Inpsyde\Modularity;
 use Enokh\UniversalTheme\Config;
-use Enokh\UniversalTheme\Config\Settings;
+use Inpsyde\Modularity;
 use Psr\Container\ContainerInterface;
 
 /**
@@ -41,8 +40,8 @@ class Module implements
 
                 return ThemeJson::fromTheme(wp_get_theme($properties->baseName()));
             },
-            self::IMAGE_SIZES => static fn(): array => [],
-            self::NAVIGATION_MENUS => static fn(): array => [
+            self::IMAGE_SIZES => static fn (): array => [],
+            self::NAVIGATION_MENUS => static fn (): array => [
                 self::NAVIGATION_MENU_MAIN => __('Main Menu', 'enokh-universal-theme'),
                 self::NAVIGATION_MENU_UTILITY => __('Utility Menu', 'enokh-universal-theme'),
                 self::NAVIGATION_MENU_FOOTER => __('Footer Menu', 'enokh-universal-theme'),
@@ -54,7 +53,7 @@ class Module implements
              *
              * @returns array<string, bool|array>
              */
-            self::SUPPORTS => static fn(): array => [
+            self::SUPPORTS => static fn (): array => [
 
                 /**
                  * Include default opinionated theme styles
@@ -80,7 +79,7 @@ class Module implements
                 'post-thumbnails' => true,
                 'menus' => true,
             ],
-            self::TEMPLATE_AREAS => static fn(): array => [
+            self::TEMPLATE_AREAS => static fn (): array => [
                 [
                     'area' => 'sidebar',
                     'label' => _x('Sidebar', 'template part area', 'enokh-universal-theme'),
@@ -102,8 +101,8 @@ class Module implements
                     'area_tag' => 'div',
                 ],
             ],
-            self::THUMBNAIL_SIZE => static fn(): array => [150, 150],
-            Settings\CopyrightTextSetting::class => static fn() => new Settings\CopyrightTextSetting(),
+            self::THUMBNAIL_SIZE => static fn (): array => [150, 150],
+            Settings\CopyrightTextSetting::class => static fn () => new Settings\CopyrightTextSetting(),
         ];
     }
 
@@ -128,7 +127,7 @@ class Module implements
 
         add_filter(
             'wp_theme_json_data_theme',
-            fn (\WP_Theme_JSON_Data $data) => $data->update_with($themeJson->toArray())
+            static fn (\WP_Theme_JSON_Data $data) => $data->update_with($themeJson->toArray())
         );
     }
 
@@ -167,16 +166,16 @@ class Module implements
 
     private function configureNavigationMenus(ContainerInterface $container): void
     {
-        \register_nav_menus((array)$container->get(self::NAVIGATION_MENUS));
+        \register_nav_menus((array) $container->get(self::NAVIGATION_MENUS));
     }
 
     private function configureBlockTemplateAreas(ContainerInterface $container): void
     {
         add_filter(
             'default_wp_template_part_areas',
-            fn(array $templateAreas): array => array_merge(
+            static fn (array $templateAreas): array => array_merge(
                 $templateAreas,
-                (array)$container->get(self::TEMPLATE_AREAS),
+                (array) $container->get(self::TEMPLATE_AREAS),
             )
         );
     }

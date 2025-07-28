@@ -1,0 +1,114 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "enokh-blocks/list",
+  "title": "MAH List",
+  "category": "enokh-blocks",
+  "icon": "editor-ul",
+  "description": "",
+  "keywords": [
+    "list",
+    "mah"
+  ],
+  "version": "0.1.0",
+  "textdomain": "enokh-blocks",
+  "allowedBlocks": [
+    "enokh-blocks/list-item"
+  ],
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "uniqueId": {
+      "type": "string",
+      "default": ""
+    },
+    "listType": {
+      "type": "string",
+      "default": "ul"
+    },
+    "typography": {
+      "type": "object",
+      "default": {}
+    },
+    "borders": {
+      "type": "object",
+      "default": {}
+    },
+    "spacing": {
+      "type": "object",
+      "default": {}
+    },
+    "listSpacing": {
+      "type": "object",
+      "default": {}
+    },
+    "column": {
+      "type": "number",
+      "default": null
+    },
+    "columnTablet": {
+      "type": "number",
+      "default": null
+    },
+    "columnMobile": {
+      "type": "number",
+      "default": null
+    },
+    "columnGap": {
+      "type": "string",
+      "default": null
+    },
+    "columnGapTablet": {
+      "type": "string",
+      "default": null
+    },
+    "columnGapMobile": {
+      "type": "string",
+      "default": null
+    },
+    "colors": {
+      "type": "object",
+      "default": {}
+    },
+    "marker": {
+      "type": "object",
+      "default": {
+        "spacing": {},
+        "alignItems": {
+          "type": "string",
+          "default": "center"
+        },
+        "alignItemsTablet": {
+          "type": "string",
+          "default": ""
+        },
+        "alignItemsMobile": {
+          "type": "string",
+          "default": ""
+        }
+      }
+    },
+    "numerical": {
+      "type": "object",
+      "default": {}
+    },
+    "listPosition": {
+      "type": "string",
+      "default": ""
+    },
+    "listPositionTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "listPositionMobile": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "providesContext": {
+    "enokh-blocks/listMarker": "marker",
+    "enokh-blocks/listType": "listType"
+  },
+  "editorScript": "file:./editor.tsx"
+}

@@ -6,7 +6,6 @@ namespace Enokh\UniversalTheme\Blocks\Header;
 
 use Inpsyde\Modularity;
 use Inpsyde\PresentationElements;
-use Enokh\UniversalTheme\Blocks\Header\Elements;
 use Psr\Container\ContainerInterface;
 
 class Module implements
@@ -18,7 +17,7 @@ class Module implements
     public function factories(): array
     {
         return [
-            Elements\HeaderBlock::class => fn () => new Elements\HeaderBlock(),
+            Elements\HeaderBlock::class => static fn () => new Elements\HeaderBlock(),
         ];
     }
 
@@ -34,7 +33,7 @@ class Module implements
     {
         PresentationElements\registerBlock(
             Elements\HeaderBlock::BLOCK_TYPE,
-            fn () => $container->has(Elements\HeaderBlock::class)
+            static fn () => $container->has(Elements\HeaderBlock::class)
                 ? $container->get(Elements\HeaderBlock::class)
                 : new PresentationElements\Block\NullBlock()
         );

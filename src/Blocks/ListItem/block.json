@@ -1,0 +1,68 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "enokh-blocks/list-item",
+  "title": "Enokh List Item",
+  "category": "enokh-blocks",
+  "icon": "editor-ul",
+  "description": "",
+  "parent": [
+    "enokh-blocks/list"
+  ],
+  "allowedBlocks": [
+    "enokh-blocks/list",
+    "enokh-blocks/icon"
+  ],
+  "keywords": [
+    "list item",
+    "mah"
+  ],
+  "version": "0.1.0",
+  "textdomain": "enokh-blocks",
+  "supports": {
+    "html": false,
+    "splitting": true
+  },
+  "attributes": {
+    "uniqueId": {
+      "type": "string",
+      "default": ""
+    },
+    "content": {
+      "type": "string",
+      "source": "html",
+      "selector": ".enokh-blocks-list-item__text"
+    },
+    "typography": {
+      "type": "object",
+      "default": {}
+    },
+    "borders": {
+      "type": "object",
+      "default": {}
+    },
+    "spacing": {
+      "type": "object",
+      "default": {}
+    },
+    "colors": {
+      "type": "object",
+      "default": {}
+    },
+    "listMarker": {
+      "type": "object",
+      "default": {}
+    },
+    "listType": {
+      "type": "string"
+    }
+  },
+  "usesContext": [
+    "enokh-blocks/listMarker",
+    "enokh-blocks/listType"
+  ],
+  "editorScript": "file:./editor.tsx",
+  "editorStyle": "file:./editor.css",
+  "viewScript": "file:./front-office.ts",
+  "viewStyle": "file:./front-office.css"
+}

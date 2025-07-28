@@ -17,7 +17,7 @@ class L10n
 
     public static function set(string $group, string $key, string $translation): void
     {
-        if (! isset(self::instance()->data[$group])) {
+        if (!isset(self::instance()->data[$group])) {
             self::instance()->data[$group] = [];
         }
 

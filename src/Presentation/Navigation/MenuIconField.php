@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Enokh\UniversalTheme\Presentation\Navigation;
 
+use Enokh\DesignSystem\Presentation\Icon\IconSetRegistry;
 use Inpsyde\MoreMenuFields\EditField;
 use Inpsyde\MoreMenuFields\EditFieldValue;
-use Enokh\DesignSystem\Presentation\Icon\IconSetRegistry;
 
 // phpcs:disable PSR1.Methods.CamelCapsMethodName.NotCamelCaps
 // phpcs:disable WordPress.Security.EscapeOutput.OutputNotEscaped

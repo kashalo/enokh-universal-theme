@@ -1,0 +1,33 @@
+// Less strong rules
+.enokh-blocks-list-item {
+
+	&__content.enokh-blocks-list-item__has-bullet {
+
+		&::before {
+			background-color: currentcolor;
+		}
+	}
+}
+
+.editor-styles-wrapper {
+
+	.enokh-blocks-list-item {
+
+		&__content.enokh-blocks-list-item__has-bullet {
+			display: flex;
+
+			&::before {
+				content: "";
+				flex-shrink: 0;
+				-webkit-mask-repeat: no-repeat;
+				mask-repeat: no-repeat;
+			}
+		}
+
+		&__bullet {
+			display: inline-block;
+			line-height: 0;
+		}
+	}
+
+}

@@ -47,7 +47,7 @@ const Edit: React.FunctionComponent< BlockEditProps > = ( props ) => {
                 ) : (
                     <Placeholder
                         icon={ navigation }
-                        label={ _x( 'Please select a navigation menu location', 'Navigation block', 'mah-blocks' ) }
+                        label={ _x( 'Please select a navigation menu location', 'Navigation block', 'enokh-blocks' ) }
                     />
                 ) }
             </nav>

@@ -4,10 +4,7 @@ declare(strict_types=1);
 
 namespace Enokh\UniversalTheme\Model;
 
-use Inpsyde\App;
 use Inpsyde\Modularity;
-use Inpsyde\WpContracts;
-use Enokh\UniversalTheme\Model\Taxonomy\DisplayGroupTaxonomy;
 use Psr\Container\ContainerInterface;
 
 /**
@@ -26,8 +23,6 @@ class Module implements Modularity\Module\ServiceModule, Modularity\Module\Execu
 
     public function run(ContainerInterface $container): bool
     {
-
-
         return true;
     }
 }

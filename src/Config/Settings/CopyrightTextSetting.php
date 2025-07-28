@@ -46,7 +46,7 @@ class CopyrightTextSetting implements Contracts\Setting
 
     public function value(): ?string
     {
-        return (string)get_option(self::NAME, self::DEFAULT);
+        return (string) get_option(self::NAME, self::DEFAULT);
     }
 
     public function updateValue(string $value): bool

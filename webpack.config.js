@@ -1,4 +1,7 @@
 const defaultConfig = require( '@wordpress/scripts/config/webpack.config' );
+const path = require("path");
+const CleanTerminalPlugin = require('clean-terminal-webpack-plugin');
+const Webpackbar = require('webpackbar');
 
 const config = {
     ...defaultConfig,
@@ -11,8 +14,21 @@ const config = {
                 use: 'ts-loader',
                 exclude: /node_modules/,
             },
+            {
+                test: /\.(bmp|png|jpe?g|gif|webp)$/i,
+                type: 'asset/resource',
+                generator: {
+                    filename: 'images/[name][ext]',
+                },
+            },
         ],
     },
+    resolve: {
+        ...defaultConfig.resolve,
+        alias : {
+            '@enokh-blocks': path.resolve(__dirname, './resources/ts'),
+        }
+    }
 };
 
 module.exports = {
@@ -27,6 +43,11 @@ module.exports = {
         'enokh-design-system-elements': './resources/scss/enokh-design-system-elements.scss',
         'enokh-design-system-elements-editor': './resources/scss/enokh-design-system-elements-editor.scss',
     },
+    plugins: [
+        ...config.plugins,
+        new Webpackbar(),
+        new CleanTerminalPlugin(),
+    ],
     output: {
         path: __dirname + '/assets',
         filename: '[name].js',

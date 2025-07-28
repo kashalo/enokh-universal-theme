@@ -1,0 +1,19 @@
+.editor-styles-wrapper {
+
+	.enokh-blocks-carousel-arrows {
+		position: unset;
+
+		> .block-editor-inner-blocks > .block-editor-block-list__layout {
+			box-sizing: border-box;
+			height: 100%;
+			left: 0;
+			pointer-events: none;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: 1;
+		}
+
+	}
+
+}

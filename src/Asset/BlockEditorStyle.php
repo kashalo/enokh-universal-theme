@@ -20,7 +20,7 @@ class BlockEditorStyle implements StyleFactory
 
     public function createStyle(): Style
     {
-        if (! $this->style) {
+        if (!$this->style) {
             $fileName = 'enokh-universal-theme-editor.css';
             $assetDir = $this->properties->basePath() . 'assets/';
             $assetUri = $this->properties->baseUrl() . 'assets/';

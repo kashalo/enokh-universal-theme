@@ -3,6 +3,7 @@
  * Generated on Mon, 30 Jun 2025 15:13:08 GMT
  */
 
+// @ts-ignore
 module.exports = {
   "enokh": {
     "color": {

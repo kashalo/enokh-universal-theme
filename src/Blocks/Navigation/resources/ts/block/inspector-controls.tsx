@@ -23,7 +23,7 @@ const NavigationInspectorControls: React.FunctionComponent< BlockInspectorContro
             <InspectorControls>
 
                 <Panel>
-                    <PanelBody title={ _x( 'Menu', 'Navigation block', 'mah-blocks' ) }>
+                    <PanelBody title={ _x( 'Menu', 'Navigation block', 'enokh-blocks' ) }>
                         <MenuLocationSelector
                             location={ props.attributes.menuLocation }
                             setLocation={ ( menuLocation ) => props.setAttributes( { menuLocation } ) }
@@ -31,9 +31,9 @@ const NavigationInspectorControls: React.FunctionComponent< BlockInspectorContro
                     </PanelBody>
                 </Panel>
                 <Panel>
-                    <PanelBody title={ _x( 'Accessibility', 'Navigation block', 'mah-blocks' ) }>
+                    <PanelBody title={ _x( 'Accessibility', 'Navigation block', 'enokh-blocks' ) }>
                         <TextControl
-                            label={ _x( 'Menu name', 'Navigation block', 'mah-blocks' ) }
+                            label={ _x( 'Menu name', 'Navigation block', 'enokh-blocks' ) }
                             value={ props.attributes.ariaLabel }
                             onChange={ ( value ) => props.setAttributes( { ariaLabel: value } ) }
                         />

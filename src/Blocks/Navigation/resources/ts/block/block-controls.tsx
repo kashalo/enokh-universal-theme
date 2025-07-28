@@ -35,7 +35,7 @@ const Controls: React.FunctionComponent< BlockControlsProps > = ( props ) => {
                             }
                         }}
                     >
-                        { _x( 'Menu', 'Navigation block', 'mah-blocks' ) }
+                        { _x( 'Menu', 'Navigation block', 'enokh-blocks' ) }
                     </ToolbarButton>
                 ) }
                 renderContent={ () => (
@@ -61,13 +61,13 @@ const Controls: React.FunctionComponent< BlockControlsProps > = ( props ) => {
                             }
                         } }
                     >
-                        { _x( 'Accessibility', 'Navigation block', 'mah-blocks' ) }
+                        { _x( 'Accessibility', 'Navigation block', 'enokh-blocks' ) }
                     </ToolbarButton>
                 ) }
                 renderContent={ () => (
                     <div className="blocks-navigation__toolbar-dropdown-control">
                         <TextControl
-                            label={ _x( 'Menu name', 'Navigation block', 'mah-blocks' ) }
+                            label={ _x( 'Menu name', 'Navigation block', 'enokh-blocks' ) }
                             value={ props.attributes.ariaLabel }
                             onChange={ ( value ) => props.setAttributes( { ariaLabel: value } ) }
                         />

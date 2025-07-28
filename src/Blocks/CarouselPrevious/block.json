@@ -1,0 +1,308 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "enokh-blocks/carousel-previous",
+  "title": "Carousel Previous",
+  "category": "enokh-blocks",
+  "icon": "details",
+  "parent": [ "enokh-blocks/carousel-arrows" ],
+  "description": "Carousel previous button",
+  "keywords": [],
+  "version": "0.1.0",
+  "textdomain": "enokh-blocks",
+  "attributes": {
+    "uniqueId": {
+      "type": "string",
+      "default": ""
+    },
+    "iconDisplay": {
+      "type": "object",
+      "default": {}
+    },
+    "sizing": {
+      "type": "object",
+      "default": {}
+    },
+    "spacing": {
+      "type": "object",
+      "default": {}
+    },
+    "borders": {
+      "type": "object",
+      "default": {}
+    },
+    "borderColor": {
+      "type": "string",
+      "default": ""
+    },
+    "borderColorHover": {
+      "type": "string",
+      "default": ""
+    },
+    "textColor": {
+      "type": "string",
+      "default": ""
+    },
+    "textColorTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "textColorMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "textColorHover": {
+      "type": "string",
+      "default": ""
+    },
+    "textColorHoverTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "textColorHoverMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "textColorDisabled": {
+      "type": "string",
+      "default": ""
+    },
+    "textColorDisabledTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "textColorDisabledMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": ""
+    },
+    "backgroundColorTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "backgroundColorMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "backgroundColorHover": {
+      "type": "string",
+      "default": ""
+    },
+    "backgroundColorHoverTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "backgroundColorHoverMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "backgroundColorDisabled": {
+      "type": "string",
+      "default": ""
+    },
+    "backgroundColorDisabledTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "backgroundColorDisabledMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "useGlobalMaxWidth": {
+      "type": "boolean",
+      "default": false
+    },
+    "wrapperDisplay": {
+      "type": "string",
+      "default": ""
+    },
+    "flexDirection": {
+      "type": "string",
+      "default": ""
+    },
+    "flexWrap": {
+      "type": "string",
+      "default": ""
+    },
+    "alignItems": {
+      "type": "string",
+      "default": ""
+    },
+    "justifyContent": {
+      "type": "string",
+      "default": ""
+    },
+    "columnGap": {
+      "type": "string",
+      "default": ""
+    },
+    "rowGap": {
+      "type": "string",
+      "default": ""
+    },
+    "position": {
+      "type": "string",
+      "default": ""
+    },
+    "overflowX": {
+      "type": "string",
+      "default": ""
+    },
+    "overflowY": {
+      "type": "string",
+      "default": ""
+    },
+    "zindex": {
+      "type": "string",
+      "default": ""
+    },
+    "flexGrow": {
+      "type": "string",
+      "default": ""
+    },
+    "flexShrink": {
+      "type": "string",
+      "default": ""
+    },
+    "flexBasis": {
+      "type": "string",
+      "default": ""
+    },
+    "order": {
+      "type": "string",
+      "default": ""
+    },
+    "wrapperDisplayTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "flexDirectionTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "flexWrapTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "alignItemsTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "justifyContentTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "columnGapTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "rowGapTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "positionTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "overflowXTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "overflowYTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "zindexTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "flexGrowTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "flexShrinkTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "flexBasisTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "orderTablet": {
+      "type": "string",
+      "default": ""
+    },
+
+    "wrapperDisplayMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "flexDirectionMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "flexWrapMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "alignItemsMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "justifyContentMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "columnGapMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "rowGapMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "positionMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "overflowXMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "overflowYMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "zindexMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "flexGrowMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "flexShrinkMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "flexBasisMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "orderMobile": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "supports": {
+    "className": false,
+    "html": false
+  },
+  "styles": [],
+  "editorScript": "file:./editor.tsx",
+  "viewScript": "file:./front-office.ts",
+  "style": "file:./front-office.css"
+}

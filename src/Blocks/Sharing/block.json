@@ -1,0 +1,212 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "enokh-blocks/sharing",
+  "title": "Enokh Sharing",
+  "category": "enokh-blocks",
+  "allowedBlocks": ["enokh-blocks/button"],
+  "icon": "share",
+  "description": "Enokh Sharing Wrapper",
+  "keywords": ["sharing"],
+  "version": "0.1.0",
+  "textdomain": "enokh-blocks",
+  "attributes": {
+    "uniqueId": {
+      "type": "string",
+      "default": ""
+    },
+    "spacing": {
+      "type": "object",
+      "default": {}
+    },
+    "display": {
+      "type": "string",
+      "default": ""
+    },
+    "flexDirection": {
+      "type": "string",
+      "default": ""
+    },
+    "flexWrap": {
+      "type": "string",
+      "default": ""
+    },
+    "alignItems": {
+      "type": "string",
+      "default": ""
+    },
+    "justifyContent": {
+      "type": "string",
+      "default": ""
+    },
+    "columnGap": {
+      "type": "string",
+      "default": ""
+    },
+    "rowGap": {
+      "type": "string",
+      "default": ""
+    },
+    "position": {
+      "type": "string",
+      "default": ""
+    },
+    "overflowX": {
+      "type": "string",
+      "default": ""
+    },
+    "overflowY": {
+      "type": "string",
+      "default": ""
+    },
+    "zindex": {
+      "type": "string",
+      "default": ""
+    },
+    "flexGrow": {
+      "type": "string",
+      "default": ""
+    },
+    "flexShrink": {
+      "type": "string",
+      "default": ""
+    },
+    "flexBasis": {
+      "type": "string",
+      "default": ""
+    },
+    "order": {
+      "type": "string",
+      "default": ""
+    },
+    "displayTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "flexDirectionTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "flexWrapTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "alignItemsTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "justifyContentTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "columnGapTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "rowGapTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "positionTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "overflowXTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "overflowYTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "zindexTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "flexGrowTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "flexShrinkTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "flexBasisTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "orderTablet": {
+      "type": "string",
+      "default": ""
+    },
+
+    "displayMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "flexDirectionMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "flexWrapMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "alignItemsMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "justifyContentMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "columnGapMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "rowGapMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "positionMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "overflowXMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "overflowYMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "zindexMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "flexGrowMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "flexShrinkMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "flexBasisMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "orderMobile": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "supports": {
+    "className": false,
+    "html": false
+  },
+  "styles": [],
+  "editorScript": "file:./editor.tsx",
+  "editorStyle": "file:./editor.css",
+  "viewScript": "file:./front-office.ts"
+}

@@ -1,5 +1,5 @@
 const Webpackbar = require('webpackbar');
-const defaultConfig = require( '@wordpress/scripts/config/webpack.config' );
+const defaultConfig = require('@wordpress/scripts/config/webpack.config');
 
 const config = {
     ...defaultConfig,
@@ -11,7 +11,7 @@ const config = {
                 test: /\.tsx?$/,
                 use: 'ts-loader',
                 exclude: /node_modules/,
-            }
+        }
         ],
     },
 };

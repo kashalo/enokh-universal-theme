@@ -20,7 +20,7 @@ class FrontOfficeStyle implements StyleFactory
 
     public function createStyle(): Style
     {
-        if (! $this->style) {
+        if (!$this->style) {
             $fileName = 'enokh-universal-theme.css';
             $assetDir = $this->properties->basePath() . 'assets/';
             $assetUri = $this->properties->baseUrl() . 'assets/';

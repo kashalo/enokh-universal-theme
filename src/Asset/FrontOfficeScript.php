@@ -4,10 +4,11 @@ declare(strict_types=1);
 
 namespace Enokh\UniversalTheme\Asset;
 
+use Enokh\UniversalTheme\Blocks;
 use Inpsyde\Assets\Asset;
 use Inpsyde\Assets\Script;
 use Inpsyde\Modularity\Properties\Properties;
-use Enokh\UniversalTheme\Blocks;
+use Psr\Container\ContainerInterface;
 
 use function Inpsyde\PresentationElements\block;
 
@@ -21,9 +22,9 @@ class FrontOfficeScript implements ScriptFactory
     {
     }
 
-    public function createScript(): Script
+    public function createScript(ContainerInterface $container): Script
     {
-        if (! $this->script) {
+        if (!$this->script) {
             $fileName = 'enokh-universal-theme.js';
             $assetDir = $this->properties->basePath() . 'assets/';
             $assetUri = $this->properties->baseUrl() . 'assets/';
@@ -63,7 +64,7 @@ class FrontOfficeScript implements ScriptFactory
         $data = [];
 
         foreach ($blocks as $block) {
-            if (! $block instanceof WithAssetLocalization) {
+            if (!$block instanceof WithAssetLocalization) {
                 continue;
             }
             $localization = $block->assetLocalization();

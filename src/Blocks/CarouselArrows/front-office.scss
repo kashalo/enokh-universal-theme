@@ -1,0 +1,17 @@
+main,
+.wp-site-blocks {
+
+	.enokh-blocks-carousel-arrows {
+		box-sizing: border-box;
+		display: flex;
+		height: 100%;
+		left: 0;
+		padding: 10px;
+		pointer-events: none;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 1;
+	}
+
+}

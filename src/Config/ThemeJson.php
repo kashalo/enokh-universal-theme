@@ -51,7 +51,7 @@ class ThemeJson implements \JsonSerializable
         $data = $this->data;
 
         foreach (explode($this->delimiter, $key) as $segment) {
-            if (! is_array($data) || ! array_key_exists($segment, $data)) {
+            if (!is_array($data) || !array_key_exists($segment, $data)) {
                 return false;
             }
             $data = $data[$segment];
@@ -66,7 +66,7 @@ class ThemeJson implements \JsonSerializable
         $data = $this->data;
 
         foreach (explode($this->delimiter, $key) as $segment) {
-            if (! is_array($data) || ! array_key_exists($segment, $data)) {
+            if (!is_array($data) || !array_key_exists($segment, $data)) {
                 return null;
             }
             $data = $data[$segment];
@@ -74,6 +74,7 @@ class ThemeJson implements \JsonSerializable
 
         return $data;
     }
+
     // phpcs:enable Inpsyde.CodeQuality.ReturnTypeDeclaration.IncorrectVoidReturn
 
     public function set(string $key, null|bool|int|float|string|array $value): self
@@ -90,11 +91,11 @@ class ThemeJson implements \JsonSerializable
         $data = &$this->data;
 
         foreach (explode($this->delimiter, $key) as $segment) {
-            if ($data && ! is_array($data)) {
+            if ($data && !is_array($data)) {
                 return $this;
             }
 
-            if (! array_key_exists($segment, $data)) {
+            if (!array_key_exists($segment, $data)) {
                 $data[$segment] = [];
             }
 
@@ -115,7 +116,7 @@ class ThemeJson implements \JsonSerializable
 
         // Directory merging
         if (is_string($data)) {
-            if (! is_dir($data) || ! is_readable($data)) {
+            if (!is_dir($data) || !is_readable($data)) {
                 return $this;
             }
 
@@ -128,7 +129,7 @@ class ThemeJson implements \JsonSerializable
 
         // Array merging
         foreach ($data as $key => $value) {
-            if (! is_string($key)) {
+            if (!is_string($key)) {
                 continue;
             }
             $this->set($key, $value);

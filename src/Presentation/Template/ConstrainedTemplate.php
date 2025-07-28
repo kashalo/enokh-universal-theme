@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Enokh\UniversalTheme\Presentation\Template;
 
-use function Inpsyde\PresentationElements\block;
-
 /**
  * We need to render blocks before wp_head() so that
  * the style engine can output generated styles

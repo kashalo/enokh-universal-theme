@@ -1,0 +1,40 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "enokh-blocks/carousel-items",
+  "title": "Carousel Items",
+  "category": "enokh-blocks",
+  "icon": "details",
+  "description": "Carousel items wrapper",
+  "keywords": [],
+  "version": "0.1.0",
+  "textdomain": "enokh-blocks",
+  "attributes": {
+    "uniqueId": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "supports": {
+    "className": false,
+    "html": false,
+    "inserter": false
+  },
+  "usesContext": [
+    "enokh-blocks/minHeight",
+    "enokh-blocks/minHeightTablet",
+    "enokh-blocks/minHeightMobile",
+    "enokh-blocks/carouselItemPerSlide",
+    "enokh-blocks/carouselSpaceBetween",
+    "enokh-blocks/carouselItemPerSlideMobile",
+    "enokh-blocks/carouselSpaceBetweenMobile",
+    "enokh-blocks/carouselItemPerSlideTablet",
+    "enokh-blocks/carouselSpaceBetweenTablet",
+    "enokh-blocks/carouselId"
+  ],
+  "styles": [],
+  "editorScript": "file:./editor.tsx",
+  "editorStyle": "file:./editor.css",
+  "viewScript": "file:./front-office.ts",
+  "style": "file:./front-office.css"
+}

@@ -1,6 +1,31 @@
 // Stylesheets
 import '../scss/enokh-universal-theme-editor.scss';
 
+
+// Blocks
+import "./editor/blocks/ContainerBlock";
+import "./editor/blocks/GridBlock";
+import "./editor/blocks/QueryLoopBlock";
+import "./editor/blocks/TextBlock";
+import "./editor/blocks/TermFeaturedImageBlock";
+import "./editor/blocks/TableOfContent";
+import "./editor/blocks/ButtonBlock";
+
+// Extensions
+import './editor/extensions/ContentOnlySwitch';
+import './editor/extensions/MarkerColorSupport';
+import './editor/extensions/QueryLoopPagination';
+import './editor/extensions/BlockStylesCopyPaste';
+import './editor/extensions/SyncAccordionStyles';
+import './editor/extensions/TemplateArea';
+
+// HOC
+import './hoc/withDocumentationInspectControl'
+
+// Plugins
+import './editor/plugins/ExcludeFromSearch';
+
+
 // WordPress dependencies
 import {
 	getBlockType,

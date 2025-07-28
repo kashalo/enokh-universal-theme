@@ -34,13 +34,13 @@ const SearchBlockControls: React.FunctionComponent< BlockToolbarControlProps > =
                             }
                         } }
                     >
-                        { _x( 'Placeholder', 'Search block', 'mah-blocks' ) }
+                        { _x( 'Placeholder', 'Search block', 'enokh-blocks' ) }
                     </ToolbarButton>
                 ) }
                 renderContent={ () => (
                     <TextareaControl
                         className="blocks-search__toolbar_content_textarea"
-                        label={ _x( 'Placeholder', 'Search block', 'mah-blocks' ) }
+                        label={ _x( 'Placeholder', 'Search block', 'enokh-blocks' ) }
                         value={ props.attributes.placeholderText }
                         onChange={ ( placeholderText ) => props.setAttributes( { placeholderText } ) }
                         __nextHasNoMarginBottom

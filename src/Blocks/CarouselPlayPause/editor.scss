@@ -1,0 +1,23 @@
+.editor-styles-wrapper {
+
+	.enokh-blocks-carousel-play-pause {
+		box-sizing: border-box;
+		display: flex;
+		justify-content: flex-end;
+		height: auto;
+		left: 0;
+		padding: 10px;
+		pointer-events: none;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		z-index: 1;
+
+		> button {
+			line-height: 1;
+			cursor: pointer;
+			pointer-events: all;
+		}
+	}
+
+}

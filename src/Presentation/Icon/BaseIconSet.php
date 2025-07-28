@@ -9,9 +9,6 @@ abstract class BaseIconSet implements IconSet
     protected string $name = '';
     protected string $label = '';
     protected string $directory = '';
-    /**
-     * @var array
-     */
     protected array $icons = [];
 
     public function name(): string

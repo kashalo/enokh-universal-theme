@@ -30,7 +30,7 @@ class IconSetRegistry
                 return $this;
             }
 
-            if (! is_dir($set->directory())) {
+            if (!is_dir($set->directory())) {
                 $this->throwExceptionIfDebug(sprintf(
                     'Path %s is not a directory',
                     $set->directory()

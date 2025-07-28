@@ -1,0 +1,48 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "enokh-blocks/accordion",
+  "title": "Enokh Accordion",
+  "category": "enokh-blocks",
+  "icon": "",
+  "description": "",
+  "keywords": ["accordion","enokh"],
+  "version": "0.2.0",
+  "textdomain": "enokh-blocks",
+  "allowedBlocks": ["enokh-blocks/accordion-item"],
+  "attributes": {
+    "uniqueId": {
+      "type": "string",
+      "default": ""
+    },
+    "templateLock": {
+      "type": [ "string", "boolean" ],
+      "enum": [ "all", "insert", "contentOnly", false ]
+    },
+    "headerItem": {
+      "type": "object",
+      "default": {
+        "sizing": {},
+        "spacing": {},
+        "borders": {},
+        "typography": {}
+      }
+    },
+    "panel": {
+      "type": "object",
+      "default": {
+        "spacing": {},
+        "borders": {}
+      }
+    }
+  },
+  "supports": {
+    "className": false,
+    "html": false
+  },
+  "providesContext": {
+    "enokh-blocks/accordionId": "uniqueId"
+  },
+  "styles": [],
+  "editorScript": "file:./editor.tsx"
+}

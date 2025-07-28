@@ -1,0 +1,67 @@
+main,
+.wp-site-blocks {
+
+	.enokh-blocks-carousel {
+		overflow: hidden;
+		position: relative;
+		max-width: 100%;
+		z-index: 1;
+		box-sizing: content-box;
+
+		&::before {
+			bottom: 0;
+			content: "";
+			height: 100%;
+			left: 0;
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 100%;
+			z-index: 0;
+			opacity: calc(100 / 100);
+		}
+
+		.enokh-blocks-carousel-item {
+			display: flex;
+			flex-shrink: 0;
+			position: relative;
+		}
+
+		.enokh-blocks-grid-wrapper {
+			flex-wrap: inherit;
+		}
+
+		.enokh-blocks-carousel-wrapper {
+			overflow: hidden;
+			transition: all 1s ease-out;
+
+			&:not(.swiper-initialized) {
+				visibility: hidden;
+				opacity: 0;
+				transition: all 1s ease-out;
+			}
+
+			// Coverflow carousel
+			&.swiper-coverflow {
+
+				.enokh-blocks-carousel-item {
+					visibility: hidden;
+
+					&.swiper-slide-fully-visible,
+					&.swiper-slide-visible {
+						visibility: visible;
+					}
+				}
+			}
+		}
+
+		.enokh-blocks-grid-column {
+
+			> .enokh-blocks-container {
+				width: 100%;
+			}
+		}
+
+	}
+
+}

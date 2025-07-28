@@ -13,19 +13,25 @@
 
     <config name="text_domain" value="enokh-universal-theme"/>
 
-    <rule ref="Inpsyde"/>
+    <!-- Recommended Syde PHP Coding Standard rules. -->
+    <rule ref="Syde-Extra" />
 
-    <rule ref="PSR1">
-        <exclude name="PSR1.Files.SideEffects.FoundWithSymbols" />
+    <!-- Template-specific rules. -->
+    <rule ref="Syde.ControlStructures.DisallowElse">
+        <exclude-pattern>*/templates/*</exclude-pattern>
+    </rule>
+    <rule ref="Syde-Templates">
+        <include-pattern>*/templates/*</include-pattern>
     </rule>
 
-    <rule ref="Inpsyde.CodeQuality.Psr4">
+
+
+    <!-- PSR-4 namespace configuration. -->
+    <rule ref="SlevomatCodingStandard.Files.TypeNameMatchesFileName">
         <properties>
-            <property
-                name="psr4"
-                type="array"
-                value="Enokh\UniversalTheme=>src"
-            />
+            <property name="rootNamespaces" type="array">
+                <element key="src" value="Enokh\UniversalTheme" />
+            </property>
         </properties>
     </rule>
 

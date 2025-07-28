@@ -1,0 +1,52 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "enokh-blocks/carousel-arrows",
+  "title": "Carousel Arrows",
+  "category": "enokh-blocks",
+  "icon": "details",
+  "parent": [ "enokh-blocks/carousel", "enokh-blocks/container" ],
+  "description": "Carousel arrows navigation wrapper",
+  "keywords": [],
+  "version": "0.1.0",
+  "textdomain": "enokh-blocks",
+  "attributes": {
+    "uniqueId": {
+      "type": "string",
+      "default": ""
+    },
+    "alignItems": {
+      "type": "string",
+      "default": "center"
+    },
+    "alignItemsTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "alignItemsMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "justifyContent": {
+      "type": "string",
+      "default": "space-between"
+    },
+    "justifyContentTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "justifyContentMobile": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "supports": {
+    "className": false,
+    "html": false
+  },
+  "styles": [],
+  "editorScript": "file:./editor.tsx",
+  "editorStyle": "file:./editor.css",
+  "viewScript": "file:./front-office.ts",
+  "style": "file:./front-office.css"
+}

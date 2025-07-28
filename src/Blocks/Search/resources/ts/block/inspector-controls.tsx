@@ -22,9 +22,9 @@ const SearchInspectorControls: React.FunctionComponent< BlockInspectorControlPro
     return (
         <InspectorControls>
             <Panel>
-                <PanelBody title={ _x( 'Configuration', 'Search block', 'mah-blocks' ) }>
+                <PanelBody title={ _x( 'Configuration', 'Search block', 'enokh-blocks' ) }>
                     <TextControl
-                        label={ _x( 'Placeholder', 'Search block', 'mah-blocks' ) }
+                        label={ _x( 'Placeholder', 'Search block', 'enokh-blocks' ) }
                         value={ attributes.placeholderText }
                         onChange={ ( placeholderText ) => setAttributes( { placeholderText } ) }
                     />

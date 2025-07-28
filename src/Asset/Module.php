@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Enokh\UniversalTheme\Asset;
 
-use Inpsyde\Assets\Asset;
 use Inpsyde\Assets\AssetManager;
 use Inpsyde\Assets\Script;
 use Inpsyde\Assets\Style;
@@ -27,39 +26,39 @@ class Module implements
             BlockEditorScript::class => static function (ContainerInterface $container): Script {
                 return (new BlockEditorScript(
                     $container->get(Modularity\Package::PROPERTIES)
-                ))->createScript();
+                ))->createScript($container);
             },
             BlockEditorStyle::class => static function (ContainerInterface $container): Style {
                 return (new BlockEditorStyle(
                     $container->get(Modularity\Package::PROPERTIES)
                 ))->createStyle();
             },
-            FrontOfficeScript::class =>  static function (ContainerInterface $container): Script {
+            FrontOfficeScript::class => static function (ContainerInterface $container): Script {
                 return (new FrontOfficeScript(
                     $container->get(Modularity\Package::PROPERTIES)
-                ))->createScript();
+                ))->createScript($container);
             },
-            FrontOfficeStyle::class =>  static function (ContainerInterface $container): Style {
+            FrontOfficeStyle::class => static function (ContainerInterface $container): Style {
                 return (new FrontOfficeStyle(
                     $container->get(Modularity\Package::PROPERTIES)
                 ))->createStyle();
             },
-            CoreStyle::class =>  static function (ContainerInterface $container): Style {
+            CoreStyle::class => static function (ContainerInterface $container): Style {
                 return (new CoreStyle(
                     $container->get(Modularity\Package::PROPERTIES)
                 ))->createStyle();
             },
-            CoreEditorStyle::class =>  static function (ContainerInterface $container): Style {
+            CoreEditorStyle::class => static function (ContainerInterface $container): Style {
                 return (new CoreEditorStyle(
                     $container->get(Modularity\Package::PROPERTIES)
                 ))->createStyle();
             },
-            ElementsStyle::class =>  static function (ContainerInterface $container): Style {
+            ElementsStyle::class => static function (ContainerInterface $container): Style {
                 return (new ElementsStyle(
                     $container->get(Modularity\Package::PROPERTIES)
                 ))->createStyle();
             },
-            ElementsEditorStyle::class =>  static function (ContainerInterface $container): Style {
+            ElementsEditorStyle::class => static function (ContainerInterface $container): Style {
                 return (new ElementsEditorStyle(
                     $container->get(Modularity\Package::PROPERTIES)
                 ))->createStyle();

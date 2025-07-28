@@ -4,26 +4,34 @@ declare(strict_types=1);
 
 namespace Enokh\UniversalTheme\Presentation\Elements;
 
-use Enokh\UniversalTheme\Presentation\ElementPackage;
 use Enokh\UniversalTheme\Presentation\Icon\IconSetRegistry;
 use Inpsyde\PresentationElements;
-use Mah\DesignSystem\Presentation;
 
 class Icon extends PresentationElements\Element\BaseElement
 {
     // Presentation classes
-    public const CLASS_MAIN = 'mah-icon';
+    public const CLASS_MAIN = 'enokh-icon';
 
     // HTML Attributes
     public const ATTR_ICON_SET = 'data-icon-set';
     public const ATTR_ICON_NAME = 'data-icon-name';
 
     // Arguments
+    public const ARG_TITLE = 'title';
+    public const ARG_TITLE_ELEMENT_ID = 'titleElementId';
+    public const ARG_DESCRIPTION = 'description';
+    public const ARG_DESCRIPTION_ELEMENT_ID = 'descriptionElementId';
     public const ARG_ICON_SET = 'iconSet';
     public const ARG_ICON_NAME = 'iconName';
 
     private const CACHE_KEY_ATTRS = 'attrs';
     private const CACHE_KEY_CONTENT = 'content';
+    /**
+     * @var array<string, array{
+     *     attrs: array<array-key, mixed>,
+     *     content: string,
+     * }>
+     */
     private array $cache = [];
 
     public static function name(): string
@@ -31,7 +39,7 @@ class Icon extends PresentationElements\Element\BaseElement
         return 'enokh-design-system/icon';
     }
 
-    public function __construct(private  IconSetRegistry $iconRegistry)
+    public function __construct(private IconSetRegistry $iconRegistry)
     {
     }
 
@@ -45,10 +53,25 @@ class Icon extends PresentationElements\Element\BaseElement
         return $this;
     }
 
+    public function withTitle(string $title, string $elementId = ''): self
+    {
+        $this->withArgument(self::ARG_TITLE, $title);
+        $this->withArgument(self::ARG_TITLE_ELEMENT_ID, $elementId);
+        return $this;
+    }
+
+    public function withDescription(string $description, string $elementId = ''): self
+    {
+        $this->withArgument(self::ARG_DESCRIPTION, $description);
+        $this->withArgument(self::ARG_DESCRIPTION_ELEMENT_ID, $elementId);
+        return $this;
+    }
+
+
     public function render(): string
     {
-        $iconSet = (string)$this->argument(self::ARG_ICON_SET);
-        $iconName = (string)$this->argument(self::ARG_ICON_NAME);
+        $iconSet = (string) $this->argument(self::ARG_ICON_SET);
+        $iconName = (string) $this->argument(self::ARG_ICON_NAME);
 
         if (!$iconSet || !$iconName || !$this->loadSvg($iconSet, $iconName)) {
             return '';
@@ -92,8 +115,8 @@ class Icon extends PresentationElements\Element\BaseElement
             return false;
         }
 
-        $encoded = (string)mb_convert_encoding(
-            (string)file_get_contents($iconPath . '.svg'),
+        $encoded = (string) mb_convert_encoding(
+            (string) file_get_contents($iconPath . '.svg'),
             'HTML-ENTITIES',
             "UTF-8"
         );
@@ -127,7 +150,7 @@ class Icon extends PresentationElements\Element\BaseElement
             self::CACHE_KEY_ATTRS => $attrs,
             self::CACHE_KEY_CONTENT => implode('', array_map(
             /** @psalm-suppress InvalidClass */
-                fn(\DOMNode $node): string => trim($dom->saveHTML($node)),
+                static fn (\DOMNode $node): string => trim($dom->saveHTML($node)),
                 iterator_to_array($svg->childNodes)
             )),
         ];

@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Enokh\UniversalTheme\Blocks\Header\Elements;
 
-use Inpsyde\PresentationElements;
 use Enokh\UniversalTheme\Asset;
 use Enokh\UniversalTheme\Config;
+use Inpsyde\PresentationElements;
 
 use function Inpsyde\PresentationElements\block;
 use function Inpsyde\PresentationElements\renderValue;

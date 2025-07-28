@@ -10,8 +10,8 @@
 
 declare(strict_types=1);
 
-use Inpsyde\PresentationElements;
 use Enokh\UniversalTheme\Blocks\Header\Elements\HeaderBlock;
+use Inpsyde\PresentationElements;
 
 use function Inpsyde\PresentationElements\block;
 
@@ -25,7 +25,7 @@ $header = block(HeaderBlock::BLOCK_TYPE);
  */
 $header->filterBlocks(static function (string|PresentationElements\Contracts\Block $block): bool {
     return is_string($block)
-        || ! in_array($block->type(), ['enokh-universal-theme/navigation', 'enokh-universal-theme/search'], true);
+        || !in_array($block->type(), ['enokh-universal-theme/navigation', 'enokh-universal-theme/search'], true);
 });
 
 // phpcs:disable WordPress.Security.EscapeOutput.OutputNotEscaped

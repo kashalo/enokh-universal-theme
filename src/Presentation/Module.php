@@ -7,10 +7,11 @@ namespace Enokh\UniversalTheme\Presentation;
 use Enokh\UniversalTheme\Logger\Logger;
 use Enokh\UniversalTheme\Presentation\Icon\IconSetRegistry;
 use Inpsyde\Modularity;
-use Inpsyde\PresentationElements;
 use Inpsyde\MoreMenuFields;
-use function Enokh\UniversalTheme\icon;
+use Inpsyde\PresentationElements;
 use Psr\Container\ContainerInterface;
+
+use function Enokh\UniversalTheme\icon;
 
 /**
  * @codeCoverageIgnore
@@ -28,8 +29,7 @@ class Module implements
         $this->extendBodyClasses($container);
         $this->registerIconSets($container);
         $this->registerElements($container);
-        //    $this->extendNavigationMenus($container);
-
+        $this->extendNavigationMenus($container);
 
         return true;
     }
@@ -37,7 +37,7 @@ class Module implements
     public function factories(): array
     {
         return [
-            Elements\Icon::class => static fn(ContainerInterface $container) => new Elements\Icon(
+            Elements\Icon::class => static fn (ContainerInterface $container) => new Elements\Icon(
                 $container->get(Icon\IconSetRegistry::class)
             ),
         ];
@@ -124,7 +124,7 @@ class Module implements
 
         add_action(
             'wp_head',
-            fn() => $this->maybePrintIconAuthorsAttribution($container)
+            fn () => $this->maybePrintIconAuthorsAttribution($container)
         );
     }
 
@@ -185,7 +185,6 @@ class Module implements
         }
     }
 
-
     private function extendNavigationMenus(ContainerInterface $container): void
     {
         MoreMenuFields\bootstrap();
@@ -196,11 +195,11 @@ class Module implements
             static function (array $fields, MoreMenuFields\EditFieldValueFactory $valueFactory) use ($container) {
                 try {
                     $fields[] = new Navigation\MenuIconField(
-                        $container->get( IconSetRegistry::class),
+                        $container->get(IconSetRegistry::class),
                         $valueFactory->create(Navigation\MenuIconField::NAME)
                     );
-                } catch (\Exception $e) {
-                    wp_die($e->getMessage());
+                } catch (\Throwable $exception) {
+                    wp_die($exception->getMessage());
                 }
                 return $fields;
             },
@@ -238,8 +237,6 @@ class Module implements
         );
     }
 
-
-
     private function registerElements(ContainerInterface $container): void
     {
         // Elements to be registered
@@ -250,7 +247,7 @@ class Module implements
         foreach ($elements as $element) {
             PresentationElements\registerElement(
                 $element,
-                fn() => $container->has($element)
+                static fn () => $container->has($element)
                     ? $container->get($element)
                     : new PresentationElements\Element\NullElement()
             );

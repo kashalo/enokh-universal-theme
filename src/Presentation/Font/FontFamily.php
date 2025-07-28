@@ -6,5 +6,4 @@ namespace Enokh\UniversalTheme\Presentation\Font;
 
 interface FontFamily
 {
-
 }

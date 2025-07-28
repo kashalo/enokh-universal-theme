@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace  Enokh\UniversalTheme\Blocks\NavigationDrawerTheme\Elements;
+namespace Enokh\UniversalTheme\Blocks\NavigationDrawerTheme\Elements;
 
-use Inpsyde\PresentationElements;
 use Enokh\UniversalTheme\Asset;
 use Enokh\UniversalTheme\Config;
+use Inpsyde\PresentationElements;
 
 use function Inpsyde\PresentationElements\block;
 use function Inpsyde\PresentationElements\renderValue;
@@ -158,5 +158,6 @@ class NavigationDrawerBlock extends PresentationElements\Block\BaseBlock impleme
             ),
         ];
     }
+
     // phpcs:enable Inpsyde.CodeQuality.FunctionLength.TooLong
 }

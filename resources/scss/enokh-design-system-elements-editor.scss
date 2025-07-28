@@ -1,3 +1,4 @@
+@use "sass:meta";
 @use "mixins";
 
 // Restrict elements custom properties to the block editor
@@ -6,5 +7,5 @@
 // Restrict elements styles to the block editor
 .editor-styles-wrapper {
 	// stylelint-disable-next-line no-invalid-position-at-import-rule
-	@import "elements";
+	@include meta.load-css("elements");
 }

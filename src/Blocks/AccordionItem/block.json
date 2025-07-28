@@ -1,0 +1,38 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "enokh-blocks/accordion-item",
+  "title": "Enokh Accordion Item",
+  "category": "enokh-blocks",
+  "icon": "",
+  "description": "",
+  "keywords": ["accordion item","mah"],
+  "version": "0.2.0",
+  "textdomain": "enokh-blocks",
+  "parent": ["enokh-blocks/accordion"],
+  "attributes": {
+    "uniqueId": {
+      "type": "string",
+      "default": ""
+    },
+    "heading": {
+      "type": "string",
+      "default": ""
+    },
+    "title": {
+      "type": "string",
+      "default": ""
+    },
+    "isOpen": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "supports": {
+    "className": false,
+    "html": false
+  },
+  "providesContext": {},
+  "styles": [],
+  "editorScript": "file:./editor.tsx"
+}

@@ -20,7 +20,7 @@ class CoreStyle implements StyleFactory
 
     public function createStyle(): Style
     {
-        if (! $this->style) {
+        if (!$this->style) {
             $fileName = 'enokh-design-system-core.css';
             $assetDir = $this->properties->basePath() . 'assets/';
             $assetUri = $this->properties->baseUrl() . 'assets/';

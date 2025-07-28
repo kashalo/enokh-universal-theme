@@ -1,0 +1,20 @@
+.enokh-blocks-list-item {
+
+	&__content.enokh-blocks-list-item__has-bullet {
+		display: flex;
+
+		&::before {
+			content: "";
+
+			-webkit-mask-repeat: no-repeat;
+			mask-repeat: no-repeat;
+			background-color: currentcolor;
+			flex-shrink: 0;
+		}
+	}
+
+	&__bullet {
+		display: inline-block;
+		line-height: 0;
+	}
+}

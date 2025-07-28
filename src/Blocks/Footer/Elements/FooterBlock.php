@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Enokh\UniversalTheme\Blocks\Footer\Elements;
 
-use Inpsyde\PresentationElements;
 use Enokh\UniversalTheme\Asset;
 use Enokh\UniversalTheme\Config;
+use Inpsyde\PresentationElements;
 
 use function Inpsyde\PresentationElements\block;
 use function Inpsyde\PresentationElements\renderValue;
@@ -110,7 +110,7 @@ class FooterBlock extends PresentationElements\Block\BaseBlock implements Asset\
                     ],
                     [
                         self::logo(),
-                       // self::copyright(),
+                        // self::copyright(),
                     ]
                 ),
             ]
@@ -158,14 +158,14 @@ class FooterBlock extends PresentationElements\Block\BaseBlock implements Asset\
 
     protected static function logo(): PresentationElements\Contracts\Block
     {
-        $logo = get_theme_mod( 'custom_logo' );
-        $image = wp_get_attachment_image_src( $logo , 'full' );
+        $logo = get_theme_mod('custom_logo');
+        $image = wp_get_attachment_image_src($logo, 'full');
 
         return block(
             'core/image',
             [
                 'className' => self::CLASS_LOGO,
-                'src' => is_array( $image ) ? $image[0] : '',
+                'src' => is_array($image) ? $image[0] : '',
                 'alt' => get_bloginfo('name'),
             ]
         );

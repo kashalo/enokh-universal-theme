@@ -6,10 +6,7 @@ namespace Enokh\UniversalTheme\Blocks\Footer;
 
 use Inpsyde\Modularity;
 use Inpsyde\PresentationElements;
-use Enokh\UniversalTheme\Blocks\Footer\Elements;
 use Psr\Container\ContainerInterface;
-
-use function Inpsyde\PresentationElements\registerElement;
 
 class Module implements
     Modularity\Module\FactoryModule,
@@ -20,14 +17,14 @@ class Module implements
     public function factories(): array
     {
         return [
-            Elements\FooterBlock::class => fn () => new Elements\FooterBlock(),
+            Elements\FooterBlock::class => static fn () => new Elements\FooterBlock(),
         ];
     }
 
     public function run(ContainerInterface $container): bool
     {
         $this->registerBlocksElements($container);
-        $this->registerBlock();
+        $this->registerBlock($container);
 
         return true;
     }
@@ -36,18 +33,20 @@ class Module implements
     {
         PresentationElements\registerBlock(
             Elements\FooterBlock::BLOCK_TYPE,
-            fn () => $container->has(Elements\FooterBlock::class)
+            static fn () => $container->has(Elements\FooterBlock::class)
                 ? $container->get(Elements\FooterBlock::class)
                 : new PresentationElements\Block\NullBlock()
         );
     }
 
-    private function registerBlock(): void
+    private function registerBlock(ContainerInterface $container): void
     {
+        /** @var Modularity\Properties\Properties $properties */
+        $properties = $container->get(Modularity\Package::PROPERTIES);
         add_action(
             'init',
             static fn () => register_block_type_from_metadata(
-                get_template_directory() . '/assets/Blocks/Footer'
+                $properties->basePath() . '/assets/Blocks/Footer'
             ),
             0 // need to register before _register_theme_block_patterns() runs on 'init'
         );

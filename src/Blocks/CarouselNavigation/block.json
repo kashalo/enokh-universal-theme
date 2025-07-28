@@ -1,0 +1,172 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "enokh-blocks/carousel-navigation",
+  "title": "Carousel Navigation",
+  "category": "enokh-blocks",
+  "icon": "details",
+  "parent": [
+    "enokh-blocks/carousel",
+    "enokh-blocks/container"
+  ],
+  "description": "Carousel Navigation",
+  "keywords": [],
+  "version": "0.1.0",
+  "textdomain": "enokh-blocks",
+  "attributes": {
+    "uniqueId": {
+      "type": "string",
+      "default": ""
+    },
+    "borderColor": {
+      "type": "string",
+      "default": ""
+    },
+    "typography": {
+      "type": "object",
+      "default": {}
+    },
+    "borders": {
+      "type": "object",
+      "default": {}
+    },
+    "spacing": {
+      "type": "object",
+      "default": {}
+    },
+    "shape": {
+      "type": "object",
+      "default": {
+        "icon": "circle",
+        "iconGroup": "font-awesome-solid",
+        "width": "1em",
+        "height": "1em"
+      }
+    },
+    "variant": {
+      "type": "string",
+      "default": "shape"
+    },
+    "orientation": {
+      "type": "string",
+      "default": "horizontal"
+    },
+    "innerAlignItems": {
+      "type": "string",
+      "default": "start"
+    },
+    "innerAlignItemsTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "innerAlignItemsMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "alignItems": {
+      "type": "string",
+      "default": "end"
+    },
+    "alignItemsTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "alignItemsMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "justifyContent": {
+      "type": "string",
+      "default": "center"
+    },
+    "justifyContentTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "justifyContentMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "gap": {
+      "type": "string",
+      "default": "10px"
+    },
+    "gapTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "gapMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "textColor": {
+      "type": "string",
+      "default": ""
+    },
+    "textColorTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "textColorMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "textColorHover": {
+      "type": "string",
+      "default": ""
+    },
+    "textColorHoverTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "textColorHoverMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": ""
+    },
+    "backgroundColorTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "backgroundColorMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "backgroundColorHover": {
+      "type": "string",
+      "default": ""
+    },
+    "backgroundColorHoverTablet": {
+      "type": "string",
+      "default": ""
+    },
+    "backgroundColorHoverMobile": {
+      "type": "string",
+      "default": ""
+    },
+    "enableAdvancedPosition": {
+      "type": "boolean",
+      "default": false
+    },
+    "advancedPosition": {
+      "type": "object",
+      "default": {}
+    },
+    "element": {
+      "type": "object",
+      "default": {}
+    }
+  },
+  "supports": {
+    "className": false,
+    "html": false
+  },
+  "styles": [],
+  "editorScript": "file:./editor.tsx",
+  "editorStyle": "file:./editor.css",
+  "viewScript": "file:./front-office.ts",
+  "style": "file:./front-office.css"
+}

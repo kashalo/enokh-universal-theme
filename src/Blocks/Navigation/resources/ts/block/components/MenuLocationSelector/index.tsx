@@ -33,7 +33,7 @@ const MenuLocationSelector: React.FunctionComponent< ComponentProps > = ( props 
 
     return (
         <SelectControl
-            label={ _x( 'Select menu location', 'Navigation block', 'mah-blocks' ) }
+            label={ _x( 'Select menu location', 'Navigation block', 'enokh-blocks' ) }
             value={ props.location }
             options={ locations ? [ noSelectionOption, ...locations ] : [] }
             onChange={ props.setLocation }

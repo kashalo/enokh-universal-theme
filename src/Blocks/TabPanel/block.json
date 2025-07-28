@@ -1,0 +1,61 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "enokh-blocks/tab-panel",
+  "title": "MAH Tab Panel",
+  "category": "enokh-blocks",
+  "icon": "details",
+  "description": "Tab panel wrapper",
+  "keywords": ["tab","mah"],
+  "version": "0.2.0",
+  "textdomain": "enokh-blocks",
+  "allowedBlocks": ["enokh-blocks/tab"],
+  "attributes": {
+    "uniqueId": {
+      "type": "string",
+      "default": ""
+    },
+    "templateLock": {
+      "type": [ "string", "boolean" ],
+      "enum": [ "all", "insert", "contentOnly", false ]
+    },
+    "navigation": {
+      "type": "object",
+      "default": {
+        "display": "",
+        "displayTablet": "",
+        "displayMobile": "",
+        "flexDirection": "",
+        "flexDirectionTablet": "",
+        "flexDirectionMobile": "",
+        "sizing": {},
+        "borders": {},
+        "spacing": {}
+      }
+    },
+    "panel": {
+      "type": "object",
+      "default": {
+        "spacingBetween": "",
+        "spacingBetweenTablet": "",
+        "spacingBetweenMobile": "",
+        "verticalAlignment": "",
+        "verticalAlignmentTablet": "",
+        "verticalAlignmentMobile": "",
+        "horizontalAlignment": "",
+        "horizontalAlignmentTablet": "",
+        "horizontalAlignmentMobile": "",
+        "borders": {}
+      }
+    }
+  },
+  "supports": {
+    "className": false,
+    "html": false
+  },
+  "providesContext": {
+    "enokh-blocks/tabPanelId": "uniqueId"
+  },
+  "styles": [],
+  "editorScript": "file:./editor.tsx"
+}

@@ -20,7 +20,7 @@ class ElementsStyle implements StyleFactory
 
     public function createStyle(): Style
     {
-        if (! $this->style) {
+        if (!$this->style) {
             $fileName = 'enokh-design-system-elements.css';
             $assetDir = $this->properties->basePath() . 'assets/';
             $assetUri = $this->properties->baseUrl() . 'assets/';

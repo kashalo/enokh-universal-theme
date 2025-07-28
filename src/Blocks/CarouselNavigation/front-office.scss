@@ -1,0 +1,24 @@
+main,
+.wp-site-blocks {
+
+	.enokh-blocks-carousel-navigation {
+		display: flex;
+		height: 100%;
+		pointer-events: none;
+		position: absolute;
+		width: auto;
+
+		&__items-wrapper {
+			pointer-events: all;
+			display: flex;
+			width: auto;
+			z-index: 1;
+		}
+
+		&__item {
+			line-height: 1;
+			cursor: pointer;
+		}
+	}
+
+}
