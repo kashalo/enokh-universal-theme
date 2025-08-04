@@ -9,7 +9,10 @@ const addTemplateAreaAttributes = ( settings, name ) => {
         },
     } );
 
+
     return settings;
 };
 
-addFilter( 'blocks.registerBlockType', 'enokh-blocks/add-template-area-attributes', addTemplateAreaAttributes );
+
+// Temporary disable template area
+//addFilter( 'blocks.registerBlockType', 'enokh-blocks/add-template-area-attributes', addTemplateAreaAttributes );

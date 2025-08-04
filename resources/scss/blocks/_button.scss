@@ -1,0 +1,12 @@
+.enokh-blocks-button {
+	box-sizing: border-box;
+
+	&:disabled,
+	&[disabled] {
+		cursor: not-allowed;
+	}
+}
+
+.enokh-blocks-button__go-to-top {
+	visibility: hidden;
+}

@@ -1,0 +1,22 @@
+[data-type="mah-blocks/tab-panel"],
+[data-type="mah-blocks/tab"] {
+  border: 1px solid currentColor;
+  border-radius: 2px;
+  padding: 10px;
+
+  .enokh-blocks-tab-header {
+    border-bottom: 1px solid var(--wp--preset--color--cyan-bluish-gray);
+    padding: 1.4rem 0;
+  }
+
+  .enokh-blocks-tab-subtitle {
+    padding: 1.4rem 0;
+  }
+
+  .enokh-blocks-tab-item-header {
+    border-bottom: 1px solid var(--wp--preset--color--cyan-bluish-gray);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+  }
+}

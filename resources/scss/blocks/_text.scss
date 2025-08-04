@@ -1,0 +1,9 @@
+.enokh-blocks-text {
+	margin: 0;
+	word-break: break-word;
+
+	&.has-icon {
+		display: flex;
+		align-items: center;
+	}
+}

@@ -1,0 +1,23 @@
+.editor-styles-wrapper {
+  .enokh-blocks-text {
+
+    word-break: break-word;
+
+    span.rich-text {
+      display: inline-block;
+    }
+  }
+}
+
+.enokh-blocks-text {
+  margin: 0;
+  &.has-icon {
+    display: flex;
+    align-items: center;
+  }
+}
+
+// Textarea elements available withing block toolbar dropdowns
+.enokh-blocks-text__toolbar-content-textarea {
+  width: 250px;
+}

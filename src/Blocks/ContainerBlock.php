@@ -79,9 +79,9 @@ class ContainerBlock
             ->generate()
             ->output();
 
+
         add_filter($this->blockUtility->cssHookName(), static function ($inlineCss) use ($css, $settings) {
             $inlineCss[$settings['uniqueId']] = $css;
-
             return $inlineCss;
         });
 

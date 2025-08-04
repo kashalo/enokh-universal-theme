@@ -1,0 +1,6 @@
+mark {
+	// some browsers using background-color: yellow; as default
+	// so we're going to overwrite it and inherit from parent,
+	// which is normally "white" or "transparent" by default.
+	background-color: inherit;
+}

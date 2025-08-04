@@ -1,0 +1,21 @@
+.enokh-blocks-range-control {
+  .enokh-blocks-range-control--wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .enokh-blocks-range-control--range {
+      width: calc(100% - 90px);
+    }
+
+    .enokh-blocks-range-control-input {
+      width: 80px;
+    }
+  }
+
+  .components-base-control__help {
+    margin-top: -8px;
+    font-size: 12px;
+    font-style: normal;
+    color: rgb(117, 117, 117);
+  }
+}

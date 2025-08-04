@@ -1,0 +1,20 @@
+.enokh-blocks-icon {
+	vertical-align: middle;
+	display: inline-block;
+	line-height: 0;
+}
+
+span.enokh-blocks-icon__copied-link {
+	display: none !important;
+
+	.enokh-blocks-button.copied & {
+		display: block !important;
+	}
+}
+
+span.enokh-blocks-icon {
+
+	.enokh-blocks-button.copied & {
+		display: none;
+	}
+}

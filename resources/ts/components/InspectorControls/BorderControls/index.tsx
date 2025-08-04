@@ -144,7 +144,7 @@ export default function BorderControls( props: BorderControlsProps ) {
                         const iconBorderStyle = !! sync ? 'borderAll' : borderArea;
 
                         return (
-                            <FlexControl key={ borderArea }>
+                            <FlexControl key={ areaIndex }>
                                 <Tooltip
                                     text={ !! sync ? __( 'All sides', 'enokh-blocks' ) : borderLabels[ borderArea ] }
                                 >

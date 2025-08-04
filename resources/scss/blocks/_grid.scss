@@ -1,0 +1,43 @@
+// stylelint-disable no-descending-specificity
+.enokh-blocks-grid-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+
+	.wp-block-image {
+		margin-bottom: 0;
+	}
+}
+
+.enokh-blocks-grid-column {
+	box-sizing: border-box;
+}
+
+
+.enokh-blocks-has-divider.js {
+
+	> .enokh-blocks-grid-column {
+		position: relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+		}
+	}
+
+	> .enokh-blocks-grid-column.row-end + .enokh-blocks-grid-column,
+	> .enokh-blocks-grid-column:first-child {
+
+		&::before {
+			border-left: none;
+		}
+	}
+
+	> .enokh-blocks-grid-column:last-child {
+
+		&::before {
+			border-bottom: none;
+		}
+
+	}
+}
+

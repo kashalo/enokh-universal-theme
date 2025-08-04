@@ -3,6 +3,10 @@
 @import './mixins';
 @import './custom-properties';
 @import './elements';
+@import "global/variables";
+@import "global/utility";
+@import "global/base";
+@import "./blocks";
 
 // WP Admin Bar
 #wpadminbar {

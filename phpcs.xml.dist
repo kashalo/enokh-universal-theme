@@ -12,6 +12,7 @@
     <config name="testVersion" value="8.1-"/>
 
     <config name="text_domain" value="enokh-universal-theme"/>
+    <config name="text_domain" value="enokh-blocks"/>
 
     <!-- Recommended Syde PHP Coding Standard rules. -->
     <rule ref="Syde-Extra" />
