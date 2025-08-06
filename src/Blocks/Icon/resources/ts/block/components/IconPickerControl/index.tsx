@@ -83,12 +83,14 @@ const IconPickerControl = ( props: IconPickerControlProps ) => {
             </BaseControl>
 
             <BaseControl className="enokh-blocks-icon-chooser-wrapper">
+                 {/*// @ts-ignore */}
                 <TextControl
                     onChange={(value) => {
                         debouncedSetTerm(value);
                     }}
                     placeholder="Search icon..."
-                    className="enokh-blocks-icon-chooser__search-input" value={''}                />
+                    className="enokh-blocks-icon-chooser__search-input"
+                />
                 { Object.keys( iconSVGSets ).map( ( svg, i ) => {
                     const svgItems = iconSVGSets[ svg ].svgs;
 

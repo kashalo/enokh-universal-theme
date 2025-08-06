@@ -145,5 +145,5 @@ const withContentOnlyControls = createHigherOrderComponent(
     'withContentOnlyControls'
 );
 
-addFilter( 'blocks.registerBlockType', 'enokh-blocks/content-only-attributes', addContentOnlyAttributes );
-addFilter( 'editor.BlockEdit', 'enokh-blocks/content-only-controls', withContentOnlyControls );
+// addFilter( 'blocks.registerBlockType', 'enokh-blocks/content-only-attributes', addContentOnlyAttributes );
+// addFilter( 'editor.BlockEdit', 'enokh-blocks/content-only-controls', withContentOnlyControls );
