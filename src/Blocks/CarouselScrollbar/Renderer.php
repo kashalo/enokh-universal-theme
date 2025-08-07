@@ -27,7 +27,7 @@ class Renderer
             ->generate()
             ->output();
 
-        add_filter('mah-blocks_css_inline', static function ($inlineCss) use ($css, $attributes) {
+        add_filter('enokh-blocks_css_inline', static function ($inlineCss) use ($css, $attributes) {
             $inlineCss[$attributes['uniqueId']] = $css;
 
             return $inlineCss;

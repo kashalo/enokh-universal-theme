@@ -1,18 +1,18 @@
 // stylelint-disable no-descending-specificity
 
-body.gutenberg-editor-page [data-type="mah-blocks/container"] .editor-block-list__block,
-[data-type="mah-blocks/container"] .wp-block-heading h1,
-[data-type="mah-blocks/container"] .wp-block-heading h1.editor-rich-text__tinymce,
-[data-type="mah-blocks/container"] .wp-block-heading h2,
-[data-type="mah-blocks/container"] .wp-block-heading h2.editor-rich-text__tinymce,
-[data-type="mah-blocks/container"] .wp-block-heading h3,
-[data-type="mah-blocks/container"] .wp-block-heading h3.editor-rich-text__tinymce,
-[data-type="mah-blocks/container"] .wp-block-heading h4,
-[data-type="mah-blocks/container"] .wp-block-heading h4.editor-rich-text__tinymce,
-[data-type="mah-blocks/container"] .wp-block-heading h5,
-[data-type="mah-blocks/container"] .wp-block-heading h5.editor-rich-text__tinymce,
-[data-type="mah-blocks/container"] .wp-block-heading h6,
-[data-type="mah-blocks/container"] .wp-block-heading h6.editor-rich-text__tinymce {
+body.gutenberg-editor-page [data-type="enokh-blocks/container"] .editor-block-list__block,
+[data-type="enokh-blocks/container"] .wp-block-heading h1,
+[data-type="enokh-blocks/container"] .wp-block-heading h1.editor-rich-text__tinymce,
+[data-type="enokh-blocks/container"] .wp-block-heading h2,
+[data-type="enokh-blocks/container"] .wp-block-heading h2.editor-rich-text__tinymce,
+[data-type="enokh-blocks/container"] .wp-block-heading h3,
+[data-type="enokh-blocks/container"] .wp-block-heading h3.editor-rich-text__tinymce,
+[data-type="enokh-blocks/container"] .wp-block-heading h4,
+[data-type="enokh-blocks/container"] .wp-block-heading h4.editor-rich-text__tinymce,
+[data-type="enokh-blocks/container"] .wp-block-heading h5,
+[data-type="enokh-blocks/container"] .wp-block-heading h5.editor-rich-text__tinymce,
+[data-type="enokh-blocks/container"] .wp-block-heading h6,
+[data-type="enokh-blocks/container"] .wp-block-heading h6.editor-rich-text__tinymce {
 	color: inherit;
 }
 
@@ -41,7 +41,7 @@ body.gutenberg-editor-page [data-type="mah-blocks/container"] .editor-block-list
 	width: 65px;
 }
 
-[data-type="mah-blocks/container"] > .block-editor-block-list__block-edit > [data-block] {
+[data-type="enokh-blocks/container"] > .block-editor-block-list__block-edit > [data-block] {
 	margin: 0;
 }
 
@@ -61,7 +61,7 @@ body.gutenberg-editor-page [data-type="mah-blocks/container"] .editor-block-list
 }
 
 /* Not needed in GB 7 */
-.edit-post-visual-editor .block-editor-block-list__block[data-type="mah-blocks/container"] > .block-editor-block-list__block-edit {
+.edit-post-visual-editor .block-editor-block-list__block[data-type="enokh-blocks/container"] > .block-editor-block-list__block-edit {
 	margin: 0;
 }
 

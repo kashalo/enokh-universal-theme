@@ -28,15 +28,25 @@ class Module implements
         return [
             'blockInlineStyle' => static function (): Style {
                 return (new Style(self::PRESENTATION_HANDLE . '-inline', ''))
-                ->withInlineStyles(
-                    implode(
-                        '',
-                        apply_filters(InlineCssGenerator::INLINE_FILTER_HOOK, [])
-                    )
-                );
+                    ->withInlineStyles(
+                        implode(
+                            '',
+                            apply_filters(InlineCssGenerator::INLINE_FILTER_HOOK, [])
+                        )
+                    );
             },
             BlockEditorScript::class => static function (ContainerInterface $container): Script {
                 return (new BlockEditorScript(
+                    $container->get(Modularity\Package::PROPERTIES)
+                ))->createScript($container);
+            },
+            TermIconScript::class => static function (ContainerInterface $container): Script {
+                return (new TermIconScript(
+                    $container->get(Modularity\Package::PROPERTIES)
+                ))->createScript($container);
+            },
+            TermIconStyle::class => static function (ContainerInterface $container): Style {
+                return (new TermIconStyle(
                     $container->get(Modularity\Package::PROPERTIES)
                 ))->createScript($container);
             },
@@ -94,6 +104,8 @@ class Module implements
                     $container->get(ElementsStyle::class),
                     $container->get(ElementsEditorStyle::class),
                     $container->get('blockInlineStyle'),
+                    $container->get(TermIconScript::class),
+                    $container->get(TermIconStyle::class)
                 );
             }
         );

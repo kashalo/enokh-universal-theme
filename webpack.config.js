@@ -42,6 +42,8 @@ module.exports = {
         'enokh-design-system-core-editor': './resources/scss/enokh-design-system-core-editor.scss',
         'enokh-design-system-elements': './resources/scss/enokh-design-system-elements.scss',
         'enokh-design-system-elements-editor': './resources/scss/enokh-design-system-elements-editor.scss',
+
+        'enokh-blocks-term-icon-selector': './resources/ts/editor/admin/TermIconSelector/index',
     },
     plugins: [
         ...config.plugins,

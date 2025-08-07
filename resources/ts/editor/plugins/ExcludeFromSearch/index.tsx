@@ -8,7 +8,7 @@ const applyWithSelect = withSelect( ( select ) => {
     const editor = select( 'core/editor' );
     const meta = editor.getEditedPostAttribute( 'meta' );
     return {
-        excludeFromSearch: meta ? meta[ 'mah-blocks__exclude-from-search' ] : '',
+        excludeFromSearch: meta ? meta[ 'enokh-blocks__exclude-from-search' ] : '',
         type: select( 'core/editor' ).getEditedPostAttribute( 'type' ),
     };
 } );
@@ -19,7 +19,7 @@ const applyWithDispatch = withDispatch( ( dispatch ) => {
         onUpdateValue: ( value ) => {
             editor.editPost( {
                 meta: {
-                    'mah-blocks__exclude-from-search': value,
+                    'enokh-blocks__exclude-from-search': value,
                 },
             } );
         },

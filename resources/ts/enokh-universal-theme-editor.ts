@@ -69,7 +69,7 @@ const coreBlocksToDeregister = [
 	// 'core/group',
 	// 'core/heading',
 	// 'core/home-link',
-	'core/html',
+	// 'core/html',
 	// 'core/image',
 	// 'core/latest-comments',
 	// 'core/latest-posts',

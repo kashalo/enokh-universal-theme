@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Enokh\UniversalTheme\Meta\TermIcon;
 
-use Mah\Blocks\Provider\AssetProvider;
+use Enokh\UniversalTheme\Asset\TermIconScript;
 use MetaboxOrchestra\BoxInfo;
 use MetaboxOrchestra\BoxView;
 use WP_Term;
@@ -46,8 +46,8 @@ class View implements BoxView
             </tr>
         </table>
         <?php
-        wp_enqueue_script(AssetProvider::MAH_BLOCKS_TERM_ICON_HANDLE);
-        wp_enqueue_style(AssetProvider::MAH_BLOCKS_TERM_ICON_HANDLE);
+        wp_enqueue_script(TermIconScript::TERM_ICON_HANDLE);
+        wp_enqueue_style(TermIconScript::TERM_ICON_HANDLE);
         return ob_get_clean();
     }
 }
