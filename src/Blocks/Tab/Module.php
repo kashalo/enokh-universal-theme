@@ -33,7 +33,7 @@ class Module implements ExecutableModule, ServiceModule
             static function () use ($properties, $container) {
                 $renderer = $container->get(Renderer::class);
                 register_block_type_from_metadata(
-                    $properties->basePath() . 'assets/Editor/Blocks/Tab',
+                    $properties->basePath() . 'assets/Blocks/Tab',
                     [
                         'render_callback' => [$renderer, 'render'],
                     ]

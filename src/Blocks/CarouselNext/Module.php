@@ -35,7 +35,7 @@ class Module implements Modularity\Module\ExecutableModule, Modularity\Module\Se
             static function () use ($properties, $container) {
                 $renderer = $container->get(Renderer::class);
                 register_block_type_from_metadata(
-                    $properties->basePath() . 'assets/Editor/Blocks/CarouselNext',
+                    $properties->basePath() . 'assets/Blocks/CarouselNext',
                     [
                         'render_callback' => [$renderer, 'render'],
                     ]

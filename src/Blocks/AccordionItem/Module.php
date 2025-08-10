@@ -39,7 +39,7 @@ class Module implements ServiceModule, ExecutableModule
             static function () use ($properties, $container) {
                 $renderer = $container->get(Renderer::class);
                 register_block_type_from_metadata(
-                    $properties->basePath() . 'assets/Editor/Blocks/AccordionItem',
+                    $properties->basePath() . 'assets/Blocks/AccordionItem',
                     [
                         'render_callback' => [$renderer, 'render'],
                     ]

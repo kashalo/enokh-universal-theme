@@ -38,7 +38,7 @@ class Module implements Modularity\Module\ExecutableModule, Modularity\Module\Se
             static function () use ($properties, $container) {
                 $renderer = $container->get(Renderer::class);
                 register_block_type_from_metadata(
-                    $properties->basePath() . 'assets/Editor/Blocks/TabPanel',
+                    $properties->basePath() . 'assets/Blocks/TabPanel',
                     [
                         'render_callback' => [$renderer, 'render'],
                     ]

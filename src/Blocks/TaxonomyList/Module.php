@@ -31,7 +31,7 @@ class Module implements Modularity\Module\ExecutableModule, Modularity\Module\Se
                 $renderer = $container->get(Renderer::class);
                 $gridBlock = $container->get(GridBlock::class);
                 register_block_type_from_metadata(
-                    $properties->basePath() . 'assets/Editor/Blocks/TaxonomyList',
+                    $properties->basePath() . 'assets/Blocks/TaxonomyList',
                     [
                         'render_callback' => [$gridBlock, 'render'],
                     ]

@@ -41,7 +41,7 @@ class Module implements ExecutableModule, ServiceModule
             static function () use ($properties, $container) {
                 $renderer = $container->get(Renderer::class);
                 register_block_type_from_metadata(
-                    $properties->basePath() . 'assets/Editor/Blocks/List',
+                    $properties->basePath() . 'assets/Blocks/List',
                     [
                         'render_callback' => [$renderer, 'render'],
                     ]
