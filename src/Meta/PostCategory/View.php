@@ -33,7 +33,7 @@ class View implements BoxView
         $featuredImageId = get_term_meta($this->term->term_id, Metabox::META_KEY_FEATURED_IMAGE_ID, true);
         $isFeaturedTerm = get_term_meta($this->term->term_id, Metabox::META_KEY_IS_FEATURED_TERM, true);
         $isFeaturedTerm = !empty($isFeaturedTerm);
-
+        wp_enqueue_media();
         ob_start();
         $buttonText = __('Select image', 'enokh-blocks');
         ?>

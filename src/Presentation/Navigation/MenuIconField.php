@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Enokh\UniversalTheme\Presentation\Navigation;
 
-use Enokh\DesignSystem\Presentation\Icon\IconSetRegistry;
+use Enokh\UniversalTheme\Presentation\Icon\IconSetRegistry;
 use Inpsyde\MoreMenuFields\EditField;
 use Inpsyde\MoreMenuFields\EditFieldValue;
 
